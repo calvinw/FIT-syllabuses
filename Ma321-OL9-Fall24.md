@@ -1,6 +1,6 @@
 # Data Analysis for Business Applications 
 
-# MA321 Syllabus Section OL9 Fall 2024
+# MA321 Syllabus Section OLA Fall 2024
 
 ## Info 
 
