@@ -88,7 +88,7 @@ Demos are constructions or calculations or problems that are done by you as you 
 
 #### Assignments - 80%
 
-Assignments are problems you complete after the Demos and Readings that are also shared with me via google docs. Please make sure 
+Assignments are problems you complete after the Demos and Readings that are also shared with me via google docs. Please make sure these are shared so I can edit the documents for helping you and grading. 
 
 NOTE ON LATE WORK:  
 
