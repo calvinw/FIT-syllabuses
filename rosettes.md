@@ -51,32 +51,33 @@ Otherwise...
 If has no reflection lines it will be a *Cyclic*. You just need to identify the
 number of motifs it has around the center point to identify it
 
-### This is an example of a $C_1$  
+### This is an example of a $C_1$ (It has 1 motif around center) 
 
 ![](https://www.york.ac.uk/depts/maths/histstat/symmetry/1.gif)
 
 Notice it has 1 motif around the center point
 
-### This is an example of a $C_2$  
+### This is an example of a $C_2$  (It has 2 motifs around center)
 
 ![](https://www.york.ac.uk/depts/maths/histstat/symmetry/2.gif)
 
 
 Notice it has 2 motifs around the center point
 
-### This is an example of a $C_3$  
+### This is an example of a $C_3$  (It has 3 motifs around center)
 
 ![](https://www.york.ac.uk/depts/maths/histstat/symmetry/3.gif)
 
 Notice it has 3 motifs around the center point
 
-### This is an example of a $C_4$  
+### This is an example of a $C_4$  (It has 4 motifs around center)
+
 
 ![](https://www.york.ac.uk/depts/maths/histstat/symmetry/4.gif)
 
 Notice it has 4 motifs around the center point
 
-### This is an example of a $C_5$  
+### This is an example of a $C_5$  (It has 5 motifs around center)
 
 ![](https://www.york.ac.uk/depts/maths/histstat/symmetry/5.gif)
 
@@ -86,24 +87,30 @@ Notice it has 5 motifs around the center point
 
 ## Dihedral Rosettes have Rotational and Reflection Symmetry
 
+Dihedral rosettes have two different types of symmetries. They have rotational
+symmetry and reflection symmetry.
+
 ## Cyclic Rosettes have Rotational Symmetry Only
+
+Cyclic rosettes have just one type of symmetry. They have rotational symmetry
+only.
 
 ## Two Rotations make a Reflection
 
-But notice that because Dihedral rosettes have reflection symmetry
-they also have rotations, since 2 reflections make a rotation.
+But notice that because Dihedral rosettes have reflection symmetry they also
+have rotations, since 2 reflections make a rotation.
 
 Motifs go from Normal, Inverted, Normal, Etc. for Dihedral Rosettes.
 
 Each jump from Normal to the next Normal around the center is a Rotation.
 
-## Two Mirror Kaleidoscope Designs are exactly the same as the Dihedral Rosettes
+## The Two Mirror Kaleidoscope Designs are Exactly the Same as the Dihedral Rosettes
 
-The 2 mirror Kaleidoscopes designs you looked at earlier are exactly the same
-as the dihedral rosette patterns. This is just another name for 2 mirror
-Kaleidoscopes. 
+The 2 mirror Kaleidoscopes designs (made with 2 actual mirrors) you looked at
+earlier are exactly the same as the set of Dihedral rosette patterns. This is
+just another name for 2 mirror Kaleidoscopes. 
 
-(Here 2 mirror means you make them with 2 real mirrors open at an angle, but
-they produce potentially more that 2 reflection lines going around that center
-point.)
+(Confusingly, here 2 mirror means you make them with 2 real mirrors open at an
+angle, but they produce potentially more that 2 reflection lines going around
+that center point.)
 
