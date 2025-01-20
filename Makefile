@@ -1,5 +1,5 @@
 # List all .md files in the current directory
-MD_FILES := $(filter-out README.md,$(wildcard *.md))
+MD_FILES := $(filter-out README.md rosettes.md d3_calculations.md, $(wildcard *.md))
 
 # Define targets for HTML and PDF outputs
 HTML_TARGETS := $(MD_FILES:.md=.html)
