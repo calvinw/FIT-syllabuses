@@ -1,0 +1,140 @@
+---
+title: "Large Language Models and Applications"
+author: "Calvin Williamson, Science and Math"
+date: 29 Jan 2025
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+## Large Language Models (LLM)
+
+- AI Models You Send a Prompt and They Give a Response 
+- ChatGPT, Claude, Gemini, DeepSeek, Many Others 
+- Prompts can include Text, Images, Audio, Video
+- Responses can include Text, Images, Audio, Video 
+
+## Text Based LLMs 
+
+To prompt an LLM with text you type your question and submit it 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Prompt: What is the capital of France?
+    LLM->>User: Response: The capital of France is Paris.
+```
+The model responds with some text.
+
+**Example**: ChatGPT 3.5 (Nov 22) 
+
+## MultiModal LLMs
+
+Prompts can include 
+
+- Text
+- Image (eg. uploaded image file) 
+- Audio (eg. from microphone, or uploaded audio file) 
+- Video (eg Webcam) 
+- Screen sharing (eg show your computer screen)
+
+Responses can include: Text, Image, Audio, Video   
+
+**Example**: Gemini 2.0 Flash (Dec 24) 
+
+## How To Prompt a MultiModal LLM using Audio 
+
+To prompt the LLM you speak into a microphone on your computer 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Audio Prompt 🔊: Can you hear me? 
+    LLM->>User: Audio Response 🔊: Yes! I hear you? How can I help you today?
+```
+
+The model responds in audio and/or text that you can hear and see immediately
+
+
+## How To Prompt a MultiModal LLM using Video and Audio
+
+Using a webcam you speak and show the model what you want 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Webcam Prompt 📹+🔊: Can you see and hear me? 
+    LLM->>User: Audio Response 🔊: Yes! I can both see and hear you. How can I help you today?
+    
+```
+
+The model responds in audio and/or text
+
+## Example Large Language Model: Deep Seek {.smaller}
+
+* Navigate to [DeepSeek](https://www.deepseek.com) and create an account to use the DeepSeek models. 
+  * DeepSeek-V3 is the standard model available at chat prompt 
+  * DeepSek-R1 is the reasoning model
+
+Deep Seeks models are competive with the state of the art closed
+source models but are created at a fraction of the cost.
+ 
+Notice the difference when posting prompts to the standard V3 model versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
+
+## Deep Seek Assignment {.smaller}
+
+Using the techniques demonstrated in the demo, have DeepSeek create an html, javascript and css application for you to play tick tac toe. 
+
+- Ask the model to create the application all in one index.html file so that you can preview it.
+- Make sure the model creates an "artifact" window that allows you to preview the html application
+- Have the model create a scoring system for multiple games so you can keep score of the number of times X's win and the number of times Y's win
+- Ask the model to implement a "hint" feature so that it shows a suggested move for the next player
+
+You may use the regular model if it works, but you may need to
+switch to the "DeepThink" model especially if you need to make
+changes along the way
+
+## Example LLM Application: NotebookLM {.smaller}
+
+* Navigate to [NotebookLM](https://notebooklm.google.com) and create an account using your private (non-FIT) email.
+
+NotebookLM is an AI-powered note-taking and knowledge management
+tool designed to help users organize, summarize, and interact with
+their notes and documents more effectively. It leverages natural
+language processing to provide insights, generate summaries, and
+answer questions based on the content you input, making it easier
+to manage and extract value from large amounts of information.
+
+## NotebookLM Assignment {.smaller}
+
+Using documents and video links about the 2025 LA fires create a NotebookLM project called "LA 2025 Fires".
+
+1) Upload at least 4 documents as sources (Try wikipedia links, or other articles, and youtube videos (use ones with transcripts))
+
+2) Have the LLM summmarize each of your documents/videos, save these summaries as Notes as part of the project.
+
+3) Create an audio podcast for your documents, but have the hosts focus on one particular aspect of the fire. 
+
+For example have them discuss:
+- the relationship of the fires to climate change 
+- have them discuss the property damage for the fires
+- have them focus the human toll involved 
+
+For this you will have to "prompt" the audio podcast before it is created. Be specific in your prompt
+
+## Example Multimodal LLM: Gemini 2.0 Flash {.smaller}
+
+* Navigate to [Google AI Studio](https://aistudio.google.com) and login with an private gmail account to use the gemini 2 models. (Again use a private gmail account since FIT gmail accounts do not have access at this time) 
+* Make sure the model selected is "Gemini 2.0 Flash Experimental"
+* Click on the Stream Realtime button 
+  * Click on Talk to Gemini and try talking to the LLM
+  * Click on Show Gemini and use your webcam to show it something in the room
+  * Click on Share your Screen and show it something on your compputer.
+
+[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)
+
+[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)
