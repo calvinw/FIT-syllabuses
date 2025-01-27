@@ -118,7 +118,7 @@ Using documents and video links about the 2025 LA fires create a NotebookLM proj
 3. Create an audio podcast for your documents, but have the hosts focus on one particular aspect of the fire. For example try to restrict their discussion to one of these:  
    1. The relationship of the fires to climate change 
    2. Have them discuss the property damage for the fires
-   3. Have them focus the human toll involved
+   3. Have them focus on the human toll involved
 
 For this you will have to "prompt" the audio podcast before it is created. See the audio overview settings. 
 
