@@ -78,7 +78,7 @@ The model responds in audio and/or text
 
 * Navigate to [DeepSeek](https://www.deepseek.com) and create an account to use the DeepSeek models. 
   * DeepSeek-V3 is the standard model available at chat prompt 
-  * DeepSek-R1 is the reasoning model
+  * DeepSeek-R1 is the reasoning model
 
 Deep Seeks models are competive with the state of the art closed
 source models but are created at a fraction of the cost.
@@ -113,18 +113,14 @@ to manage and extract value from large amounts of information.
 
 Using documents and video links about the 2025 LA fires create a NotebookLM project called "LA 2025 Fires".
 
-1) Upload at least 4 documents as sources (Try wikipedia links, or other articles, and youtube videos (use ones with transcripts))
+1. Upload at least 4 documents as sources (Try wikipedia links, or other articles, and youtube videos (use ones with transcripts)). Use 2 or 3 different types of document types (pdfs/youtube videos/websites) 
+2. Have the LLM summmarize each of your documents/videos, save these summaries as Notes as part of the project.
+3. Create an audio podcast for your documents, but have the hosts focus on one particular aspect of the fire. For example try to restrict their discussion to one of these:  
+   1. The relationship of the fires to climate change 
+   2. Have them discuss the property damage for the fires
+   3. Have them focus the human toll involved
 
-2) Have the LLM summmarize each of your documents/videos, save these summaries as Notes as part of the project.
-
-3) Create an audio podcast for your documents, but have the hosts focus on one particular aspect of the fire. 
-
-For example have them discuss:
-- the relationship of the fires to climate change 
-- have them discuss the property damage for the fires
-- have them focus the human toll involved 
-
-For this you will have to "prompt" the audio podcast before it is created. Be specific in your prompt
+For this you will have to "prompt" the audio podcast before it is created. See the audio overview settings. 
 
 ## Example Multimodal LLM: Gemini 2.0 Flash {.smaller}
 
