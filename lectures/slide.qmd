@@ -80,6 +80,11 @@ The model responds in audio and/or text
   * DeepSeek-V3 is the standard model available at chat prompt 
   * DeepSeek-R1 is the reasoning model
 
+Examples:  
+
+1. [Barbie Deep Think](BarbieDeepThink.html)
+2. [Making a Todo App with DeepSeek](DeepSeekSession.html) | [Version 1](DeepSeek1.html) | [Version 2](DeepSeek2.html)
+
 Deep Seeks models are competive with the state of the art closed
 source models but are created at a fraction of the cost.
  

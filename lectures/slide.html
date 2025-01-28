@@ -6,8 +6,8 @@
 <script src="slide_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slide_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slide_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slide_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="slide_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Calvin Williamson, Science and Math">
   <meta name="dcterms.date" content="2025-01-29">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/theme/quarto-27a844e7d43f0d31b27642e48490372a.css">
   <link href="slide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slide_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -240,6 +240,11 @@ Calvin Williamson, Science and Math
 <li>DeepSeek-R1 is the reasoning model</li>
 </ul></li>
 </ul>
+<p>Examples:</p>
+<ol type="1">
+<li><a href="BarbieDeepThink.html">Barbie Deep Think</a></li>
+<li><a href="DeepSeekSession.html">Making a Todo App with DeepSeek</a> | <a href="DeepSeek1.html">Version 1</a> | <a href="DeepSeek2.html">Version 2</a></li>
+</ol>
 <p>Deep Seeks models are competive with the state of the art closed source models but are created at a fraction of the cost.</p>
 <p>Notice the difference when posting prompts to the standard V3 model versus the “reasoning model” (Button “DeepThink”). The reasoning model shows you its thinking process.</p>
 </section>
@@ -586,6 +591,8 @@ Calvin Williamson, Science and Math
       });
       clipboard.on('success', onCopySuccess);
       if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
         const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
           text: getTextToCopy,
           container: window.document.getElementById('quarto-embedded-source-code-modal')
