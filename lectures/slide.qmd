@@ -142,6 +142,6 @@ For this you will have to "prompt" the audio podcast before it is created. See t
   * Click on Show Gemini and use your webcam to show it something in the room
   * Click on Share your Screen and show it something on your compputer.
 
-[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)
-
-[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)
+[Geminin 2 Flash MultiModal Live API](https://youtube.com/playlist?list=PL3miIiuTRI6cEN04Yx_W0u0OLuhV_bFx7&si=ASUC7DgmNYh9zXoM)  
+[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)   
+[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)  
