@@ -1,0 +1,50 @@
+---
+title: "More Variables"
+format: 
+  revealjs:
+    css: styles.css
+---
+
+::: {.columns}
+
+::: {.column width="20%"}
+#### Ex 1
+a = 4  
+b = 5  
+c = a + b  
+:::
+
+::: {.column width="20%"}
+#### Ex 2
+y = 7  
+y = y + 2  
+:::
+
+::: {.column width="20%"}
+#### Ex 3
+a = 10  
+b = 2  
+c = (a + b) * 2  
+a = b * b  
+c = c - a  
+:::
+
+::: {.column width="20%"}
+#### Ex 4
+x = 15  
+y = 3  
+z = x - y  
+x = z + y  
+z = x / y  
+:::
+
+::: {.column width="20%"}
+#### Ex 5
+p = 20  
+q = 4  
+r = p + q + q  
+p = r - p  
+r = p * p  
+:::
+
+:::

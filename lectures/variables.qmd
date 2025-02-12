@@ -1,0 +1,271 @@
+---
+title: "Variables"
+format: 
+  revealjs
+---
+
+# Variables and Program Execution
+
+## Example 1 - Step 1 
+
+a = 2 $\boldsymbol{\longleftarrow}$  
+b = 3  
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 2     |
+| b        |       |
+| c        |       |
+
+## Example 1 - Step 2 
+
+a = 2  
+b = 3 $\boldsymbol{\longleftarrow}$  
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 2     |
+| b        | 3     |
+| c        |       |
+
+## Example 1 - Step 3 
+
+a = 2  
+b = 3  
+c = a + b $\boldsymbol{\longleftarrow}$ a is 2, b is 3 before assignment  
+
+| Variable | Value |
+|----------|-------|
+| a        | 2     |
+| b        | 3     |
+| c        | 5     |
+
+## Example 2 - Step 1
+
+x = 5 $\boldsymbol{\longleftarrow}$  
+x = x + 3  
+
+| Variable | Value |
+|----------|-------|
+| x        | 5     |
+
+## Example 2 - Step 2
+
+x = 5  
+x = x + 3 $\boldsymbol{\longleftarrow}$ x is 5 before assignment  
+
+| Variable | Value |
+|----------|-------|
+| x        | 8     |
+
+## Example 3 - Step 1 
+
+a = 6 $\boldsymbol{\longleftarrow}$  
+b = 4  
+c = a * 2 + b  
+a = a - 2  
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 6     |
+| b        |       |
+| c        |       |
+
+## Example 3 - Step 2 
+
+a = 6  
+b = 4 $\boldsymbol{\longleftarrow}$  
+c = a * 2 + b  
+a = a - 2  
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 6     |
+| b        | 4     |
+| c        |       |
+
+## Example 3 - Step 3 
+
+a = 6   
+b = 4   
+c = a * 2 + b $\boldsymbol{\longleftarrow}$ a is 6, b is 4 before assignment    
+a = a - 2  
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 6     |
+| b        | 4     |
+| c        | 16    |
+
+## Example 3 - Step 4 
+
+a = 6  
+b = 4  
+c = a * 2 + b  
+a = a - 2 $\boldsymbol{\longleftarrow}$ a is 6 before assignment   
+c = a + b  
+
+| Variable | Value |
+|----------|-------|
+| a        | 4     |
+| b        | 4     |
+| c        | 16    |
+
+## Example 3 - Step 5 
+
+a = 6  
+b = 4  
+c = a * 2 + b  
+a = a - 2  
+c = a + b $\boldsymbol{\longleftarrow}$ a is 4, b is 4 before assignment   
+
+| Variable | Value |
+|----------|-------|
+| a        | 4     |
+| b        | 4     |
+| c        | 8     |
+
+## Example 4 - Step 1
+
+x = 8 $\boldsymbol{\longleftarrow}$  
+y = 2  
+z = x / y  
+x = y * 3  
+z = x - y  
+
+| Variable | Value |
+|----------|-------|
+| x        | 8     |
+| y        |       |
+| z        |       |
+
+## Example 4 - Step 2
+
+x = 8  
+y = 2 $\boldsymbol{\longleftarrow}$  
+z = x / y  
+x = y * 3  
+z = x - y  
+
+| Variable | Value |
+|----------|-------|
+| x        | 8     |
+| y        | 2     |
+| z        |       |
+
+## Example 4 - Step 3
+
+x = 8  
+y = 2  
+z = x / y $\boldsymbol{\longleftarrow}$ x is 8, y is 2 before assignment  
+x = y * 3  
+z = x - y  
+
+| Variable | Value |
+|----------|-------|
+| x        | 8     |
+| y        | 2     |
+| z        | 4     |
+
+## Example 4 - Step 4
+
+x = 8  
+y = 2  
+z = x / y  
+x = y * 3 $\boldsymbol{\longleftarrow}$ y is 2 before assignment  
+z = x - y  
+
+| Variable | Value |
+|----------|-------|
+| x        | 6     |
+| y        | 2     |
+| z        | 4     |
+
+## Example 4 - Step 5
+
+x = 8  
+y = 2  
+z = x / y  
+x = y * 3  
+z = x - y $\boldsymbol{\longleftarrow}$ x is 6, y is 2 before assignment  
+
+| Variable | Value |
+|----------|-------|
+| x        | 6     |
+| y        | 2     |
+| z        | 4     |
+
+## Example 5 - Step 1
+
+p = 10 $\boldsymbol{\longleftarrow}$  
+q = 5  
+r = p - q  
+p = p + q  
+r = p / q  
+
+| Variable | Value |
+|----------|-------|
+| p        | 10    |
+| q        |       |
+| r        |       |
+
+## Example 5 - Step 2
+
+p = 10  
+q = 5 $\boldsymbol{\longleftarrow}$  
+r = p - q  
+p = p + q  
+r = p / q  
+
+| Variable | Value |
+|----------|-------|
+| p        | 10    |
+| q        | 5     |
+| r        |       |
+
+## Example 5 - Step 3
+
+p = 10  
+q = 5  
+r = p - q $\boldsymbol{\longleftarrow}$ p is 10, q is 5 before assignment  
+p = p + q  
+r = p / q  
+
+| Variable | Value |
+|----------|-------|
+| p        | 10    |
+| q        | 5     |
+| r        | 5     |
+
+## Example 5 - Step 4
+
+p = 10  
+q = 5  
+r = p - q  
+p = p + q $\boldsymbol{\longleftarrow}$ p is 10, q is 5 before assignment  
+r = p / q  
+
+| Variable | Value |
+|----------|-------|
+| p        | 15    |
+| q        | 5     |
+| r        | 5     |
+
+## Example 5 - Step 5
+
+p = 10  
+q = 5  
+r = p - q  
+p = p + q  
+r = p / q $\boldsymbol{\longleftarrow}$ p is 15, q is 5 before assignment  
+
+| Variable | Value |
+|----------|-------|
+| p        | 15    |
+| q        | 5     |
+| r        | 3     |
