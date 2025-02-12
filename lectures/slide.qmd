@@ -80,6 +80,11 @@ The model responds in audio and/or text
   * DeepSeek-V3 is the standard model available at chat prompt 
   * DeepSeek-R1 is the reasoning model
 
+Examples:  
+
+1. [Barbie Deep Think](BarbieDeepThink.html)
+2. [Making a Todo App with DeepSeek](DeepSeekSession.html) | [Version 1](DeepSeek1.html) | [Version 2](DeepSeek2.html)
+
 Deep Seeks models are competive with the state of the art closed
 source models but are created at a fraction of the cost.
  
@@ -101,6 +106,12 @@ changes along the way
 ## Example LLM Application: NotebookLM {.smaller}
 
 * Navigate to [NotebookLM](https://notebooklm.google.com) and create an account using your private (non-FIT) email.
+
+Pdfs to upload   
+
+- [Interaction of Light and Matter](InteractionLightMatter.pdf)
+- [Lights and White](LightsAndWhite.pdf)
+- [Scientfic Notation](ScientificNotationPropertiesOfWaves.pdf)
 
 NotebookLM is an AI-powered note-taking and knowledge management
 tool designed to help users organize, summarize, and interact with
@@ -131,6 +142,6 @@ For this you will have to "prompt" the audio podcast before it is created. See t
   * Click on Show Gemini and use your webcam to show it something in the room
   * Click on Share your Screen and show it something on your compputer.
 
-[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)
-
-[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)
+[Geminin 2 Flash MultiModal Live API](https://youtube.com/playlist?list=PL3miIiuTRI6cEN04Yx_W0u0OLuhV_bFx7&si=ASUC7DgmNYh9zXoM)  
+[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)   
+[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)  
