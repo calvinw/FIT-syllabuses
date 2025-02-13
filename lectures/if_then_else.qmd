@@ -1,0 +1,216 @@
+---
+title: If Then Statements 
+format: 
+  revealjs
+---
+
+## Example 1 
+
+```r
+do some code up here
+
+if this statement is true  
+  do this thing  
+else  
+  do this otherthing  
+```
+
+## Example 2 
+
+Here == means "is equal to"
+
+```python
+x = 3  
+if x == 3
+    print("hello")
+else  
+    print ("bye")
+```
+
+In words:
+
+```r
+set x equal to 3
+
+if x is equal to 3  
+  print "hello"  
+else  
+  print "bye"  
+```
+. . . 
+
+"hello"
+
+
+## Example 3
+
+Here == means "is equal to"
+
+```python
+x = 2 
+if x == 3
+    print("hello")
+else
+    print ("bye")  
+```
+
+In words:
+
+```r
+set x equal to 2 
+
+if x is equal to 3  
+  print "hello"  
+else  
+  print "bye"  
+```
+. . . 
+
+"bye"
+
+## Example 4 
+
+Here \> means "is greater than"
+
+```python
+x = 2 
+if x > 3
+    print("hello")
+else
+    print("bye")
+```
+
+In words:
+
+```r
+set x equal to 2 
+
+if x is greater than 3  
+  print "hello"  
+else  
+  print "bye"  
+```
+
+. . . 
+
+"bye"
+
+## Example 5
+
+Here < means "is less than"
+
+```python
+x = 3 
+if x < 4 
+    print("hello")
+else
+    print("bye")
+```
+
+In words:
+
+```r
+set x equal to 3 
+
+if x is less than 4  
+  print("hello")  
+else  
+  print("bye") 
+```
+. . . 
+
+"hello"
+
+
+## Example 6 
+
+Here != means "is not equal to"
+
+```python
+x = 3 
+if x != 4 
+    print ("hello")
+else
+    print ("bye")
+```
+
+In words:
+
+```r
+set x equal to 3 
+
+if x is not equal to 4  
+  print("hello")  
+else  
+  print("bye") 
+```
+. . . 
+
+"hello"
+
+## String 1
+```python
+name = "Alice"
+if name == "Alice":
+    print("hello")
+else:
+    print("bye")
+```
+
+In words:
+
+```r
+set name equal to "Alice" 
+
+if name is equal to "Alice"  
+  print("hello")  
+else  
+  print("bye") 
+```
+. . . 
+
+"hello"
+
+## String 2
+```python
+name = "Bill"
+if name != "Alice" 
+    print("hello")
+else:
+    print("bye")
+```
+In words:
+
+```r
+set name equal to "Bill" 
+
+if name is not equal to "Alice"  
+  print("hello")  
+else  
+  print("bye") 
+```
+. . . 
+
+"hello"
+
+## String 3 
+```python
+name = "Bill"
+if name != "Bill" 
+    print("hello")
+else:
+    print("bye")
+```
+In words:
+
+```r
+set name equal to "Bill" 
+
+if name is not equal to "Bill"  
+  print("hello")  
+else  
+  print("bye") 
+```
+. . . 
+
+"bye"

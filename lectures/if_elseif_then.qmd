@@ -1,0 +1,76 @@
+---
+title: If ElseIf Then Statements 
+format: 
+  revealjs
+---
+
+## Example 1 
+
+```r
+do some code up here
+
+if this statement is true  
+  do this 1st thing  
+else if this 2nd statement is true 
+  do this 2nd thing  
+else  
+  do this 3rd thing 
+```
+
+## Example 2 
+
+Here == means "is equal to"
+
+```python
+x = 3  
+if x == 2 
+    print("first thing")
+else if x == 3
+    print("second thing")
+else  
+    print ("third thing")
+```
+
+In words:
+
+```r
+set x equal to 3
+if x is equal to 2  
+    print("first thing")
+else if x is equal to 3 
+    print("second thing")
+else  
+    print("third thing")
+```
+. . . 
+
+"second thing"
+
+## Example 3
+
+Here \< means "is less than"
+
+```python
+x = 12  
+if x < 10 
+    print("first thing")
+else if x < 20 
+    print("second thing")
+else  
+    print ("third thing")
+```
+
+In words:
+
+```r
+set x equal to 12 
+if x is than 10  
+    print("first thing")
+else if is less than 20 
+    print("second thing")
+else  
+    print("third thing")
+```
+. . . 
+
+"second thing"
