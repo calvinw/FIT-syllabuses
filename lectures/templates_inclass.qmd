@@ -1,0 +1,69 @@
+---
+title: "Templates In class"
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+## Example 1 - What is printed out in the code below
+
+```{python}
+#| eval: false
+#| echo: true 
+word = "hello"
+number = 42
+template1 = "The {item} is {value}"
+template2 = "The {value} is {item}"
+
+message1 = template1.format(item=word, value=number)
+message2 = template2.format(item=word, value=number)
+print(message1)
+print(message2)
+```
+
+## Example 2 - What is printed out in the code below
+
+```{python}
+#| eval: false
+#| echo: true 
+greeting = "hello"
+name = "greeting"
+template = "I say {greeting} to {name}"
+message1 = template.format(greeting=name, name=greeting)
+message2 = template.format(greeting=greeting, name=name)
+print(message1)
+print(message2)
+```
+
+## Example 3 - What is printed out in the code below
+
+```{python}
+#| eval: false
+#| echo: true 
+inner = "{x} plus {y}"
+outer = "The expression {formula} equals {result}"
+x = "formula"
+y = "result"
+result = "outer"
+formula = inner.format(x=x, y=y)
+final = outer.format(formula=formula, result=result)
+print(final)
+```
+
+## Example 4 - What is printed out in the code below
+
+```{python}
+#| eval: false
+#| echo: true 
+a = "b"
+b = "c"
+c = "a"
+pattern = "First is {a}, second is {b}, third is {c}"
+result1 = pattern.format(a=b, b=c, c=a)
+result2 = pattern.format(a=a, b=b, c=c)
+print(result1)
+print(result2)
+```
+
+

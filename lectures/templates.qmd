@@ -1,0 +1,114 @@
+---
+title: "Prompt Template Substitutions"
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+##
+
+**Example 1** Evaluate with kind equal to the string "chicken"
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "Can you make me a {kind} sandwich for lunch?"
+
+prompt = template.format(kind = "chicken")
+print(prompt)
+```
+. . . 
+
+Can you make me a chicken sandwich for lunch?
+
+. . . 
+
+**Example 2** Evaluate with direct string values
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "I would like to order a {size} {drink} please."
+
+# Evaluate with direct string values
+prompt = template.format(size = "large", drink = "coffee")
+print(prompt)
+```
+. . .
+
+I would like to order a large coffee please.
+
+##
+
+**Example 3** Evaluate it when kind is x, and here x is "turkey"
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "Can you make me a {kind} sandwich for lunch?"
+
+x = "turkey"
+
+prompt = template.format(kind = x)
+print(prompt)
+```
+. . . 
+
+Can you make me a turkey sandwich for lunch?
+
+. . . 
+
+**Example 4** Evaluate using variables
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "The meeting will be in {room} at {time}."
+
+location = "Room 101"
+meeting_time = "2:30 PM"
+
+prompt = template.format(room = location, time = meeting_time)
+print(prompt)
+```
+. . .
+
+The meeting will be in Room 101 at 2:30 PM.
+
+##
+
+**Example 5** Evaluate it when kind is "tuna" 
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "Can you make me a {kind} sandwich for lunch?"
+
+kind = "tuna"
+
+prompt = template.format(kind = kind)
+print(prompt)
+```
+. . . 
+
+Can you make me a tuna sandwich for lunch?
+
+. . . 
+
+**Example 6** Evaluate using named variables
+
+```{python}
+#| eval: false
+#| echo: true 
+template = "Your order number {number} will be ready in {minutes} minutes."
+
+number = "A245"
+minutes = "15"
+
+prompt = template.format(number = number, minutes = minutes)
+print(prompt)
+```
+. . .
+
+Your order number A245 will be ready in 15 minutes.
