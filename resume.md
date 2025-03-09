@@ -68,7 +68,7 @@ SUNY Chancellor's Award for Excellence in Teaching, 2012
 
 ## Publications
 
-**[Using Cloud Tools for Literate Programming to Redesign an AI Course for Non-Traditional College Students](https://doi.org/10.1609/aaai.v34i09.7069) ** (with Maria Hwang), Proceedings of the AAAI Conference on Artificial Intelligence, (2020), 34(09), 13502-13503.
+**Using Cloud Tools for Literate Programming to Redesign an AI Course for Non-Traditional College Students** (with Maria Hwang), Proceedings of the AAAI Conference on Artificial Intelligence, (2020), 34(09), 13502-13503. [(pdf)](https://doi.org/10.1609/aaai.v34i09.7069)
 
 **A Phase Cell Cluster Expansion**, Annals of Physics 175 (1987), 31
 
