@@ -1,0 +1,46 @@
+# Building Progressive Prompts in FLUX.1
+   
+Make a set of progressive prompts by refining the 
+prompts and sending to FLUX.1 
+  
+- Textured Still Life
+- Subject: Still life composition
+- Style: Tactile, textured, felt cut-out collage
+- Composition: Buttons, yarn, fabric scraps, and beads
+- Lighting: Soft, diffused light
+- Color Palette: Vibrant primary colors and pastel hues
+- Mood: Playful, whimsical, childlike
+- Technical Details: Close-up shot focusing on textures
+- Additional Elements: Overlapping layers and uneven edges for handcrafted look
+  
+Complete Prompt:   
+
+A still life composition, tactile and textured, resembling a felt cut-out collage. It features objects like buttons, yarn, fabric scraps, and beads. Soft, diffused light illuminates the scene. The color palette includes a mix of vibrant primary colors and pastel hues. The mood is playful, whimsical, and childlike. A close-up shot focuses on the textures of the materials. Overlapping layers and slightly uneven edges mimic the handcrafted look of a collage.
+
+### Step 1
+  
+1. Basic Prompt (Establishing the Core Idea)  
+A still life composition featuring buttons, yarn, and fabric scraps. Soft lighting and a playful, colorful mood.
+  
+### Step 2 
+  
+2. Expanding Textures and Style   
+  
+A still life composition resembling a felt collage, featuring buttons, yarn, and fabric scraps. The textures are soft and tactile, and the lighting is soft and diffused. The color palette includes a mix of bright and pastel tones, creating a whimsical, playful mood.
+  
+### Step 3 
+
+3. Adding Overlapping Layers and Uneven Edges  
+  
+A still life composition resembling a handcrafted felt collage. The scene includes buttons, yarn, fabric scraps, and beads, arranged with overlapping layers and slightly uneven edges. Soft, diffused lighting enhances the tactile textures, and the color palette combines vibrant primary colors with soft pastels, creating a playful, whimsical mood.
+
+### Step 4 
+  
+4. Enhancing Technical Details and Depth  
+A close-up still life composition inspired by a felt cut-out collage. It features buttons, yarn, fabric scraps, and beads with overlapping layers and slightly uneven edges. The tactile textures are highlighted by soft, diffused lighting. The color palette includes vibrant primary colors and pastel hues, contributing to a playful and childlike atmosphere.
+
+### Step 5 
+
+5. Final Refined Prompt (Complete)  
+  
+A still life composition, tactile and textured, resembling a felt cut-out collage. It features objects like buttons, yarn, fabric scraps, and beads. Soft, diffused light illuminates the scene. The color palette includes a mix of vibrant primary colors and pastel hues. The mood is playful, whimsical, and childlike. A close-up shot focuses on the textures of the materials. Overlapping layers and slightly uneven edges mimic the handcrafted look of a collage.
