@@ -1,0 +1,62 @@
+
+
+### **Example 1**: Sales Prediction  
+Suppose you are predicting the number of units sold (in **10,000s**) based on the amount of money spent on online ads. Suppose your x-variable is the advertising spend (in **1,000s of dollars**). The equation you get is **m = 2.8** and **b = 5**.  
+
+Now, suppose you want to find the predicted number of units sold when you spend **\$25,000** on ads. What is the prediction of units sold?  
+
+#### **Solution:**  
+You need to use **x = 25** (since 25 stands for \$25,000) in the equation:  
+
+$$
+Y = 2.8x + 5 = 2.8(25) + 5 = 75 
+$$
+
+Since **Y represents units in 10,000s**, the actual prediction is:  
+
+$$
+75 \times 10,000 = 750,000 \text{ units}
+$$
+
+---
+
+### **Example 2**: Store Profit Projection  
+A store manager is estimating the total profit (in **millions of dollars**) based on the number of customers visiting the store. The x-variable is the number of customers (in **100,000s**). The equation given is **m = 1.2** and **b = 0.5**.  
+
+If the store expects **450,000** customers next year, what is the predicted profit in dollars?  
+
+#### **Solution:**  
+You need to use **x = 4.5** (since 4.5 stands for 450,000 customers) in the equation:  
+
+$$
+Y = 1.2x + 0.5 = 1.2(4.5) + 0.5 = 5.9
+$$
+
+Since **Y represents profit in millions of dollars**, the actual prediction is:  
+
+$$
+5.9 \times 1,000,000 = 5,900,000 \text{ dollars} \ (\$5.9 \text{ million})
+$$
+
+---
+
+### **Example 3**: Warehouse Inventory Projection  
+A company wants to predict the total weight of products shipped (in **100,000 pounds**) based on the number of orders placed. The x-variable is the number of orders (in **10,000s**). The equation given is **m = 4.5** and **b = 3**.  
+
+If the company receives **120,000** orders, what is the predicted total weight of shipments in pounds?  
+
+#### **Solution:**  
+You need to use **x = 12** (since 12 stands for 120,000 orders) in the equation:  
+
+$$
+Y = 4.5x + 3 = 4.5(12) + 3 = 57
+$$
+
+Since **Y represents weight in 100,000 pounds**, the actual prediction is:  
+
+$$
+57 \times 100,000 = 5,700,000 \text{ pounds}
+$$
+
+---
+
