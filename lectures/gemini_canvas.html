@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -65,6 +99,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="overlapping-svgs-and-showing-gemini-a-screenshot">Overlapping SVGS and Showing Gemini a Screenshot</h2>
 <p>Ask Gemini to edit some html with you. Get an html editor window.</p>
 <p>Delete everything that is there and paste in the following svg code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode svg code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">svg</span><span class="ot"> width=</span><span class="st">"400"</span><span class="ot"> height=</span><span class="st">"400"</span><span class="ot"> xmlns=</span><span class="st">"http://www.w3.org/2000/svg"</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">circle</span><span class="ot"> cx=</span><span class="st">"200"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> r=</span><span class="st">"150"</span><span class="ot"> fill=</span><span class="st">"yellow"</span> /&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">rect</span><span class="ot"> width=</span><span class="st">"200"</span><span class="ot"> height=</span><span class="st">"150"</span><span class="ot"> x=</span><span class="st">"30"</span><span class="ot"> y=</span><span class="st">"30"</span><span class="ot"> rx=</span><span class="st">"16"</span><span class="ot"> ry=</span><span class="st">"16"</span><span class="ot"> fill=</span><span class="st">"blue"</span> /&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">ellipse</span><span class="ot"> cx=</span><span class="st">"100"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> rx=</span><span class="st">"100"</span><span class="ot"> ry=</span><span class="st">"100"</span><span class="ot"> fill=</span><span class="st">"cyan"</span> /&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">svg</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Now ask Gemini to move the shapes around so they do not overlap. You can try to show Gemini what the picture looks like by making a screenshot and pasting that into gemini chat window. Tell the LLM that it is what the svg code currently shows and it needs to fix it so that the shapes do not overlap</p>
 </section>
 </section>
