@@ -1,0 +1,206 @@
+---
+title: "Tools and Model Context Protocol(MCP)"
+author: "Calvin Williamson"
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+## Tools and Large Language Models
+
+- Tools (or agents) are examples of additional software that can be called while an LLM is responding to a prompt 
+
+- Available tools the LLM may call are described in the prompt to the LLM
+
+- Common examples of tools include:
+  - Searching the web
+  - Accessing google drive
+  - Accessing emails  
+
+## Calling a Tool: How Does It Work?
+
+- While answering a prompt, if an LLM determines it needs to use a tool, it responds to the initial prompt saying it needs the results from a tool
+
+- The AI app calls the tool on behalf of the LLM, then passes the result from the tool back to the LLM
+
+- The LLM uses the original prompt and the result from the tool call and incorporates both of these (prompt and result of tool call) into its final response back to the AI app
+  
+Here the LLMs response has been enhanced by the results of the tool.  
+
+## Prompting an LLM without Tools
+
+Here is an example of prompting an LLM but without any tools.
+
+```{mermaid}
+sequenceDiagram
+    participant AI_App as AI App
+    participant LLM
+    
+    AI_App->>LLM: Forwards prompt
+    LLM->>AI_App: Responds with answer
+```
+
+The response from the LLM only incorporates what it knows from its initial training. This means the response may not have current or appropriate data for answering the prompt.  
+
+## Prompting an LLM Using a Tool {.smaller}
+
+```{mermaid}
+sequenceDiagram
+    participant AI_App as AI App
+    participant LLM
+    participant Tool as Tool (Web Search) 
+    
+    AI_App->>LLM: AI App sends prompt (with a tool specified)
+    LLM->>AI_App: LLM requests tool call
+    AI_App->>Tool: AI App calls the tool  
+    Tool->>AI_App: Tool responds with tool result 
+    AI_App->>LLM: AI App forwards tool result to LLM 
+    LLM->>AI_App: LLM considers tool result and original prompt and responds 
+```
+
+Here the LLM has called back to the AI App to get more info from the tool. The AI App retrieved the result from the tool and forwarded to LLM so it could use that information.
+
+## Model Context Protocol (MCP) {.smaller}
+
+MCP is a particular protocol that makes tool usage standardized. MCP servers may have resources, tools, and prompts so they are more general than tools. Also MCP servers have a way to advertise what they offer and so they may be queried to provide that. But the basic flow is the same as with a tool: 
+
+```{mermaid}
+sequenceDiagram
+    participant AI_App as AI App
+    participant LLM
+    participant MCP_Server as MCP Server 
+    
+    AI_App->>LLM: AI App sends prompt (with MCP server it can use)
+    LLM->>AI_App: LLM requests an MCP server call
+    AI_App->>MCP_Server: AI App calls the MCP server  
+    MCP_Server->>AI_App: MCP server responds with a result 
+    AI_App->>LLM: AI App forwards the MCP server result to LLM 
+    LLM->>AI_App: LLM considers MCP server result and original prompt and responds 
+```
+
+The response from the LLM has incorporated information it has received from the MCP Server in its response. 
+
+## An Example of Not Using a Tool {.smaller}
+
+Step 1: AI App sends prompt "What is 1234 + 5678?" 
+
+```json
+{ 
+  "messages": [
+    { "role": "user", "content": "What is 1234 + 5678?" }
+  ] 
+}
+```
+
+Step 2: LLM processed this internally and calculates the result using its training
+
+```json
+{
+  "messages": [
+    { "role": "user", "content": "What is 1234 + 5678?" },
+    { "role": "ai", "content": "The sum of 1234 and 5678 is 6912." }
+  ]
+} 
+```
+
+## An Example of Using A Tool {.smaller}
+
+Step 1: AI App forwards the prompt to the LLM along with info about tool:
+
+```json
+{
+  "messages": [
+    { "role": "user", "content": "What is 1234 + 5678?" }
+  ],
+  "tools": [
+    {
+      "name": "add_two_numbers",
+      "description": "Adds two numbers together",
+      "parameters": {
+        "num1": "First number to add",
+        "num2": "Second number to add"
+      }
+    }
+  ]
+}
+```
+
+## An Example of Using A Tool (cont) {.smaller}
+
+Step 2: 
+LLM recognizes this as a math problem and decides to use the add_two_numbers tool instead of calculating itself
+
+Step 3:
+The LLM then generates a tool call request with the necessary parameters and sends it to the AI App
+
+```json
+{
+  "tool": [
+    {
+      "name": "add_two_numbers",
+      "parameters": {
+        "num1": "1234",
+        "num2": "5678"
+      }
+    }
+  ]
+}
+```
+
+## An Example of Using A Tool (cont) {.smaller}
+
+Step 4: The AI App forwards the tool call to the tool and gets the result back.
+
+Step 5: The tool executes `add_two_numbers` and returns the result of the tool call.
+
+```json
+{
+  "result": 6912
+}
+```
+
+## An Example of Using A Tool (cont) {.smaller}
+
+Step 6: The AI App sends the tool result to the LLM
+
+Step 7: LLM formulates its final response incorporating the tool result.
+
+```json
+{
+  "messages": [
+    { "role": "user", "content": "What is 1234 + 5678?" },
+    { "role": "ai", "content": "The sum of 1234 and 5678 is 6912." }
+  ]
+}
+```
+
+The result has incorporated the result from the tool.
+
+## Advantages of MCP over Regular Tools {.smaller}
+
+- **Standardization**: MCP provides a standard protocol for all tool interactions, making implementation more consistent and reliable
+
+- **Discoverability**: MCP servers can advertise their capabilities, allowing LLMs to dynamically discover available resources
+
+- **Extensibility**: Beyond simple tools, MCP servers can provide access to resources, prompts, and other services
+
+- **Interoperability**: A single MCP implementation works across different AI applications and models
+
+- **Versioning**: MCP can handle versioning of services, ensuring compatibility as tools and models evolve
+
+## References {.smaller}
+
+1. Anthropic. (2024). ["Introducing the Model Context Protocol."](https://www.anthropic.com/news/model-context-protocol)
+
+2. Anthropic Documentation. (2024). ["Model Context Protocol (MCP)."](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
+
+3. [Model Context Protocol GitHub Organization.](https://github.com/modelcontextprotocol) (2024).
+
+4. Docker. (2024). ["The Model Context Protocol: Simplifying Building AI apps with Anthropic Claude Desktop and Docker."](https://www.docker.com/blog/the-model-context-protocol-simplifying-building-ai-apps-with-anthropic-claude-desktop-and-docker/)
+
+5. TechCrunch. (2024). ["Anthropic proposes a new way to connect data to AI chatbots."](https://techcrunch.com/2024/11/25/anthropic-proposes-a-way-to-connect-data-to-ai-chatbots/)
+
+6. TechCrunch. (2025). ["OpenAI adopts rival Anthropic's standard for connecting AI models to data."](https://techcrunch.com/2025/03/26/openai-adopts-rival-anthropics-standard-for-connecting-ai-models-to-data/)
+
+7. [Model Context Protocol Official Documentation.](https://modelcontextprotocol.io/introduction) (2024).
