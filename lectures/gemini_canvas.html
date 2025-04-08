@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>progressive_prompts</title>
+<title>gemini_canvas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,19 +20,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="progressive_prompts_files/libs/clipboard/clipboard.min.js"></script>
-<script src="progressive_prompts_files/libs/quarto-html/quarto.js"></script>
-<script src="progressive_prompts_files/libs/quarto-html/popper.min.js"></script>
-<script src="progressive_prompts_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="progressive_prompts_files/libs/quarto-html/anchor.min.js"></script>
-<link href="progressive_prompts_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="progressive_prompts_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="progressive_prompts_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="progressive_prompts_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="progressive_prompts_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="gemini_canvas_files/libs/clipboard/clipboard.min.js"></script>
+<script src="gemini_canvas_files/libs/quarto-html/quarto.js"></script>
+<script src="gemini_canvas_files/libs/quarto-html/popper.min.js"></script>
+<script src="gemini_canvas_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="gemini_canvas_files/libs/quarto-html/anchor.min.js"></script>
+<link href="gemini_canvas_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="gemini_canvas_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="gemini_canvas_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="gemini_canvas_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="gemini_canvas_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -46,36 +80,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="building-progressive-prompts-in-flux.1" class="level1">
-<h1>Building Progressive Prompts in FLUX.1</h1>
-<p>Make a set of progressive prompts by refining the prompts and sending to FLUX.1</p>
-<section id="the-mystical-treehouse" class="level2">
-<h2 class="anchored" data-anchor-id="the-mystical-treehouse">The Mystical Treehouse</h2>
-<p>Subject: A treehouse Style: Whimsical, magical, fairytale illustration Composition: Nestled among towering trees in an enchanted forest Lighting: Soft, ethereal light Color Palette: Vibrant greens, blues, and purples Mood: Enchanting, dreamy Technical Details: Tilt-shift lens for miniature effect Additional Elements: Tiny glowing mushrooms and fireflies illuminating the forest floor</p>
-<p>Complete Prompt: A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy. Tilt-shift lens, to emphasize the miniature, fairytale-like quality. Tiny glowing mushrooms and fireflies illuminating the forest floor.</p>
+<section id="vibe-coding-experiments-with-google-gemini" class="level1">
+<h1>Vibe Coding Experiments with Google Gemini</h1>
+<p>Using Google Canvas try vibe coding the following ideas:</p>
+<section id="menu-system-for-pizzas" class="level2">
+<h2 class="anchored" data-anchor-id="menu-system-for-pizzas">Menu System for Pizzas</h2>
+<p>Try writing code for a menu of pizzas</p>
+<p>There are three sizes large, medium and small and three different pizzas that can be ordered.</p>
+<section id="pizzas" class="level3">
+<h3 class="anchored" data-anchor-id="pizzas">Pizzas</h3>
+<p>Pepperoni $12.95, $10.00, $7.00 Cheese $10.95, $9.25, $6.50 Eggplant pizza $11.95, $9.75, $6.75</p>
+<p>Ask Gemini to put up a canvas html editor and create a html app that uses vanilla javascript and html to let the user select any number of large, medium, and small pizzas. For example the user might order 2 large Pepperoni and 1 small Eggplant pizza.</p>
+<p>The webapp you are building should show the current order at the bottom and the total order amount. It should also let you add any of the above items to the current order,</p>
+<p>Also there should be a way to remove an item from the current order displayed at the bottom</p>
 </section>
-<section id="a-set-of-prompts" class="level2">
-<h2 class="anchored" data-anchor-id="a-set-of-prompts">A Set of Prompts</h2>
-<section id="step-1-basic-concept" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-basic-concept">Step 1 (Basic Concept):</h3>
-<p>A magical treehouse</p>
 </section>
-<section id="step-2-add-setting" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-add-setting">Step 2 (Add Setting):</h3>
-<p>A magical treehouse, whimsical, nestled among towering trees in an enchanted forest</p>
-</section>
-<section id="step-3-add-lighting-atmosphere" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-add-lighting-atmosphere">Step 3 (Add Lighting &amp; Atmosphere):</h3>
-<p>A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light</p>
-</section>
-<section id="step-4-add-color-palette-mood" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-add-color-palette-mood">Step 4 (Add Color Palette &amp; Mood):</h3>
-<p>A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy</p>
-</section>
-<section id="step-5-complete-with-technical-elements-details" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-complete-with-technical-elements-details">Step 5 (Complete with Technical Elements &amp; Details):</h3>
-<p>A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy. Tilt-shift lens, to emphasize the miniature, fairytale-like quality. Tiny glowing mushrooms and fireflies illuminating the forest floor</p>
-</section>
+<section id="overlapping-svgs-and-showing-gemini-a-screenshot" class="level2">
+<h2 class="anchored" data-anchor-id="overlapping-svgs-and-showing-gemini-a-screenshot">Overlapping SVGS and Showing Gemini a Screenshot</h2>
+<p>Ask Gemini to edit some html with you. Get an html editor window.</p>
+<p>Delete everything that is there and paste in the following svg code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode svg code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">svg</span><span class="ot"> width=</span><span class="st">"400"</span><span class="ot"> height=</span><span class="st">"400"</span><span class="ot"> xmlns=</span><span class="st">"http://www.w3.org/2000/svg"</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">circle</span><span class="ot"> cx=</span><span class="st">"200"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> r=</span><span class="st">"150"</span><span class="ot"> fill=</span><span class="st">"yellow"</span> /&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">rect</span><span class="ot"> width=</span><span class="st">"200"</span><span class="ot"> height=</span><span class="st">"150"</span><span class="ot"> x=</span><span class="st">"30"</span><span class="ot"> y=</span><span class="st">"30"</span><span class="ot"> rx=</span><span class="st">"16"</span><span class="ot"> ry=</span><span class="st">"16"</span><span class="ot"> fill=</span><span class="st">"blue"</span> /&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">ellipse</span><span class="ot"> cx=</span><span class="st">"100"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> rx=</span><span class="st">"100"</span><span class="ot"> ry=</span><span class="st">"100"</span><span class="ot"> fill=</span><span class="st">"cyan"</span> /&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">svg</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now ask Gemini to move the shapes around so they do not overlap. You can try to show Gemini what the picture looks like by making a screenshot and pasting that into gemini chat window. Tell the LLM that it is what the svg code currently shows and it needs to fix it so that the shapes do not overlap</p>
 </section>
 </section>
 

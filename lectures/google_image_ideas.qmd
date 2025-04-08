@@ -1,0 +1,29 @@
+# Experiments with Googles Gemini 2 Experimental (Image Generation) 
+   
+## A Few Things to Try With Gemini 2 Image Generation  
+
+### Idea 1
+Upload an image and ask it to make a side view and a back view for that image.
+
+### Idea 2 
+Upload an image and ask it to edit just a part. 
+1) Add something to the image.  (add something, change the clothes, change the hair) 
+2) Remove something from the image. (like people, background objects, etc)
+
+### Idea 3
+Create a recipe and ask it to illustrate the recipe with different images.
+
+### Idea 4 
+Create a childrens book and have it illustrate each chapter or part.
+
+### Idea 5
+Give it some text and ask it to create a greeting card using that text.
+
+### Idea 6 
+Upload two images and ask it to put together different things in each image (like 2 people)
+
+### Idea 7 
+Create a logo for some company, ask it to iterate on the logo.
+
+### Idea 8 
+Upload your Bitmoji and ask it to make a story using your BitMoji Character.

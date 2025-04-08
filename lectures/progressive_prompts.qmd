@@ -3,7 +3,7 @@
 Make a set of progressive prompts by refining the 
 prompts and sending to FLUX.1 
   
-### The Mystical Treehouse
+## The Mystical Treehouse
 
 Subject: A treehouse
 Style: Whimsical, magical, fairytale illustration
@@ -16,21 +16,19 @@ Additional Elements: Tiny glowing mushrooms and fireflies illuminating the fores
 
 Complete Prompt: A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy. Tilt-shift lens, to emphasize the miniature, fairytale-like quality. Tiny glowing mushrooms and fireflies illuminating the forest floor. 
 
-### A Set of Prompts
+## A Set of Prompts
 
-### Step 1
+### Step 1 (Basic Concept):
+A magical treehouse
 
-A simple treehouse with magical elements nestled in a forest. Whimsical fairytale illustration style with soft lighting. Primarily green and blue colors. Dreamy atmosphere with a few glowing elements.
-  
-### Step 2 
+### Step 2 (Add Setting):
+A magical treehouse, whimsical, nestled among towering trees in an enchanted forest
 
-A magical treehouse built into the trunk of an ancient oak tree, situated in a misty forest. Whimsical fairytale illustration style with ethereal moonlight filtering through branches. Vibrant greens and purples with blue accents. Enchanting mood with glowing windows in the treehouse and several luminescent mushrooms at its base.
+### Step 3 (Add Lighting & Atmosphere):
+A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light
 
-### Step 3 
+### Step 4 (Add Color Palette & Mood):
+A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy
 
-A multi-level magical treehouse with winding staircases and tiny bridges connecting different tree platforms, nestled among three towering ancient trees in an enchanted forest. Whimsical fairytale illustration with soft, ethereal light emanating from lanterns and crystals. Vibrant color palette of emerald greens, royal purples, and deep blues. Dreamy, enchanting atmosphere with tilt-shift lens effect. Glowing mushroom rings, scattered fireflies, and small woodland creatures inhabiting the forest floor.
-
-
-### Step 4 
-
-An elaborate magical treehouse village with multiple interconnected structures, ornate wooden platforms, hanging gardens and crystalline windows, nestled among massive, ancient trees with faces subtly carved into their bark in an enchanted, mist-filled forest. Whimsical, detailed fairytale illustration with soft, ethereal light streaming through leaves and illuminating dust particles. Rich, vibrant color palette transitioning from emerald and jade greens to deep indigos, lavenders and royal purples. Enchanting, dreamy atmosphere with tilt-shift lens effect creating a miniature, diorama-like quality. Forest floor alive with concentric rings of glowing mushrooms in various sizes and colors, swarms of blue and golden fireflies forming patterns in the air, tiny fairies peeking from behind leaves, owl messengers perched on branches, and a meandering stream with luminescent water flowing underneath the treehouse structures.
+### Step 5 (Complete with Technical Elements & Details):
+A magical treehouse, whimsical, fairytale illustration, nestled among towering trees in an enchanted forest, glowing with soft, ethereal light. Vibrant greens, blues, and purples, enchanting, dreamy. Tilt-shift lens, to emphasize the miniature, fairytale-like quality. Tiny glowing mushrooms and fireflies illuminating the forest floor
