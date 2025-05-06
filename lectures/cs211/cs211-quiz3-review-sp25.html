@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>cs211-quiz3-review-sp25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="cs211-quiz3-review-sp25_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cs211-quiz3-review-sp25_files/libs/quarto-html/quarto.js"></script>
+<script src="cs211-quiz3-review-sp25_files/libs/quarto-html/popper.min.js"></script>
+<script src="cs211-quiz3-review-sp25_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cs211-quiz3-review-sp25_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cs211-quiz3-review-sp25_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cs211-quiz3-review-sp25_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cs211-quiz3-review-sp25_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cs211-quiz3-review-sp25_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cs211-quiz3-review-sp25_files/libs/bootstrap/bootstrap-c769a565bd55057ea50b55661ee20eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cs211-quiz3-review-sp25.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="llm-assessment-capabilities-features-and-tools" class="level1">
+<h1>LLM Assessment: Capabilities, Features, and Tools</h1>
+<section id="image-generation" class="level2">
+<h2 class="anchored" data-anchor-id="image-generation">Image Generation</h2>
+<ol type="1">
+<li><strong>Multiple Choice:</strong> Which of the following best describes the difference between FLUX and Gemini 2.5’s image generation capabilities?
+<ul>
+<li><ol type="a">
+<li>FLUX creates photorealistic images while Gemini 2.5 only creates cartoons</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Gemini 2.5 offers more interactive refinement capabilities while FLUX is more one-shot</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Gemini 2.5 can generate video while FLUX cannot</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>FLUX is only available in specific regions while Gemini 2.5 is global</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) Gemini 2.5 offers more interactive refinement capabilities while FLUX is more one-shot</strong></p>
+<ol start="2" type="1">
+<li><strong>True/False:</strong> Both FLUX and Gemini 2.5 use natural language prompts as input for image generation.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) True</strong></p>
+<ol start="3" type="1">
+<li><strong>Multiple Choice:</strong> What is a key limitation in current image generation models like FLUX?
+<ul>
+<li><ol type="a">
+<li>They cannot generate images of people</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>They often produce artifacts in complex scenes</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>They can only work with square aspect ratios</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>They require programming knowledge to use effectively</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) They often produce artifacts in complex scenes</strong></p>
+</section>
+<section id="artifacts-in-llms" class="level2">
+<h2 class="anchored" data-anchor-id="artifacts-in-llms">Artifacts in LLMs</h2>
+<ol start="4" type="1">
+<li><strong>Multiple Choice:</strong> What is the primary purpose of artifacts in LLM interactions?
+<ul>
+<li><ol type="a">
+<li>To store user data between sessions</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>To create and manage self-contained content that can be referenced and updated</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>To improve rendering speed of text responses</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>To track conversation history for billing purposes</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) To create and manage self-contained content that can be referenced and updated</strong></p>
+<ol start="5" type="1">
+<li><strong>True/False:</strong> Artifacts can be modified by both the LLM and the user throughout a conversation.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) True</strong></p>
+<ol start="6" type="1">
+<li><strong>Multiple Choice:</strong> Which of these is NOT a common type of artifact in modern LLM systems?
+<ul>
+<li><ol type="a">
+<li>Code artifacts</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Document artifacts</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>SVG graphics</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Video artifacts</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: d) Video artifacts</strong></p>
+<ol start="7" type="1">
+<li><strong>Multiple Choice:</strong> How do LLMs typically use artifacts in creative writing tasks?
+<ul>
+<li><ol type="a">
+<li>They can edit and improve existing artifacts based on user feedback</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>They automatically generate artifacts without user input</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>They can only create artifacts of fewer than 100 words</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>They require external APIs to generate artifacts</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) They can edit and improve existing artifacts based on user feedback</strong></p>
+</section>
+<section id="system-vs.-user-prompts" class="level2">
+<h2 class="anchored" data-anchor-id="system-vs.-user-prompts">System vs.&nbsp;User Prompts</h2>
+<ol start="8" type="1">
+<li><strong>True/False:</strong> System prompts are visible to the end user in most commercial LLM applications.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="9" type="1">
+<li><strong>Multiple Choice:</strong> What is the primary difference between system prompts and user prompts?
+<ul>
+<li><ol type="a">
+<li>System prompts are written in code while user prompts use natural language</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>System prompts help define the LLM’s behavior and constraints while user prompts are specific requests</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>System prompts are optional while user prompts are required</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>System prompts only work for certain types of questions</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) System prompts help define the LLM’s behavior and constraints while user prompts are specific requests</strong></p>
+<ol start="10" type="1">
+<li><strong>Multiple Choice:</strong> Which of the following would most likely be part of a system prompt rather than a user prompt?
+<ul>
+<li><ol type="a">
+<li>“Write a poem about autumn”</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>“Summarize this article”</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>“Always cite sources and avoid making up facts”</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>“How do I fix this Python error?”</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: c) “Always cite sources and avoid making up facts”</strong></p>
+</section>
+<section id="vibe-coding" class="level2">
+<h2 class="anchored" data-anchor-id="vibe-coding">Vibe Coding</h2>
+<ol start="11" type="1">
+<li><strong>True/False:</strong> Vibe coding refers to assigning numerical values to represent emotional tones in text.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="12" type="1">
+<li><strong>Multiple Choice:</strong> Which best describes how vibe coding works in LLM interactions?
+<ul>
+<li><ol type="a">
+<li>It uses special symbols to trigger different emotional responses</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>It involves writing code that makes interfaces more visually appealing</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>It uses natural language indicators to guide the style and tone of LLM responses</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>It requires specialized programming languages only available to AI researchers</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: c) It uses natural language indicators to guide the style and tone of LLM responses</strong></p>
+</section>
+<section id="open-source-llms" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-llms">Open Source LLMs</h2>
+<ol start="13" type="1">
+<li><strong>Multiple Choice:</strong> What does it mean that DeepSeek is “open source”?
+<ul>
+<li><ol type="a">
+<li>Anyone can use it for free without restrictions</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Its code and weights are publicly available for others to inspect, modify, and use</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>It can only process open data formats</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>It was developed collaboratively by multiple companies</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) Its code and weights are publicly available for others to inspect, modify, and use</strong></p>
+<ol start="14" type="1">
+<li><strong>True/False:</strong> Open source LLMs like DeepSeek always perform worse than closed source models.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+</section>
+<section id="multimodal-llms" class="level2">
+<h2 class="anchored" data-anchor-id="multimodal-llms">Multimodal LLMs</h2>
+<ol start="15" type="1">
+<li><strong>Multiple Choice:</strong> Which of these capabilities is NOT typically associated with multimodal LLMs?
+<ul>
+<li><ol type="a">
+<li>Understanding and describing images</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Processing audio input</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Physical manipulation of objects</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Analyzing charts and graphs</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: c) Physical manipulation of objects</strong></p>
+<ol start="16" type="1">
+<li><strong>True/False:</strong> Multimodal LLMs can understand the relationship between text and images in a single context.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) True</strong></p>
+<ol start="17" type="1">
+<li><strong>Multiple Choice:</strong> What is a key advantage of multimodal LLMs over text-only models?
+<ul>
+<li><ol type="a">
+<li>They always provide more accurate responses</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>They can process and reason across different types of media</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>They require less computing power</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>They are always open source</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) They can process and reason across different types of media</strong></p>
+</section>
+<section id="llm-tools" class="level2">
+<h2 class="anchored" data-anchor-id="llm-tools">LLM Tools</h2>
+<ol start="18" type="1">
+<li><strong>Multiple Choice:</strong> In the context of LLMs, what are “tools” primarily used for?
+<ul>
+<li><ol type="a">
+<li>Debugging model errors</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Extending the model’s capabilities beyond its training</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Reducing inference costs</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Simplifying prompt engineering</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) Extending the model’s capabilities beyond its training</strong></p>
+<ol start="19" type="1">
+<li><strong>True/False:</strong> LLM tools require specialized programming knowledge to implement.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="20" type="1">
+<li><strong>Multiple Choice:</strong> Which of the following is an example of a common tool integration with LLMs?
+<ul>
+<li><ol type="a">
+<li>Weather forecasting</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Password management</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Physical robotics control</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Cryptocurrency mining</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) Weather forecasting</strong></p>
+</section>
+<section id="vector-embeddings" class="level2">
+<h2 class="anchored" data-anchor-id="vector-embeddings">Vector Embeddings</h2>
+<ol start="21" type="1">
+<li><strong>True/False:</strong> Vector embeddings represent words as points in multidimensional space where semantic similarity correlates with spatial proximity.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: a) True</strong></p>
+<ol start="22" type="1">
+<li><strong>Multiple Choice:</strong> How are vector embeddings primarily used with LLMs?
+<ul>
+<li><ol type="a">
+<li>To compress model size for faster inference</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>To enable better understanding of relationships between concepts</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>To translate between different languages</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>To reduce the risk of hallucinations</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) To enable better understanding of relationships between concepts</strong></p>
+</section>
+<section id="semantic-vs.-keyword-search" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-vs.-keyword-search">Semantic vs.&nbsp;Keyword Search</h2>
+<ol start="23" type="1">
+<li><strong>Multiple Choice:</strong> What is the key difference between semantic search and keyword search?
+<ul>
+<li><ol type="a">
+<li>Semantic search requires more computing resources</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Keyword search finds exact word matches while semantic search understands meaning</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Semantic search only works with certain languages</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Keyword search is always more accurate for technical queries</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) Keyword search finds exact word matches while semantic search understands meaning</strong></p>
+<ol start="24" type="1">
+<li><strong>True/False:</strong> Semantic search is inherently more accurate than keyword search for all types of queries.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+</section>
+<section id="chat-context-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="chat-context-limitations">Chat Context Limitations</h2>
+<ol start="25" type="1">
+<li><strong>Multiple Choice:</strong> Why do chat conversations with LLMs typically have context length limitations?
+<ul>
+<li><ol type="a">
+<li>To reduce the cost of providing the service</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Because longer conversations lead to more hallucinations</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Due to memory constraints and computational complexity</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>To encourage users to start new conversations more frequently</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: c) Due to memory constraints and computational complexity</strong></p>
+<ol start="26" type="1">
+<li><strong>True/False:</strong> When an LLM reaches its context limit, it automatically deletes the oldest parts of the conversation.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+</section>
+<section id="additional-questions" class="level2">
+<h2 class="anchored" data-anchor-id="additional-questions">Additional Questions</h2>
+<ol start="27" type="1">
+<li><strong>Multiple Choice:</strong> Which statement about LLM-generated images is most accurate?
+<ul>
+<li><ol type="a">
+<li>They are always completely original creations</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>They may contain artifacts that reveal their AI-generated nature</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>They can perfectly replicate copyrighted images</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>They can only be created in standard aspect ratios</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) They may contain artifacts that reveal their AI-generated nature</strong></p>
+<ol start="28" type="1">
+<li><strong>Multiple Choice:</strong> What happens when providing feedback on LLM responses?
+<ul>
+<li><ol type="a">
+<li>The model immediately learns from your feedback</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Your feedback is collected to potentially improve future versions</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>The model adjusts its parameters in real-time</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Feedback is only used for billing purposes</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) Your feedback is collected to potentially improve future versions</strong></p>
+<ol start="29" type="1">
+<li><strong>True/False:</strong> Modern LLMs can remember information from past conversations after the chat session has ended.
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="30" type="1">
+<li><strong>Multiple Choice:</strong> Which of the following best describes how an LLM processes a prompt?
+<ul>
+<li><ol type="a">
+<li>It searches its training data for exact matches</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>It generates a response based on statistical patterns from its training</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>It connects to the internet to find the most recent information</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>It asks other AI systems for help</li>
+</ol></li>
+</ul></li>
+</ol>
+<p><strong>Correct Answer: b) It generates a response based on statistical patterns from its training</strong></p>
+<p>I’ll add some questions specifically about reasoning models and how they work:</p>
+</section>
+</section>
+<section id="additional-questions-on-reasoning-models" class="level1">
+<h1>Additional Questions on Reasoning Models</h1>
+<ol start="31" type="1">
+<li><strong>Multiple Choice:</strong> What is the primary characteristic that distinguishes a “reasoning model” from other types of LLMs?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Reasoning models can only process numerical data</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Reasoning models have an extended thinking mode for more complex problems</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Reasoning models can only be accessed through specialized APIs</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Reasoning models are always larger in parameter count than standard LLMs</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) Reasoning models have an extended thinking mode for more complex problems</strong></p>
+<ol start="32" type="1">
+<li><strong>True/False:</strong> Reasoning models like Claude 3.7 Sonnet always use their extended thinking capabilities for every query they receive.</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="33" type="1">
+<li><strong>Multiple Choice:</strong> How does the “extended thinking mode” in reasoning models typically work?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>It accesses external knowledge bases not available to standard models</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>It allocates additional time and computational resources to process complex problems</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>It only activates when specifically requested by developers</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>It uses specialized hardware acceleration unavailable to regular models</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) It allocates additional time and computational resources to process complex problems</strong></p>
+<ol start="34" type="1">
+<li><strong>Multiple Choice:</strong> Which types of tasks generally benefit most from reasoning models compared to standard LLMs?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Simple fact retrieval and basic information queries</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Creative writing and storytelling</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Complex problem-solving involving multiple steps or logical deduction</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Text summarization of short documents</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: c) Complex problem-solving involving multiple steps or logical deduction</strong></p>
+<ol start="35" type="1">
+<li><strong>True/False:</strong> The reasoning capabilities in models like Claude 3.7 Sonnet require users to input their queries using special formatting or syntax.</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) False</strong></p>
+<ol start="36" type="1">
+<li><strong>Multiple Choice:</strong> What is a key technique often employed by reasoning models to improve their problem-solving abilities?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>They only use pre-programmed decision trees</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>They employ chain-of-thought processes to break down complex problems</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>They can only reason about topics present in their training data</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>They rely exclusively on retrieving solutions from memory</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) They employ chain-of-thought processes to break down complex problems</strong></p>
+<ol start="37" type="1">
+<li><strong>Multiple Choice:</strong> When using a reasoning model like Claude 3.7 Sonnet in extended thinking mode, what should users typically expect?</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Higher costs but no improvement in answer quality</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Slightly longer response times but potentially more thorough and accurate answers</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Immediate responses that are identical to standard mode</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>The ability to solve problems that are fundamentally unsolvable by AI</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) Slightly longer response times but potentially more thorough and accurate answers</strong></p>
+<ol start="38" type="1">
+<li><strong>True/False:</strong> Reasoning models can solve mathematical problems beyond the capabilities of standard LLMs without using external tools.</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>True</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>False</li>
+</ol></li>
+</ul>
+<p><strong>Correct Answer: b) False</strong>:</p>
+<section id="dataframes" class="level2">
+<h2 class="anchored" data-anchor-id="dataframes">DataFrames</h2>
+<ol start="10" type="1">
+<li><p>Consider the following code:</p>
+<p>What will be printed from this code?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'student'</span>: [<span class="st">'Emma'</span>, <span class="st">'James'</span>, <span class="st">'Sofia'</span>],</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'score'</span>: [<span class="dv">85</span>, <span class="dv">92</span>, <span class="dv">88</span>],</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'subject'</span>: [<span class="st">'Math'</span>, <span class="st">'Science'</span>, <span class="st">'Math'</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Original DataFrame:"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop(<span class="st">'score'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">2</span>, <span class="dv">1</span>] <span class="op">=</span> <span class="st">'Art'</span> </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Modified DataFrame:"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Given the following DataFrame:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'student'</span>: [<span class="st">'Emma'</span>, <span class="st">'James'</span>, <span class="st">'Sofia'</span>],</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'score'</span>: [<span class="dv">85</span>, <span class="dv">92</span>, <span class="dv">88</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Write code to add a new column called ‘status’ with values [‘Fail’, ‘Pass’, ‘Pass’] and print the resulting DataFrame.</p></li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
