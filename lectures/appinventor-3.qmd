@@ -1,0 +1,95 @@
+# App Inventor Exam: TinyDB, Canvas, Events, Procedures, and Virtual Screens
+
+---
+
+1. In your drawing application, users want to erase everything they've drawn. What's the most efficient way to clear all content from the Canvas?
+   - A. Use Canvas.Clear
+   - B. Create a new Canvas component and replace the old one
+   - C. Set the background color to white
+   - D. Draw a white rectangle covering the entire Canvas
+
+2. You're creating an app that should show an introductory tutorial only on the first launch. How would you implement this functionality?
+   - A. Use a global variable to track if the tutorial has been shown
+   - B. Ask the user each time if they want to see the tutorial
+   - C. Check in Screen.Initialize if a "tutorialShown" tag exists in TinyDB, if not, show the tutorial and then store "true" with that tag
+   - D. Always show the tutorial during OnStart
+
+3. Your app needs to calculate a player's score based on several factors. Which type of procedure is most appropriate?
+   - A. A procedure with multiple parameters but no result
+   - B. A procedure without parameters or result
+   - C. A procedure with result that returns the calculated score value
+   - D. No procedure - just use the blocks directly in the Button.Click event
+
+4. When a user draws on your app's Canvas, which event should you use to create lines that follow their finger movement?
+   - A. Canvas.TouchDown
+   - B. Canvas.Dragged
+   - C. Canvas.Draw
+   - D. Canvas.TouchMove
+
+5. What would be the most appropriate way to store a user's preferred theme setting (dark/light) so it persists when they restart the app?
+   - A. Use a global variable
+   - B. Save it to a text file
+   - C. Store it in a Label component that's not visible
+   - D. Use TinyDB to save the theme preference
+
+6. In an app with virtual screens, you have multiple VerticalArrangements that represent different sections. What happens to the data in a hidden arrangement when you make another one visible?
+   - A. The data is automatically saved to TinyDB
+   - B. All data is lost when an arrangement becomes invisible
+   - C. The data is preserved since the arrangement is just hidden, not destroyed
+   - D. The data is temporarily stored in the device's clipboard
+
+7. Which of these would NOT be appropriate to store in TinyDB?
+   - A. User high scores
+   - B. Language preference
+   - C. Large image files
+   - D. Last played level number
+
+8. You need to restart your game in multiple situations (level completion, player loss, reset button). What's the best approach?
+   - A. Copy the same reset blocks into each event handler
+   - B. Define a procedure without result called "ResetGame" and call it from each event
+   - C. Use global variables to track when to reset
+   - D. Create a new screen for each scenario
+
+9. Your educational app needs to draw X and Y axes for a coordinate system. What's the most efficient way to do this?
+   - A. Use many Canvas.DrawPoint calls
+   - B. Use Canvas.DrawCircle with a very small radius
+   - C. Use Canvas.DrawLine for each axis with appropriate coordinates
+   - D. Use Canvas.DrawRect to create thin rectangles
+
+10. A user deleted your app and reinstalled it, but their saved preferences were gone. Why?
+    - A. They didn't sync their data to the cloud
+    - B. TinyDB data is tied to the app installation and is deleted when the app is uninstalled
+    - C. The preferences expired after a certain time period
+    - D. The user needs to restore their preferences manually
+
+11. In your quiz app with multiple categories as virtual screens, users want to return directly to the main menu from any category. What's the best approach?
+    - A. Use a procedure that changes the visibility of all category arrangements to false and makes the main menu visible
+    - B. Add a "Home" button that uses multiple BackScreen blocks
+    - C. Restart the app
+    - D. Use BackScreen repeatedly until reaching the main menu
+
+12. Your app needs to convert temperatures between Celsius and Fahrenheit. What type of procedure would be most appropriate?
+    - A. A procedure without result that updates a Temperature label
+    - B. A procedure with result that returns the converted temperature
+    - C. No procedure - calculate the conversion directly in the Button.Click event
+    - D. Two separate procedures, one for each conversion direction
+
+13. When implementing drag-and-drop functionality for objects on a Canvas, which parameters from the Dragged event are essential to make objects follow the finger smoothly?
+    - A. prevX and prevY
+    - B. startX and startY
+    - C. currentX and currentY
+    - D. draggedX and draggedY
+
+14. To clear all saved user data in your app at once, which TinyDB method would you use?
+    - A. TinyDB.DeleteAll
+    - B. TinyDB.Reset
+    - C. TinyDB.Clear
+    - D. TinyDB.RemoveAll
+
+15. In a drawing application, users want to change the pen color while drawing. Where would you place the color selection code?
+    - A. In the Screen.Initialize event
+    - B. In a separate procedure that's called when a color button is clicked
+    - C. Inside the Canvas.Dragged event
+    - D. In the Clock.Timer event
+
+---
