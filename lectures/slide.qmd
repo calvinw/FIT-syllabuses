@@ -1,7 +1,7 @@
 ---
 title: "Large Language Models and Applications"
 author: "Calvin Williamson, Science and Math"
-date: 29 Jan 2025
+date: Sept 2025
 format: 
   revealjs:
     mermaid:
@@ -71,37 +71,72 @@ sequenceDiagram
     LLM->>User: Audio Response 🔊: Yes! I can both see and hear you. How can I help you today?
     
 ```
-
 The model responds in audio and/or text
 
-## Example Large Language Model: Deep Seek {.smaller}
+## Large Language Models as Software Developers 
 
-* Navigate to [DeepSeek](https://www.deepseek.com) and create an account to use the DeepSeek models. 
-  * DeepSeek-V3 is the standard model available at chat prompt 
-  * DeepSeek-R1 is the reasoning model
+- Language models are excellent at writing software. 
+- The term *Vibe Coding* has been used to describe the act of coding and not looking at the source code but just prompting the model to write things. 
+  - GPT 5 (OpenAI)
+  - Claude Sonnet and Opus (Anthropic)
+  - Gemini 2.5 Pro (Google) 
+  - Qwen3-Coder
 
-Examples:  
+## Large Language Models as Artists? 
+
+Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
+
+- [Claude 1](https://shorturl.at/nGg2s)
+- [Claude 2](https://shorturl.at/1TP2e)
+- [Qwen3-Coder Draft](https://shorturl.at/7deQN)
+- [Qwen3-Coder Finished](https://shorturl.at/DjtMz)
+
+
+## Large Language Model: Deep Seek {.smaller}
+
+In Spring 25 a new model called Deep Seek caused Wall Street to panic and lose Billions of dollars. The reason is the Deep Seek was released as an open source model that anyone could download and run on their own, thus challenging the idea that only companies with proprietary models would dominate the AI space. The models from OpenAI, Anthropic, Google all are proprietary models:
+
+- ChatGPT (OpenAI)
+- Claude (Anthropic)
+- Gemini (Google) 
+
+These models cannot be run by anyone the way Deep Seek can. 
+
+## Examples of Reasoning Models: Deep Seek {.smaller}
 
 1. [Barbie Deep Think](BarbieDeepThink.html)
 2. [Making a Todo App with DeepSeek](DeepSeekSession.html) | [Version 1](DeepSeek1.html) | [Version 2](DeepSeek2.html)
 
-Deep Seeks models are competive with the state of the art closed
-source models but are created at a fraction of the cost.
+Deep Seeks models are competive with the state of the art closed source models but are created at a fraction of the cost.
  
-Notice the difference when posting prompts to the standard V3 model versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
+Notice the difference when posting prompts to the standard V3 models versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
 
-## Deep Seek Assignment {.smaller}
+## Large Language Model: Qwen {.smaller}
 
-Using the techniques demonstrated in the demo, have DeepSeek create an html, javascript and css application for you to play tick tac toe. 
+- Navigate to [Qwen](https://chat.qwen.ai) and create an account to use the Qwen models. 
+- Qwen has both coding models (Qwen3-Coder) and regular models. Also they have Reasoning models.  
+- Qwen has recently released state of the art Image Editing and Image Generation Features 
+
+## Qwen3-Coder Assignment #1 Coding {.smaller}
+
+Using the techniques demonstrated in the demo, have Qwen3-Coder create an html, javascript and css application for you to play tick tac toe. 
 
 - Ask the model to create the application all in one index.html file so that you can preview it.
 - Make sure the model creates an "artifact" window that allows you to preview the html application
 - Have the model create a scoring system for multiple games so you can keep score of the number of times X's win and the number of times Y's win
 - Ask the model to implement a "hint" feature so that it shows a suggested move for the next player
 
-You may use the regular model if it works, but you may need to
-switch to the "DeepThink" model especially if you need to make
-changes along the way
+Test out the Thinking feature if you can. This is where models "think" longer. 
+
+## Qwen Assignment #2 Image Editing and Generation {.smaller}
+
+1. Upload an image with some objects and ask Qwen to remove some of the objects. 
+2. Try it with some people (Something from Google Images of someone famous is 
+   fine) 
+3. Ask Qwen to generate an image 
+4. Ask Qwen to generate a carton
+5. Upload an image of a person (Something from Google Images is okay) and ask it to make part of the picture into a cartoon (just a part). 
+6. Using an image of a person get Qwen to show you the person from a different viewpoint    
 
 ## Example LLM Application: NotebookLM {.smaller}
 
@@ -122,18 +157,7 @@ to manage and extract value from large amounts of information.
 
 ## NotebookLM Assignment {.smaller}
 
-Using documents and video links about the 2025 LA fires create a NotebookLM project called "LA 2025 Fires".
-
-1. Upload at least 4 documents as sources (Try wikipedia links, or other articles, and youtube videos (use ones with transcripts)). Use 2 or 3 different types of document types (pdfs/youtube videos/websites) 
-2. Have the LLM summmarize each of your documents/videos, save these summaries as Notes as part of the project.
-3. Create an audio podcast for your documents, but have the hosts focus on one particular aspect of the fire. For example try to restrict their discussion to one of these:  
-   1. The relationship of the fires to climate change 
-   2. Have them discuss the property damage for the fires
-   3. Have them focus on the human toll involved
-
-For this you will have to "prompt" the audio podcast before it is created. See the audio overview settings. 
-
-## Example Multimodal LLM: Gemini 2.0 Flash {.smaller}
+## Example Multimodal LLM: Gemini 2.5 Flash {.smaller}
 
 * Navigate to [Google AI Studio](https://aistudio.google.com) and login with an private gmail account to use the gemini 2 models. (Again use a private gmail account since FIT gmail accounts do not have access at this time) 
 * Make sure the model selected is "Gemini 2.0 Flash Experimental"
