@@ -117,7 +117,7 @@ Notice the difference when posting prompts to the standard V3 models versus the 
 - Qwen has both coding models (Qwen3-Coder) and regular models. Also they have Reasoning models.  
 - Qwen has recently released state of the art Image Editing and Image Generation Features 
 
-## Qwen3-Coder Assignment #1 Coding {.smaller}
+## Qwen3-Coder Assignment #1 Vibe Coding {.smaller}
 
 Using the techniques demonstrated in the demo, have Qwen3-Coder create an html, javascript and css application for you to play tick tac toe. 
 
