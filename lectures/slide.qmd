@@ -147,8 +147,13 @@ Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
 
 ## LLMs and Music Composition 
 
+
+You can use an LLM to teach you about programming. This is what they are good at. So you will be able to use an LLM to understand and write Strudel!    
+
+This is amazing because Strudel can be difficult.
+
 - [Using an LLM to Learn and Compose With Strudel](https://calvinw.github.io/llm-chat/strudel.html)
-- [Video Series about This](https://calvinw.github.io/llm-chat/)
+- [Video Series about This](https://youtube.com/playlist?list=PL3miIiuTRI6dEvBT8c-xr7LHIWZz2s7I_&si=NsBq-cRXpKHb0pqZ)
 
 ## Large Language Model: Qwen {.smaller}
 
