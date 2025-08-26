@@ -73,25 +73,6 @@ sequenceDiagram
 ```
 The model responds in audio and/or text
 
-## Large Language Models as Software Developers 
-
-- Language models are excellent at writing software. 
-- The term *Vibe Coding* has been used to describe the act of coding and not looking at the source code but just prompting the model to write things. 
-  - GPT 5 (OpenAI)
-  - Claude Sonnet and Opus (Anthropic)
-  - Gemini 2.5 Pro (Google) 
-  - Qwen3-Coder
-
-## Large Language Models as Artists? 
-
-Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
-
-- [Claude 1](https://shorturl.at/nGg2s)
-- [Claude 2](https://shorturl.at/1TP2e)
-- [Qwen3-Coder Draft](https://shorturl.at/7deQN)
-- [Qwen3-Coder Finished](https://shorturl.at/DjtMz)
-
-
 ## Large Language Model: Deep Seek {.smaller}
 
 In Spring 25 a new model called Deep Seek caused Wall Street to panic and lose Billions of dollars. The reason is the Deep Seek was released as an open source model that anyone could download and run on their own, thus challenging the idea that only companies with proprietary models would dominate the AI space. The models from OpenAI, Anthropic, Google all are proprietary models:
@@ -111,13 +92,82 @@ Deep Seeks models are competive with the state of the art closed source models b
  
 Notice the difference when posting prompts to the standard V3 models versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
 
+## Large Language Models as Software Developers 
+
+- Language models are excellent at writing software. 
+- The term *Vibe Coding* has been used to describe the act of coding and not looking at the source code but just prompting the model to write things. 
+  - GPT 5 (OpenAI)
+  - Claude Sonnet and Opus (Anthropic)
+  - Gemini 2.5 Pro (Google) 
+  - Qwen3-Coder
+
+## Prompting Large Language Models
+
+Some examples of prompting and their costs using openrouter:
+
+[Prompt Editor](https://bxxs92zhls3zuyedgtcbnd.streamlit.app/)
+
+## LLMs and Tools  
+
+LLMs can call *Tools* (external programs)
+
+This ability is sometimes called agentic.
+
+Examples (Tools):   
+  - WebSearch   
+  - Calculator (Wolfram Alpha)  
+  - Wikepedia acces   
+  - Financial Data APIs   
+
+[Example LLM with a simple tool](https://calvinw.github.io/llm-chat/)
+
+## A Music Composition Language 
+
+[Strudel.cc](https://strudel.cc/) is a musical language for live coding and DJing
+It is based on a language called Tidal Cycles which is written in a programming language called Haskell. It is compact, technical, and mathematical language. 
+
+It is amazing in capability.
+
+- [DJ Dave](https://www.youtube.com/watch?v=ZCcpWzhekEY)
+- [Coastline @by eddyflux](https://strudel.cc/workshop/getting-started/)
+- [Char Stiles](https://www.youtube.com/shorts/aOikFek0zy0)
+- [Switch Angel](https://youtu.be/dcmwqqzJubA?si=XctJy_oPuceXYPDl&t=598)
+- [Making Muisic With Code - Dan Gorelick/Viola He](https://www.youtube.com/watch?v=oqyAJ4WeKoU&t=236s)
+
+## Large Language Models Working With Strudel 
+
+Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
+
+- [Claude 1](https://shorturl.at/nGg2s)
+- [Claude 2](https://shorturl.at/1TP2e)
+- [Claude 3](https://shorturl.at/4wmlM)
+- [Claude 4](https://shorturl.at/zLAG3)
+- [Qwen3-Coder Draft](https://shorturl.at/7deQN)
+- [Qwen3-Coder Finished](https://shorturl.at/DjtMz)
+
+## LLMs and Music Composition 
+
+- [Using an LLM to Learn and Compose With Strudel](https://calvinw.github.io/llm-chat/strudel.html)
+- [Video Series about This](https://calvinw.github.io/llm-chat/)
+
 ## Large Language Model: Qwen {.smaller}
 
 - Navigate to [Qwen](https://chat.qwen.ai) and create an account to use the Qwen models. 
 - Qwen has both coding models (Qwen3-Coder) and regular models. Also they have Reasoning models.  
 - Qwen has recently released state of the art Image Editing and Image Generation Features 
 
-## Qwen3-Coder Assignment #1 Vibe Coding {.smaller}
+## Qwen Assignment #1 Image Editing and Generation {.smaller}
+
+1. Upload an image with some objects and ask Qwen to remove some of the objects. 
+2. Try it with some people (Something from Google Images of someone famous is 
+   fine) 
+3. Ask Qwen to generate an image 
+4. Ask Qwen to generate a carton
+5. Upload an image of a person (Something from Google Images is okay) and ask it to make part of the picture into a cartoon (just a part). 
+6. Using an image of a person get Qwen to show you the person from a different viewpoint    
+
+
+## Qwen3-Coder Assignment #2 Vibe Coding {.smaller}
 
 Using the techniques demonstrated in the demo, have Qwen3-Coder create an html, javascript and css application for you to play tick tac toe. 
 
@@ -128,44 +178,3 @@ Using the techniques demonstrated in the demo, have Qwen3-Coder create an html, 
 
 Test out the Thinking feature if you can. This is where models "think" longer. 
 
-## Qwen Assignment #2 Image Editing and Generation {.smaller}
-
-1. Upload an image with some objects and ask Qwen to remove some of the objects. 
-2. Try it with some people (Something from Google Images of someone famous is 
-   fine) 
-3. Ask Qwen to generate an image 
-4. Ask Qwen to generate a carton
-5. Upload an image of a person (Something from Google Images is okay) and ask it to make part of the picture into a cartoon (just a part). 
-6. Using an image of a person get Qwen to show you the person from a different viewpoint    
-
-## Example LLM Application: NotebookLM {.smaller}
-
-* Navigate to [NotebookLM](https://notebooklm.google.com) and create an account using your private (non-FIT) email.
-
-Pdfs to upload   
-
-- [Interaction of Light and Matter](InteractionLightMatter.pdf)
-- [Lights and White](LightsAndWhite.pdf)
-- [Scientfic Notation](ScientificNotationPropertiesOfWaves.pdf)
-
-NotebookLM is an AI-powered note-taking and knowledge management
-tool designed to help users organize, summarize, and interact with
-their notes and documents more effectively. It leverages natural
-language processing to provide insights, generate summaries, and
-answer questions based on the content you input, making it easier
-to manage and extract value from large amounts of information.
-
-## NotebookLM Assignment {.smaller}
-
-## Example Multimodal LLM: Gemini 2.5 Flash {.smaller}
-
-* Navigate to [Google AI Studio](https://aistudio.google.com) and login with an private gmail account to use the gemini 2 models. (Again use a private gmail account since FIT gmail accounts do not have access at this time) 
-* Make sure the model selected is "Gemini 2.0 Flash Experimental"
-* Click on the Stream Realtime button 
-  * Click on Talk to Gemini and try talking to the LLM
-  * Click on Show Gemini and use your webcam to show it something in the room
-  * Click on Share your Screen and show it something on your compputer.
-
-[Geminin 2 Flash MultiModal Live API](https://youtube.com/playlist?list=PL3miIiuTRI6cEN04Yx_W0u0OLuhV_bFx7&si=ASUC7DgmNYh9zXoM)  
-[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)   
-[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)  

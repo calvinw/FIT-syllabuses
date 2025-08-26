@@ -1,0 +1,31 @@
+## Example LLM Application: NotebookLM {.smaller}
+
+* Navigate to [NotebookLM](https://notebooklm.google.com) and create an account using your private (non-FIT) email.
+
+Pdfs to upload   
+
+- [Interaction of Light and Matter](InteractionLightMatter.pdf)
+- [Lights and White](LightsAndWhite.pdf)
+- [Scientfic Notation](ScientificNotationPropertiesOfWaves.pdf)
+
+NotebookLM is an AI-powered note-taking and knowledge management
+tool designed to help users organize, summarize, and interact with
+their notes and documents more effectively. It leverages natural
+language processing to provide insights, generate summaries, and
+answer questions based on the content you input, making it easier
+to manage and extract value from large amounts of information.
+
+## NotebookLM Assignment {.smaller}
+
+## Example Multimodal LLM: Gemini 2.5 Flash {.smaller}
+
+* Navigate to [Google AI Studio](https://aistudio.google.com) and login with an private gmail account to use the gemini 2 models. (Again use a private gmail account since FIT gmail accounts do not have access at this time) 
+* Make sure the model selected is "Gemini 2.0 Flash Experimental"
+* Click on the Stream Realtime button 
+  * Click on Talk to Gemini and try talking to the LLM
+  * Click on Show Gemini and use your webcam to show it something in the room
+  * Click on Share your Screen and show it something on your compputer.
+
+[Geminin 2 Flash MultiModal Live API](https://youtube.com/playlist?list=PL3miIiuTRI6cEN04Yx_W0u0OLuhV_bFx7&si=ASUC7DgmNYh9zXoM)  
+[Gemini 2.0 - How to use the Live Bidirectional API](https://youtu.be/CZ9WaMbiTO4?si=0QgJhAWbeLVGq5ec)   
+[Best Ways to use Gemini 2.0](https://www.youtube.com/watch?v=kN93lrS1nfw&t=226s)  
