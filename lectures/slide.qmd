@@ -134,7 +134,7 @@ It is amazing in capability.
 - [Switch Angel](https://youtu.be/dcmwqqzJubA?si=XctJy_oPuceXYPDl&t=598)
 - [Making Muisic With Code - Dan Gorelick/Viola He](https://www.youtube.com/watch?v=oqyAJ4WeKoU&t=236s)
 
-## Large Language Models Working With Strudel 
+## Large Language Models Working With Strudel {.smaller}
 
 Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
 
@@ -142,6 +142,7 @@ Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
 - [Claude 2](https://shorturl.at/1TP2e)
 - [Claude 3](https://shorturl.at/4wmlM)
 - [Claude 4](https://shorturl.at/zLAG3)
+- [Claude 5](https://shorturl.at/cEGdh)
 - [Qwen3-Coder Draft](https://shorturl.at/7deQN)
 - [Qwen3-Coder Finished](https://shorturl.at/DjtMz)
 
