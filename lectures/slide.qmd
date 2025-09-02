@@ -159,6 +159,16 @@ This is amazing because Strudel can be difficult.
 - [Using an LLM to Learn and Compose With Strudel](https://calvinw.github.io/llm-chat/strudel.html)
 - [Video Series about This](https://youtube.com/playlist?list=PL3miIiuTRI6dEvBT8c-xr7LHIWZz2s7I_&si=NsBq-cRXpKHb0pqZ)
 
+
+##
+
+![Call And Response](https://calvinw.github.io/FIT-syllabuses/lectures/CallAndResponse.svg)
+
+##
+
+![Chords And Melodies](https://calvinw.github.io/FIT-syllabuses/lectures/ChordsAndMelody.svg)
+
+
 ## Large Language Model: Qwen {.smaller}
 
 - Navigate to [Qwen](https://chat.qwen.ai) and create an account to use the Qwen models. 
