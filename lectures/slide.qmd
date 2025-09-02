@@ -143,6 +143,8 @@ Claude Sonnet And Qwen3-Coder Compositions in a Musical Software Language:
 - [Claude 3](https://shorturl.at/4wmlM)
 - [Claude 4](https://shorturl.at/zLAG3)
 - [Claude 5](https://short-link.me/185Q6)
+- [Claude 6](https://tinyurl.com/5n78vb4a)
+
 
 - [Qwen3-Coder Draft](https://shorturl.at/7deQN)
 - [Qwen3-Coder Finished](https://shorturl.at/DjtMz)
