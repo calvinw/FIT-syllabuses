@@ -121,20 +121,6 @@ Examples (Tools):
 
 [Example LLM with a simple tool](https://calvinw.github.io/llm-chat/)
 
-## A Music Composition Language 
-
-[Strudel.cc](https://strudel.cc/) is a musical language for live coding and DJing
-It is based on a language called Tidal Cycles which is written in a programming language called Haskell. It is compact, technical, and mathematical language. 
-
-It is amazing in capability.
-
-- [DJ Dave](https://www.youtube.com/watch?v=ZCcpWzhekEY)
-- [Coastline @by eddyflux](https://strudel.cc/workshop/getting-started/)
-- [Char Stiles](https://www.youtube.com/shorts/aOikFek0zy0)
-- [Switch Angel](https://youtu.be/dcmwqqzJubA?si=XctJy_oPuceXYPDl&t=598)
-- [Making Muisic With Code - Dan Gorelick/Viola He](https://www.youtube.com/watch?v=oqyAJ4WeKoU&t=236s)
-
-
 ## Large Language Model: Qwen {.smaller}
 
 - Navigate to [Qwen](https://chat.qwen.ai) and create an account to use the Qwen models. 
