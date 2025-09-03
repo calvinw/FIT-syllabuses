@@ -1,0 +1,143 @@
+---
+title: "Large Language Models and Applications"
+author: "Calvin Williamson, Science and Math"
+date: Sept 2025
+format: 
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+## Large Language Models (LLM)
+
+- AI Models You Send a Prompt and They Give a Response 
+- ChatGPT, Claude, Gemini, DeepSeek, Many Others 
+- Prompts can include Text, Images, Audio, Video
+- Responses can include Text, Images, Audio, Video 
+
+## Text Based LLMs 
+
+To prompt an LLM with text you type your question and submit it 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Prompt: What is the capital of France?
+    LLM->>User: Response: The capital of France is Paris.
+```
+The model responds with some text.
+
+**Example**: ChatGPT 3.5 (Nov 22) 
+
+## MultiModal LLMs
+
+Prompts can include 
+
+- Text
+- Image (eg. uploaded image file) 
+- Audio (eg. from microphone, or uploaded audio file) 
+- Video (eg Webcam) 
+- Screen sharing (eg show your computer screen)
+
+Responses can include: Text, Image, Audio, Video   
+
+**Example**: Gemini 2.0 Flash (Dec 24) 
+
+## How To Prompt a MultiModal LLM using Audio 
+
+To prompt the LLM you speak into a microphone on your computer 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Audio Prompt 🔊: Can you hear me? 
+    LLM->>User: Audio Response 🔊: Yes! I hear you? How can I help you today?
+```
+
+The model responds in audio and/or text that you can hear and see immediately
+
+
+## How To Prompt a MultiModal LLM using Video and Audio
+
+Using a webcam you speak and show the model what you want 
+
+```{mermaid}
+sequenceDiagram
+    participant User
+    participant LLM
+    User->>LLM: Webcam Prompt 📹+🔊: Can you see and hear me? 
+    LLM->>User: Audio Response 🔊: Yes! I can both see and hear you. How can I help you today?
+    
+```
+The model responds in audio and/or text
+
+## Large Language Model: Deep Seek {.smaller}
+
+In Spring 25 a new model called Deep Seek caused Wall Street to panic and lose Billions of dollars. The reason is the Deep Seek was released as an open source model that anyone could download and run on their own, thus challenging the idea that only companies with proprietary models would dominate the AI space. The models from OpenAI, Anthropic, Google all are proprietary models:
+
+- ChatGPT (OpenAI)
+- Claude (Anthropic)
+- Gemini (Google) 
+
+These models cannot be run by anyone the way Deep Seek can. 
+
+## Examples of Reasoning Models: Deep Seek {.smaller}
+
+1. [Barbie Deep Think](BarbieDeepThink.html)
+2. [Making a Todo App with DeepSeek](DeepSeekSession.html) | [Version 1](DeepSeek1.html) | [Version 2](DeepSeek2.html)
+
+Deep Seeks models are competive with the state of the art closed source models but are created at a fraction of the cost.
+ 
+Notice the difference when posting prompts to the standard V3 models versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
+
+## Large Language Models as Software Developers 
+
+- Language models are excellent at writing software. 
+- The term *Vibe Coding* has been used to describe the act of coding and not looking at the source code but just prompting the model to write things. 
+  - GPT 5 (OpenAI)
+  - Claude Sonnet and Opus (Anthropic)
+  - Gemini 2.5 Pro (Google) 
+  - Qwen3-Coder
+
+## Prompting Large Language Models
+
+Some examples of prompting and their costs using openrouter:
+
+[Prompt Editor](https://bxxs92zhls3zuyedgtcbnd.streamlit.app/)
+
+## LLMs and Tools  
+
+LLMs can call *Tools* (external programs)
+
+This ability is sometimes called agentic.
+
+Examples (Tools):   
+  - WebSearch   
+  - Calculator (Wolfram Alpha)  
+  - Wikepedia acces   
+  - Financial Data APIs   
+
+[Example LLM with a simple tool](https://calvinw.github.io/llm-chat/)
+
+## A Music Composition Language 
+
+[Strudel.cc](https://strudel.cc/) is a musical language for live coding and DJing
+It is based on a language called Tidal Cycles which is written in a programming language called Haskell. It is compact, technical, and mathematical language. 
+
+It is amazing in capability.
+
+- [DJ Dave](https://www.youtube.com/watch?v=ZCcpWzhekEY)
+- [Coastline @by eddyflux](https://strudel.cc/workshop/getting-started/)
+- [Char Stiles](https://www.youtube.com/shorts/aOikFek0zy0)
+- [Switch Angel](https://youtu.be/dcmwqqzJubA?si=XctJy_oPuceXYPDl&t=598)
+- [Making Muisic With Code - Dan Gorelick/Viola He](https://www.youtube.com/watch?v=oqyAJ4WeKoU&t=236s)
+
+
+## Large Language Model: Qwen {.smaller}
+
+- Navigate to [Qwen](https://chat.qwen.ai) and create an account to use the Qwen models. 
+- Qwen has both coding models (Qwen3-Coder) and regular models. Also they have Reasoning models.  
+- Qwen has recently released state of the art Image Editing and Image Generation Features 
+
