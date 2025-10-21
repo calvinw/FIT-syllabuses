@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>gemini_canvas</title>
+<title>gemini_vibe_pizza_app</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,53 +20,19 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="gemini_canvas_files/libs/clipboard/clipboard.min.js"></script>
-<script src="gemini_canvas_files/libs/quarto-html/quarto.js"></script>
-<script src="gemini_canvas_files/libs/quarto-html/popper.min.js"></script>
-<script src="gemini_canvas_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="gemini_canvas_files/libs/quarto-html/anchor.min.js"></script>
-<link href="gemini_canvas_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="gemini_canvas_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="gemini_canvas_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="gemini_canvas_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="gemini_canvas_files/libs/bootstrap/bootstrap-e1410b04cc7f3ad098892ee0af4d0b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="gemini_vibe_pizza_app_files/libs/clipboard/clipboard.min.js"></script>
+<script src="gemini_vibe_pizza_app_files/libs/quarto-html/quarto.js"></script>
+<script src="gemini_vibe_pizza_app_files/libs/quarto-html/popper.min.js"></script>
+<script src="gemini_vibe_pizza_app_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="gemini_vibe_pizza_app_files/libs/quarto-html/anchor.min.js"></script>
+<link href="gemini_vibe_pizza_app_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="gemini_vibe_pizza_app_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="gemini_vibe_pizza_app_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="gemini_vibe_pizza_app_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="gemini_vibe_pizza_app_files/libs/bootstrap/bootstrap-e1410b04cc7f3ad098892ee0af4d0b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -80,22 +46,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="vibe-coding-experiments-with-google-gemini" class="level1">
-<h1>Vibe Coding Experiments with Google Gemini</h1>
-<section id="overlapping-svgs-and-showing-gemini-a-screenshot" class="level2">
-<h2 class="anchored" data-anchor-id="overlapping-svgs-and-showing-gemini-a-screenshot">Overlapping SVGS and Showing Gemini a Screenshot</h2>
-<p>Ask Gemini to edit some html with you. Get an html Canvas editor window.</p>
-<p>Delete everything that is there and paste in the following svg code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode svg code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">svg</span><span class="ot"> width=</span><span class="st">"400"</span><span class="ot"> height=</span><span class="st">"400"</span><span class="ot"> xmlns=</span><span class="st">"http://www.w3.org/2000/svg"</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">circle</span><span class="ot"> cx=</span><span class="st">"200"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> r=</span><span class="st">"150"</span><span class="ot"> fill=</span><span class="st">"yellow"</span> /&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">rect</span><span class="ot"> width=</span><span class="st">"200"</span><span class="ot"> height=</span><span class="st">"150"</span><span class="ot"> x=</span><span class="st">"30"</span><span class="ot"> y=</span><span class="st">"30"</span><span class="ot"> rx=</span><span class="st">"16"</span><span class="ot"> ry=</span><span class="st">"16"</span><span class="ot"> fill=</span><span class="st">"blue"</span> /&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">ellipse</span><span class="ot"> cx=</span><span class="st">"100"</span><span class="ot"> cy=</span><span class="st">"200"</span><span class="ot"> rx=</span><span class="st">"100"</span><span class="ot"> ry=</span><span class="st">"100"</span><span class="ot"> fill=</span><span class="st">"cyan"</span> /&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">svg</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Now ask Gemini to move the shapes around so they touch but do not overlap.<br>
-You can try to show Gemini what the picture looks like by making a screenshot and pasting that into gemini chat window. Tell the LLM that it is what the svg code currently shows and it needs to fix it so that the shapes do not overlap</p>
+<section id="vibe-coding-with-gemini-and-canvas" class="level2">
+<h2 class="anchored" data-anchor-id="vibe-coding-with-gemini-and-canvas">Vibe Coding with Gemini and Canvas</h2>
+<p>Create a vibe coded app that takes a customers orders from a menu:</p>
+<p>Here is the menu again:</p>
+<p>Pizzas</p>
+<ul>
+<li>pepperoni pizza $12.95, $10.00, $7.00</li>
+<li>cheese pizza $10.95, $9.25, $6.50</li>
+<li>eggplant pizza $11.95, $9.75, $6.75</li>
+</ul>
+<p>Sides</p>
+<ul>
+<li>fries $4.50, $3.50</li>
+<li>greek salad $7.25</li>
+</ul>
+<p>Toppings</p>
+<ul>
+<li>extra cheese $2.00,</li>
+<li>mushrooms $1.50</li>
+<li>sausage $3.00</li>
+<li>canadian bacon $3.50</li>
+<li>peppers $1.00</li>
+</ul>
+<p>Drinks</p>
+<ul>
+<li>coke $3.00, $2.00, $1.00</li>
+<li>sprite $3.00, $2.00, $1.00</li>
+<li>bottled water $5.00</li>
+</ul>
+<p>Here are some things to implement. Try to implement and test each of these.</p>
 </section>
+<section id="requirements-for-the-pizza-orders-webapp" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-for-the-pizza-orders-webapp">Requirements for the Pizza Orders Webapp</h2>
+<ul>
+<li>Have a way to select each of the items above.</li>
+<li>Make sure the user can select multiple units of the same item</li>
+<li>Have a button that says Checkout which goes to another page that shows the order details.</li>
+<li>Have a way for the user to go back and change the order</li>
+</ul>
+<p>Apply the following discounts</p>
+<ul>
+<li>If order total &lt; $20, no discount</li>
+<li>Else if order total &lt; $50, 5% discount</li>
+<li>Else if order total &lt; $100, 10% discount</li>
+<li>Else 15% discount</li>
+</ul>
 </section>
 
 </main>

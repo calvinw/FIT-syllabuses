@@ -1,0 +1,47 @@
+## Vibe Coding with Gemini and Canvas
+
+Create a vibe coded app that takes a customers orders from a menu:
+
+Here is the menu again:
+
+Pizzas
+
+-   pepperoni pizza \$12.95, \$10.00, \$7.00
+-   cheese pizza \$10.95, \$9.25, \$6.50
+-   eggplant pizza \$11.95, \$9.75, \$6.75
+
+Sides
+
+-   fries \$4.50, \$3.50
+-   greek salad \$7.25
+
+Toppings
+
+-   extra cheese \$2.00,
+-   mushrooms \$1.50
+-   sausage \$3.00
+-   canadian bacon \$3.50
+-   peppers \$1.00
+
+Drinks
+
+-   coke \$3.00, \$2.00, \$1.00
+-   sprite \$3.00, \$2.00, \$1.00
+-   bottled water \$5.00
+
+Here are some things to implement. Try to implement and test each of
+these.
+
+## Requirements for the Pizza Orders Webapp
+
+-   Have a way to select each of the items above. 
+-   Make sure the user can select multiple units of the same item 
+-   Have a button that says Checkout which goes to another page that shows the order details. 
+-   Have a way for the user to go back and change the order
+
+Apply the following discounts
+
+-   If order total \< \$20, no discount
+-   Else if order total \< \$50, 5% discount
+-   Else if order total \< \$100, 10% discount
+-   Else 15% discount

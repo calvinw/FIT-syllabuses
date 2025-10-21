@@ -1,35 +1,8 @@
 # Vibe Coding Experiments with Google Gemini 
- 
-Using Google Canvas try vibe coding the following ideas:  
-  
-## Menu System for Pizzas
-
-Try writing code for a menu of pizzas
-
-There are three sizes large, medium and small and three different pizzas that
-can be ordered.
-
-### Pizzas
-
-Pepperoni  $12.95, $10.00, $7.00
-Cheese $10.95, $9.25, $6.50
-Eggplant pizza $11.95, $9.75, $6.75
-
-Ask Gemini to put up a canvas html editor and create a html app that uses
-vanilla javascript and html to let the user select any number of large, medium,
-and small pizzas. For example the user might order 2 large Pepperoni and 1
-small Eggplant pizza. 
-
-The webapp you are building should show the current order at the bottom and the
-total order amount. It should also let you add any of the above items to the
-current order,
-
-Also there should be a way to remove an item from the current order displayed
-at the bottom
 
 ## Overlapping SVGS and Showing Gemini a Screenshot 
 
-Ask Gemini to edit some html with you. Get an html editor window.
+Ask Gemini to edit some html with you. Get an html Canvas editor window.
 
 Delete everything that is there and paste in the following svg code:
 
@@ -43,7 +16,6 @@ Delete everything that is there and paste in the following svg code:
 </svg>
 ```
 
-Now ask Gemini to move the shapes around so they do not overlap.  You can try
-to show Gemini what the picture looks like by making a screenshot and pasting
-that into gemini chat window. Tell the LLM that it is what the svg code
+Now ask Gemini to move the shapes around so they touch but do not overlap.  
+You can try to show Gemini what the picture looks like by making a screenshot and pasting that into gemini chat window. Tell the LLM that it is what the svg code
 currently shows and it needs to fix it so that the shapes do not overlap
