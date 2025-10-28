@@ -31,7 +31,7 @@ These tools try to provide design information to a vibe coded application.
 - Can interatively prompt your designs with text
 - Can be combined with further vibe coding LLM for app assembly
 
-## Design + Vibe Coding
+## Design + Vibe Coding Process
 
 - Design the pages of app with AI assistance
 - Generate a prototype (HTML, Figma frame, CSS info, UI spec)
