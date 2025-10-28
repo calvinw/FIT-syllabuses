@@ -1,0 +1,45 @@
+---
+title: "Vibe Coding"
+author: "Calvin Williamson"
+format:
+  revealjs:
+    mermaid:
+      theme: forest
+---
+
+## Vibe Coding
+
+Coding with an LLM but letting the AI do all the work.
+
+- [Lovable](https://lovable.dev/)
+- [Bolt.New](https://bolt.new/)
+- [Firebase Studio](https://firebase.google.com/)
+- [AIStudio (Gemini)](https://aistudio.google.com/apps)
+
+## Design and Vibe Coding
+
+These tools try to provide design information to a vibe coded application.
+
+- [Stitch](https://stitch.withgoogle.com/) - An AI design tool for apps and webpages
+- [Figma](https://www.figma.com/) - A full featured design tool
+- [FigmaMake](https://www.figma.com/make/) - A vibe coding tool for design prototyping within Figma (uses Sonnet 4.5)
+
+## Stitch
+
+- Can design apps or webapps
+- Can generate/export HTML prototypes for pages/screens
+- Can interatively prompt your designs with text
+- Can be combined with further vibe coding LLM for app assembly
+
+## Design + Vibe Coding
+
+- Design the pages of app with AI assistance
+- Generate a prototype (HTML, Figma frame, CSS info, UI spec)
+- Provide the prototype to an LLM that assembles your final (multi-page) app
+
+## Not Typically Included When Vibe Coding
+
+- **Authentication** - User identity verification and access control systems to secure applications
+- **Database** - Structured data storage and retrieval systems for persistent application data
+- **Publishing** - Deployment and hosting infrastructure to make applications accessible to users
+- **Version Tracking** - Source control and versioning systems to manage code changes over time
