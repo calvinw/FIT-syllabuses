@@ -1,0 +1,91 @@
+---
+title: "TodosSpec Checklist"
+format: html
+---
+
+**Name:** ________________________
+**Date:** ________________________
+
+---
+
+## Page 1: Todo List View
+
+### Header
+- [ ] Application title "TaskFlow" is present
+- [ ] "Add New Todo" button is prominent and easy to find
+
+### Todo Display
+- [ ] All todos are displayed as cards or list items
+- [ ] Each todo shows **Title** (prominently)
+- [ ] Each todo shows **Description** (truncated if needed)
+- [ ] Each todo shows **Due Date** (when set)
+- [ ] Each todo shows **Priority** (High/Medium/Low - visually distinguishable)
+- [ ] Each todo shows **Status** (Not Started/In Progress/Completed - visually distinguishable)
+- [ ] Each todo has an **Edit button** or way to access editor
+- [ ] Todos are clearly separated from each other
+
+### Filtering
+- [ ] Can filter by Status (All, Not Started, In Progress, Completed)
+- [ ] Can filter by Priority (All, High, Medium, Low)
+- [ ] Filters update the displayed todos correctly
+
+### Empty State
+- [ ] When no todos exist, shows helpful message encouraging creation
+
+### Interactions
+- [ ] "Add New Todo" navigates to Page 2 (create mode)
+- [ ] Clicking todo or Edit button navigates to Page 2 (edit mode)
+
+---
+
+## Page 2: Todo Editor
+
+### Navigation
+- [ ] Back button/link returns to List View
+- [ ] Page title shows "Create New Todo" or "Edit Todo" appropriately
+
+### Form Fields
+- [ ] **Title** field (text input, marked as required)
+- [ ] **Description** field (multi-line text area, optional)
+- [ ] **Due Date** field (date picker/input, optional)
+- [ ] **Priority** field (dropdown/selection: High/Medium/Low, marked as required)
+- [ ] **Status** field (dropdown/selection: Not Started/In Progress/Completed, marked as required)
+- [ ] Required fields are clearly marked
+
+### Action Buttons
+- [ ] **Save** button present (saves and returns to List View)
+- [ ] **Cancel** button present (returns to List View without saving)
+- [ ] **Delete** button only shown in edit mode (not in create mode)
+
+### Create Mode
+- [ ] All fields empty or set to defaults
+- [ ] No Delete button visible
+- [ ] Save creates a new todo successfully
+
+### Edit Mode
+- [ ] All fields populated with existing todo data
+- [ ] Delete button is visible
+- [ ] Delete asks for confirmation before removing
+- [ ] Save updates the existing todo successfully
+
+### Validation
+- [ ] Cannot save without Title
+- [ ] Cannot save without Priority
+- [ ] Cannot save without Status
+- [ ] Clear error messages shown for missing required fields
+
+---
+
+## Overall Functional Requirements
+
+### CRUD Operations
+- [ ] **Create** - Can add new todos
+- [ ] **Read** - Can view all todos in list
+- [ ] **Update** - Can edit existing todos
+- [ ] **Delete** - Can remove todos (with confirmation)
+
+### General
+- [ ] Two separate pages/views exist (List and Editor)
+- [ ] Navigation works between both pages
+- [ ] Interface is clean and not cluttered
+- [ ] Design is functional and usable

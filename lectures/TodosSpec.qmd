@@ -12,11 +12,13 @@ TaskFlow Inc. needs a simple, clean todo list application for their users. They'
 
 ### Required Elements
 
-**Header:**
+**Header:**  
+
 - Application title: "TaskFlow"
 - "Add New Todo" button (should be prominent and easy to find)
 
-**Todo Display:**
+**Todo Display:**  
+
 - Display all todos as cards or list items
 - Each todo must show:
   - **Title** (prominently displayed)
@@ -26,19 +28,23 @@ TaskFlow Inc. needs a simple, clean todo list application for their users. They'
   - **Status** (Not Started, In Progress, or Completed - visually distinguishable)
   - **Edit button** or way to access the editor
 
-**Filtering Options:**
+**Filtering Options:**  
+
 - Ability to filter by Status (All, Not Started, In Progress, Completed)
 - Ability to filter by Priority (All, High, Medium, Low)
 
-**Empty State:**
+**Empty State:**  
+
 - When no todos exist, show a helpful message encouraging users to create their first todo
 
 ### Interactions
+
 - Clicking "Add New Todo" navigates to Page 2 (create mode)
 - Clicking a todo card or its Edit button navigates to Page 2 (edit mode)
 - Filters should update the displayed todos accordingly
 
 ### Design Notes
+
 - Todos should be clearly separated from each other
 - Priority and Status should be easily scannable at a glance
 - The interface should be clean and not cluttered
@@ -47,11 +53,12 @@ TaskFlow Inc. needs a simple, clean todo list application for their users. They'
 
 ### Required Elements
 
-**Navigation:**
+**Navigation:**  
+
 - Back button or link to return to the List View
 - Page title indicating whether this is "Create New Todo" or "Edit Todo"
 
-**Form Fields:**
+**Form Fields:**  
 
 1. **Title** (required)
    - Text input
@@ -74,7 +81,8 @@ TaskFlow Inc. needs a simple, clean todo list application for their users. They'
    - Options: Not Started, In Progress, Completed
    - Should indicate it's required
 
-**Action Buttons:**
+**Action Buttons:**  
+
 - **Save Button** - saves the todo and returns to List View
 - **Cancel Button** - returns to List View without saving
 - **Delete Button** - only shown when editing an existing todo (not when creating new)
@@ -85,12 +93,14 @@ TaskFlow Inc. needs a simple, clean todo list application for their users. They'
 
 ### Interactions
 
-**Create Mode:**
+**Create Mode:**  
+
 - All fields are empty or set to defaults
 - No Delete button
 - Save creates a new todo
 
-**Edit Mode:**
+**Edit Mode:**  
+
 - All fields populated with existing todo data
 - Delete button is visible
 - Delete should ask for confirmation before removing the todo

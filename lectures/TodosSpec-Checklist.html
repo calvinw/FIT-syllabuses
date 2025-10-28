@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>todosspec</title>
+<title>TodosSpec Checklist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="TodosSpec_files/libs/clipboard/clipboard.min.js"></script>
-<script src="TodosSpec_files/libs/quarto-html/quarto.js"></script>
-<script src="TodosSpec_files/libs/quarto-html/popper.min.js"></script>
-<script src="TodosSpec_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="TodosSpec_files/libs/quarto-html/anchor.min.js"></script>
-<link href="TodosSpec_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="TodosSpec_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="TodosSpec_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="TodosSpec_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="TodosSpec_files/libs/bootstrap/bootstrap-e1410b04cc7f3ad098892ee0af4d0b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="TodosSpec-Checklist_files/libs/clipboard/clipboard.min.js"></script>
+<script src="TodosSpec-Checklist_files/libs/quarto-html/quarto.js"></script>
+<script src="TodosSpec-Checklist_files/libs/quarto-html/popper.min.js"></script>
+<script src="TodosSpec-Checklist_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="TodosSpec-Checklist_files/libs/quarto-html/anchor.min.js"></script>
+<link href="TodosSpec-Checklist_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="TodosSpec-Checklist_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="TodosSpec-Checklist_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="TodosSpec-Checklist_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="TodosSpec-Checklist_files/libs/bootstrap/bootstrap-e1410b04cc7f3ad098892ee0af4d0b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -43,173 +43,147 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">TodosSpec Checklist</h1>
+</div>
 
 
 
-<section id="todo-application---specification" class="level1">
-<h1>Todo Application - Specification</h1>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>You are building a todo list application for a fictional client, “TaskFlow Inc.” This assignment focuses on using Stitch (Google’s AI-powered UI design tool) to translate written specifications into functional interface designs. Your goal is to prompt and iterate with Stitch until your design matches these specifications exactly.</p>
-</section>
-<section id="client-background" class="level2">
-<h2 class="anchored" data-anchor-id="client-background">Client Background</h2>
-<p>TaskFlow Inc.&nbsp;needs a simple, clean todo list application for their users. They’ve provided specifications for an MVP consisting of two pages. As the designer/developer, you must use Stitch to create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.</p>
-</section>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Name:</strong> ________________________ <strong>Date:</strong> ________________________</p>
+<hr>
 <section id="page-1-todo-list-view" class="level2">
 <h2 class="anchored" data-anchor-id="page-1-todo-list-view">Page 1: Todo List View</h2>
-<section id="required-elements" class="level3">
-<h3 class="anchored" data-anchor-id="required-elements">Required Elements</h3>
-<p><strong>Header:</strong></p>
-<ul>
-<li>Application title: “TaskFlow”</li>
-<li>“Add New Todo” button (should be prominent and easy to find)</li>
+<section id="header" class="level3">
+<h3 class="anchored" data-anchor-id="header">Header</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Application title “TaskFlow” is present</label></li>
+<li><label><input type="checkbox">“Add New Todo” button is prominent and easy to find</label></li>
 </ul>
-<p><strong>Todo Display:</strong></p>
-<ul>
-<li>Display all todos as cards or list items</li>
-<li>Each todo must show:
-<ul>
-<li><strong>Title</strong> (prominently displayed)</li>
-<li><strong>Description</strong> (can be truncated if long)</li>
-<li><strong>Due Date</strong> (if one is set)</li>
-<li><strong>Priority Level</strong> (High, Medium, or Low - visually distinguishable)</li>
-<li><strong>Status</strong> (Not Started, In Progress, or Completed - visually distinguishable)</li>
-<li><strong>Edit button</strong> or way to access the editor</li>
-</ul></li>
+</section>
+<section id="todo-display" class="level3">
+<h3 class="anchored" data-anchor-id="todo-display">Todo Display</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">All todos are displayed as cards or list items</label></li>
+<li><label><input type="checkbox">Each todo shows <strong>Title</strong> (prominently)</label></li>
+<li><label><input type="checkbox">Each todo shows <strong>Description</strong> (truncated if needed)</label></li>
+<li><label><input type="checkbox">Each todo shows <strong>Due Date</strong> (when set)</label></li>
+<li><label><input type="checkbox">Each todo shows <strong>Priority</strong> (High/Medium/Low - visually distinguishable)</label></li>
+<li><label><input type="checkbox">Each todo shows <strong>Status</strong> (Not Started/In Progress/Completed - visually distinguishable)</label></li>
+<li><label><input type="checkbox">Each todo has an <strong>Edit button</strong> or way to access editor</label></li>
+<li><label><input type="checkbox">Todos are clearly separated from each other</label></li>
 </ul>
-<p><strong>Filtering Options:</strong></p>
-<ul>
-<li>Ability to filter by Status (All, Not Started, In Progress, Completed)</li>
-<li>Ability to filter by Priority (All, High, Medium, Low)</li>
+</section>
+<section id="filtering" class="level3">
+<h3 class="anchored" data-anchor-id="filtering">Filtering</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Can filter by Status (All, Not Started, In Progress, Completed)</label></li>
+<li><label><input type="checkbox">Can filter by Priority (All, High, Medium, Low)</label></li>
+<li><label><input type="checkbox">Filters update the displayed todos correctly</label></li>
 </ul>
-<p><strong>Empty State:</strong></p>
-<ul>
-<li>When no todos exist, show a helpful message encouraging users to create their first todo</li>
+</section>
+<section id="empty-state" class="level3">
+<h3 class="anchored" data-anchor-id="empty-state">Empty State</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">When no todos exist, shows helpful message encouraging creation</label></li>
 </ul>
 </section>
 <section id="interactions" class="level3">
 <h3 class="anchored" data-anchor-id="interactions">Interactions</h3>
-<ul>
-<li>Clicking “Add New Todo” navigates to Page 2 (create mode)</li>
-<li>Clicking a todo card or its Edit button navigates to Page 2 (edit mode)</li>
-<li>Filters should update the displayed todos accordingly</li>
+<ul class="task-list">
+<li><label><input type="checkbox">“Add New Todo” navigates to Page 2 (create mode)</label></li>
+<li><label><input type="checkbox">Clicking todo or Edit button navigates to Page 2 (edit mode)</label></li>
 </ul>
-</section>
-<section id="design-notes" class="level3">
-<h3 class="anchored" data-anchor-id="design-notes">Design Notes</h3>
-<ul>
-<li>Todos should be clearly separated from each other</li>
-<li>Priority and Status should be easily scannable at a glance</li>
-<li>The interface should be clean and not cluttered</li>
-</ul>
+<hr>
 </section>
 </section>
 <section id="page-2-todo-editor" class="level2">
 <h2 class="anchored" data-anchor-id="page-2-todo-editor">Page 2: Todo Editor</h2>
-<section id="required-elements-1" class="level3">
-<h3 class="anchored" data-anchor-id="required-elements-1">Required Elements</h3>
-<p><strong>Navigation:</strong></p>
-<ul>
-<li>Back button or link to return to the List View</li>
-<li>Page title indicating whether this is “Create New Todo” or “Edit Todo”</li>
+<section id="navigation" class="level3">
+<h3 class="anchored" data-anchor-id="navigation">Navigation</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Back button/link returns to List View</label></li>
+<li><label><input type="checkbox">Page title shows “Create New Todo” or “Edit Todo” appropriately</label></li>
 </ul>
-<p><strong>Form Fields:</strong></p>
-<ol type="1">
-<li><strong>Title</strong> (required)
-<ul>
-<li>Text input</li>
-<li>Should indicate it’s required</li>
-</ul></li>
-<li><strong>Description</strong> (optional)
-<ul>
-<li>Multi-line text area</li>
-<li>More space than the title field</li>
-</ul></li>
-<li><strong>Due Date</strong> (optional)
-<ul>
-<li>Date picker or date input</li>
-</ul></li>
-<li><strong>Priority</strong> (required)
-<ul>
-<li>Dropdown or selection method</li>
-<li>Options: High, Medium, Low</li>
-<li>Should indicate it’s required</li>
-</ul></li>
-<li><strong>Status</strong> (required)
-<ul>
-<li>Dropdown or selection method</li>
-<li>Options: Not Started, In Progress, Completed</li>
-<li>Should indicate it’s required</li>
-</ul></li>
-</ol>
-<p><strong>Action Buttons:</strong></p>
-<ul>
-<li><strong>Save Button</strong> - saves the todo and returns to List View</li>
-<li><strong>Cancel Button</strong> - returns to List View without saving</li>
-<li><strong>Delete Button</strong> - only shown when editing an existing todo (not when creating new)</li>
+</section>
+<section id="form-fields" class="level3">
+<h3 class="anchored" data-anchor-id="form-fields">Form Fields</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Title</strong> field (text input, marked as required)</label></li>
+<li><label><input type="checkbox"><strong>Description</strong> field (multi-line text area, optional)</label></li>
+<li><label><input type="checkbox"><strong>Due Date</strong> field (date picker/input, optional)</label></li>
+<li><label><input type="checkbox"><strong>Priority</strong> field (dropdown/selection: High/Medium/Low, marked as required)</label></li>
+<li><label><input type="checkbox"><strong>Status</strong> field (dropdown/selection: Not Started/In Progress/Completed, marked as required)</label></li>
+<li><label><input type="checkbox">Required fields are clearly marked</label></li>
+</ul>
+</section>
+<section id="action-buttons" class="level3">
+<h3 class="anchored" data-anchor-id="action-buttons">Action Buttons</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Save</strong> button present (saves and returns to List View)</label></li>
+<li><label><input type="checkbox"><strong>Cancel</strong> button present (returns to List View without saving)</label></li>
+<li><label><input type="checkbox"><strong>Delete</strong> button only shown in edit mode (not in create mode)</label></li>
+</ul>
+</section>
+<section id="create-mode" class="level3">
+<h3 class="anchored" data-anchor-id="create-mode">Create Mode</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">All fields empty or set to defaults</label></li>
+<li><label><input type="checkbox">No Delete button visible</label></li>
+<li><label><input type="checkbox">Save creates a new todo successfully</label></li>
+</ul>
+</section>
+<section id="edit-mode" class="level3">
+<h3 class="anchored" data-anchor-id="edit-mode">Edit Mode</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">All fields populated with existing todo data</label></li>
+<li><label><input type="checkbox">Delete button is visible</label></li>
+<li><label><input type="checkbox">Delete asks for confirmation before removing</label></li>
+<li><label><input type="checkbox">Save updates the existing todo successfully</label></li>
 </ul>
 </section>
 <section id="validation" class="level3">
 <h3 class="anchored" data-anchor-id="validation">Validation</h3>
-<ul>
-<li>Title, Priority, and Status are required fields</li>
-<li>Show clear error messages if user tries to save without completing required fields</li>
+<ul class="task-list">
+<li><label><input type="checkbox">Cannot save without Title</label></li>
+<li><label><input type="checkbox">Cannot save without Priority</label></li>
+<li><label><input type="checkbox">Cannot save without Status</label></li>
+<li><label><input type="checkbox">Clear error messages shown for missing required fields</label></li>
 </ul>
-</section>
-<section id="interactions-1" class="level3">
-<h3 class="anchored" data-anchor-id="interactions-1">Interactions</h3>
-<p><strong>Create Mode:</strong></p>
-<ul>
-<li>All fields are empty or set to defaults</li>
-<li>No Delete button</li>
-<li>Save creates a new todo</li>
-</ul>
-<p><strong>Edit Mode:</strong></p>
-<ul>
-<li>All fields populated with existing todo data</li>
-<li>Delete button is visible</li>
-<li>Delete should ask for confirmation before removing the todo</li>
-<li>Save updates the existing todo</li>
-</ul>
-</section>
-<section id="design-notes-1" class="level3">
-<h3 class="anchored" data-anchor-id="design-notes-1">Design Notes</h3>
-<ul>
-<li>Required fields should be clearly marked</li>
-<li>Form should be easy to understand and fill out</li>
-<li>Buttons should clearly indicate their action</li>
-<li>Confirmation dialog for delete should be clear</li>
-</ul>
+<hr>
 </section>
 </section>
-<section id="functional-requirements-summary" class="level2">
-<h2 class="anchored" data-anchor-id="functional-requirements-summary">Functional Requirements Summary</h2>
-<section id="must-have" class="level3">
-<h3 class="anchored" data-anchor-id="must-have">Must Have:</h3>
-<ul>
-<li>Two separate pages/views (List and Editor)</li>
-<li>All specified form fields with correct input types</li>
-<li>Filtering on the List View</li>
-<li>Navigation between pages</li>
-<li>Create, Read, Update, and Delete (CRUD) operations for todos</li>
-<li>Required field validation</li>
-<li>Delete confirmation</li>
-<li>Empty state on List View</li>
+<section id="overall-functional-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="overall-functional-requirements">Overall Functional Requirements</h2>
+<section id="crud-operations" class="level3">
+<h3 class="anchored" data-anchor-id="crud-operations">CRUD Operations</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Create</strong> - Can add new todos</label></li>
+<li><label><input type="checkbox"><strong>Read</strong> - Can view all todos in list</label></li>
+<li><label><input type="checkbox"><strong>Update</strong> - Can edit existing todos</label></li>
+<li><label><input type="checkbox"><strong>Delete</strong> - Can remove todos (with confirmation)</label></li>
 </ul>
 </section>
-<section id="design-freedom" class="level3">
-<h3 class="anchored" data-anchor-id="design-freedom">Design Freedom:</h3>
-<ul>
-<li>Overall color scheme and styling</li>
-<li>Exact layout and spacing</li>
-<li>Typography choices</li>
-<li>Icon usage</li>
-<li>Card style vs.&nbsp;list style for todos</li>
-<li>How you indicate priority and status (colors, badges, icons - your choice)</li>
-<li>Size and positioning of elements</li>
+<section id="general" class="level3">
+<h3 class="anchored" data-anchor-id="general">General</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Two separate pages/views exist (List and Editor)</label></li>
+<li><label><input type="checkbox">Navigation works between both pages</label></li>
+<li><label><input type="checkbox">Interface is clean and not cluttered</label></li>
+<li><label><input type="checkbox">Design is functional and usable</label></li>
 </ul>
-</section>
 </section>
 </section>
 
