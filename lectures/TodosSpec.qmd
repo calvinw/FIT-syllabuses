@@ -1,0 +1,125 @@
+# Todo Application - Specification 
+
+## Project Overview
+
+You are building a todo list application for a fictional client, "TaskFlow Inc." This assignment focuses on using Stitch (Google's AI-powered UI design tool) to translate written specifications into functional interface designs. Your goal is to prompt and iterate with Stitch until your design matches these specifications exactly.
+
+## Client Background
+
+TaskFlow Inc. needs a simple, clean todo list application for their users. They've provided specifications for an MVP consisting of two pages. As the designer/developer, you must use Stitch to create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.
+
+## Page 1: Todo List View
+
+### Required Elements
+
+**Header:**
+- Application title: "TaskFlow"
+- "Add New Todo" button (should be prominent and easy to find)
+
+**Todo Display:**
+- Display all todos as cards or list items
+- Each todo must show:
+  - **Title** (prominently displayed)
+  - **Description** (can be truncated if long)
+  - **Due Date** (if one is set)
+  - **Priority Level** (High, Medium, or Low - visually distinguishable)
+  - **Status** (Not Started, In Progress, or Completed - visually distinguishable)
+  - **Edit button** or way to access the editor
+
+**Filtering Options:**
+- Ability to filter by Status (All, Not Started, In Progress, Completed)
+- Ability to filter by Priority (All, High, Medium, Low)
+
+**Empty State:**
+- When no todos exist, show a helpful message encouraging users to create their first todo
+
+### Interactions
+- Clicking "Add New Todo" navigates to Page 2 (create mode)
+- Clicking a todo card or its Edit button navigates to Page 2 (edit mode)
+- Filters should update the displayed todos accordingly
+
+### Design Notes
+- Todos should be clearly separated from each other
+- Priority and Status should be easily scannable at a glance
+- The interface should be clean and not cluttered
+
+## Page 2: Todo Editor
+
+### Required Elements
+
+**Navigation:**
+- Back button or link to return to the List View
+- Page title indicating whether this is "Create New Todo" or "Edit Todo"
+
+**Form Fields:**
+
+1. **Title** (required)
+   - Text input
+   - Should indicate it's required
+
+2. **Description** (optional)
+   - Multi-line text area
+   - More space than the title field
+
+3. **Due Date** (optional)
+   - Date picker or date input
+
+4. **Priority** (required)
+   - Dropdown or selection method
+   - Options: High, Medium, Low
+   - Should indicate it's required
+
+5. **Status** (required)
+   - Dropdown or selection method
+   - Options: Not Started, In Progress, Completed
+   - Should indicate it's required
+
+**Action Buttons:**
+- **Save Button** - saves the todo and returns to List View
+- **Cancel Button** - returns to List View without saving
+- **Delete Button** - only shown when editing an existing todo (not when creating new)
+
+### Validation
+- Title, Priority, and Status are required fields
+- Show clear error messages if user tries to save without completing required fields
+
+### Interactions
+
+**Create Mode:**
+- All fields are empty or set to defaults
+- No Delete button
+- Save creates a new todo
+
+**Edit Mode:**
+- All fields populated with existing todo data
+- Delete button is visible
+- Delete should ask for confirmation before removing the todo
+- Save updates the existing todo
+
+### Design Notes
+- Required fields should be clearly marked
+- Form should be easy to understand and fill out
+- Buttons should clearly indicate their action
+- Confirmation dialog for delete should be clear
+
+## Functional Requirements Summary
+
+### Must Have:
+- Two separate pages/views (List and Editor)
+- All specified form fields with correct input types
+- Filtering on the List View
+- Navigation between pages
+- Create, Read, Update, and Delete (CRUD) operations for todos
+- Required field validation
+- Delete confirmation
+- Empty state on List View
+
+### Design Freedom:
+- Overall color scheme and styling
+- Exact layout and spacing
+- Typography choices
+- Icon usage
+- Card style vs. list style for todos
+- How you indicate priority and status (colors, badges, icons - your choice)
+- Size and positioning of elements
+
