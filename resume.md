@@ -99,7 +99,7 @@ SUNY Chancellor's Award for Excellence in Teaching, 2012
 - Project to support rapid content creation for statistics. 
 - [Bitbucket repo](https://bitbucket.org/calvinw/mathplosion)
 
-## Invited Conference Talks
+## Peer-Reviewed Conference Presentations 
 
 **Creating an Ideal Textbook with Your Students In Mind** (co-presented with Jennifer Shloming): presented at the International Conference on Technology in Collegiate Mathematics (ICTCM 2025), San Diego, CA, Mar 2025
 
