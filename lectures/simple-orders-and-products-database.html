@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="vibe_databases_files/libs/clipboard/clipboard.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/tabby.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/popper.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="vibe_databases_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="vibe_databases_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="vibe_databases_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="simple-orders-and-products-database_files/libs/clipboard/clipboard.min.js"></script>
+<script src="simple-orders-and-products-database_files/libs/quarto-html/tabby.min.js"></script>
+<script src="simple-orders-and-products-database_files/libs/quarto-html/popper.min.js"></script>
+<script src="simple-orders-and-products-database_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="simple-orders-and-products-database_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="simple-orders-and-products-database_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="simple-orders-and-products-database_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
-  <title>Retail Orders Database</title>
+  <title>Simple Orders &amp; Products Database</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="simple-orders-and-products-database_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="simple-orders-and-products-database_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
-  <link href="vibe_databases_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="simple-orders-and-products-database_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link href="simple-orders-and-products-database_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="simple-orders-and-products-database_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="simple-orders-and-products-database_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="simple-orders-and-products-database_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -126,57 +126,15 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Retail Orders Database</h1>
+  <h1 class="title">Simple Orders &amp; Products Database</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="customers-table" class="slide level2">
-<h2>1. Customers Table</h2>
-<p>Description: This table stores customer information. It contains the “who” – all the customer details including their first name, last name, and contact email. Each customer gets a unique ID.</p>
-<div style="font-size: 0.8em;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>customer_id</th>
-<th>first_name</th>
-<th>last_name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>John</td>
-<td>Doe</td>
-<td>john.doe@example.com</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Jane</td>
-<td>Smith</td>
-<td>jane.smith@example.com</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Robert</td>
-<td>Johnson</td>
-<td>robert.johnson@example.com</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Sarah</td>
-<td>Williams</td>
-<td>sarah.williams@example.com</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="products-table" class="slide level2">
-<h2>2. Products Table</h2>
-<p>Description: This table stores product information. It contains the “what” – all available products with their pricing and descriptions. Each product gets a unique ID.</p>
+<h2>1. Products Table</h2>
+<p>Description: Stores your catalog of items – product ID, name, category, price, and availability.</p>
 <div style="font-size: 0.8em;">
 <table class="caption-top">
 <thead>
@@ -184,81 +142,87 @@
 <th>product_id</th>
 <th>name</th>
 <th>price</th>
-<th>description</th>
+<th>in_stock</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>Silk Blouse</td>
-<td>89.99</td>
-<td>Elegant office wear</td>
+<td>Wireless Headphones</td>
+<td>79.99</td>
+<td>1</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>Denim Jeans</td>
-<td>79.99</td>
-<td>Classic straight cut</td>
+<td>Coffee Beans</td>
+<td>14.99</td>
+<td>1</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td>Cashmere Sweater</td>
-<td>149.99</td>
-<td>Soft winter essential</td>
+<td>T-Shirt</td>
+<td>24.99</td>
+<td>1</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>Leather Jacket</td>
-<td>249.99</td>
-<td>Stylish outerwear</td>
+<td>USB-C Cable</td>
+<td>12.99</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 <section id="orders-table" class="slide level2">
-<h2>3. Orders Table</h2>
-<p>Description: This table links customers and products together. It records the “transaction” – which customer ordered which product and when. The customer_id and product_id columns refer back to the Customers and Products tables.</p>
+<h2>2. Orders Table</h2>
+<p>Description: Records transactions – which customer bought what product, quantity ordered, and completion status. The product_id links to the Products table.</p>
 <div style="font-size: 0.8em;">
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>order_id</th>
-<th>customer_id</th>
 <th>product_id</th>
-<th>order_date</th>
+<th>customer</th>
+<th>qty</th>
+<th>completed</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>101</td>
 <td>1</td>
+<td>Alice</td>
+<td>2</td>
 <td>1</td>
-<td>3</td>
-<td>2025-06-10 14:30:00</td>
 </tr>
 <tr class="even">
+<td>102</td>
 <td>2</td>
-<td>2</td>
-<td>1</td>
-<td>2025-07-15 09:15:00</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>2025-08-02 16:45:00</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>2</td>
-<td>4</td>
-<td>2025-08-18 11:20:00</td>
-</tr>
-<tr class="odd">
+<td>Bob</td>
 <td>5</td>
-<td>4</td>
 <td>1</td>
-<td>2025-08-25 13:10:00</td>
+</tr>
+<tr class="odd">
+<td>103</td>
+<td>3</td>
+<td>Carol</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>104</td>
+<td>1</td>
+<td>David</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>105</td>
+<td>3</td>
+<td>Alice</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -273,19 +237,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="vibe_databases_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="vibe_databases_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="vibe_databases_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="simple-orders-and-products-database_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

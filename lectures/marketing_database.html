@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="vibe_databases_files/libs/clipboard/clipboard.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/tabby.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/popper.min.js"></script>
-<script src="vibe_databases_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="vibe_databases_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="vibe_databases_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="vibe_databases_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="marketing_database_files/libs/clipboard/clipboard.min.js"></script>
+<script src="marketing_database_files/libs/quarto-html/tabby.min.js"></script>
+<script src="marketing_database_files/libs/quarto-html/popper.min.js"></script>
+<script src="marketing_database_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="marketing_database_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="marketing_database_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="marketing_database_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
-  <title>Retail Orders Database</title>
+  <title>Marketing Database</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="marketing_database_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="marketing_database_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="vibe_databases_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
-  <link href="vibe_databases_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="vibe_databases_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="marketing_database_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link href="marketing_database_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="marketing_database_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="marketing_database_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="marketing_database_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -126,139 +126,128 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Retail Orders Database</h1>
+  <h1 class="title">Marketing Database</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="customers-table" class="slide level2">
-<h2>1. Customers Table</h2>
-<p>Description: This table stores customer information. It contains the “who” – all the customer details including their first name, last name, and contact email. Each customer gets a unique ID.</p>
+<section id="leads-table" class="slide level2">
+<h2>1. Leads Table</h2>
+<p>Description: This table is your list of potential customers. It stores the “who” – any person who has shown interest in your business but hasn’t necessarily bought anything yet. Each lead gets a unique ID.</p>
 <div style="font-size: 0.8em;">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>customer_id</th>
-<th>first_name</th>
-<th>last_name</th>
+<th>lead_id</th>
 <th>email</th>
+<th>source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>John</td>
-<td>Doe</td>
-<td>john.doe@example.com</td>
+<td>sarah.j@example.com</td>
+<td>Web Form</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>Jane</td>
-<td>Smith</td>
-<td>jane.smith@example.com</td>
+<td>kevin.lee@example.com</td>
+<td>Newsletter Sign-up</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td>Robert</td>
-<td>Johnson</td>
-<td>robert.johnson@example.com</td>
+<td>amanda.w@example.com</td>
+<td>Trade Show</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>Sarah</td>
-<td>Williams</td>
-<td>sarah.williams@example.com</td>
+<td>brian.c@example.com</td>
+<td>Web Form</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="products-table" class="slide level2">
-<h2>2. Products Table</h2>
-<p>Description: This table stores product information. It contains the “what” – all available products with their pricing and descriptions. Each product gets a unique ID.</p>
+<section id="campaigns-table" class="slide level2">
+<h2>2. Campaigns Table</h2>
+<p>Description: This table is your list of marketing activities. It stores the “what” – the different campaigns you are running to try and attract leads. Each campaign gets a unique ID.</p>
 <div style="font-size: 0.8em;">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>product_id</th>
-<th>name</th>
-<th>price</th>
-<th>description</th>
+<th>campaign_id</th>
+<th>campaign_name</th>
+<th>channel</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Silk Blouse</td>
-<td>89.99</td>
-<td>Elegant office wear</td>
+<td>10</td>
+<td>Spring 2025 Sale</td>
+<td>Email</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Denim Jeans</td>
-<td>79.99</td>
-<td>Classic straight cut</td>
+<td>11</td>
+<td>Free Trial Offer</td>
+<td>PPC (Google Ads)</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Cashmere Sweater</td>
-<td>149.99</td>
-<td>Soft winter essential</td>
+<td>12</td>
+<td>Holiday Gift Guide</td>
+<td>Social (Instagram)</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Leather Jacket</td>
-<td>249.99</td>
-<td>Stylish outerwear</td>
+<td>13</td>
+<td>Summer Clearance</td>
+<td>Email</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="orders-table" class="slide level2">
-<h2>3. Orders Table</h2>
-<p>Description: This table links customers and products together. It records the “transaction” – which customer ordered which product and when. The customer_id and product_id columns refer back to the Customers and Products tables.</p>
-<div style="font-size: 0.8em;">
+<section id="conversions-table" class="slide level2">
+<h2>3. Conversions Table</h2>
+<p>Description: This table links the leads and campaigns tables together. It records the “action” – which lead responded to which campaign, what they did, and when it happened. The lead_id and campaign_id columns refer back to the first two tables.</p>
+<div style="font-size: 0.75em;">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th>order_id</th>
-<th>customer_id</th>
-<th>product_id</th>
-<th>order_date</th>
+<th>conversion_id</th>
+<th>lead_id</th>
+<th>campaign_id</th>
+<th>conversion_date</th>
+<th>action</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>500</td>
 <td>1</td>
-<td>1</td>
-<td>3</td>
-<td>2025-06-10 14:30:00</td>
+<td>10</td>
+<td>2025-06-15 09:15:00</td>
+<td>Email signup</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>2</td>
-<td>1</td>
-<td>2025-07-15 09:15:00</td>
+<td>501</td>
+<td>3</td>
+<td>12</td>
+<td>2025-07-22 11:30:00</td>
+<td>Download guide</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>2025-08-02 16:45:00</td>
+<td>502</td>
+<td>1</td>
+<td>11</td>
+<td>2025-08-03 14:00:00</td>
+<td>Trial signup</td>
 </tr>
 <tr class="even">
-<td>4</td>
+<td>503</td>
 <td>2</td>
-<td>4</td>
-<td>2025-08-18 11:20:00</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>4</td>
-<td>1</td>
-<td>2025-08-25 13:10:00</td>
+<td>10</td>
+<td>2025-08-18 16:45:00</td>
+<td>Email signup</td>
 </tr>
 </tbody>
 </table>
@@ -273,19 +262,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="vibe_databases_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="marketing_database_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="vibe_databases_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="vibe_databases_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="vibe_databases_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="marketing_database_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
