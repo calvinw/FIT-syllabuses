@@ -92,15 +92,15 @@ Deep Seeks models are competive with the state of the art closed source models b
  
 Notice the difference when posting prompts to the standard V3 models versus the "reasoning model" (Button "DeepThink"). The reasoning model shows you its thinking process.
 
-## Large Language Models as Software Developers 
+## Large Language Models as Software Developers
 
-- Language models are excellent at writing software. 
-- The term *Vibe Coding* has been used to describe the act of coding and not looking at the source code but just prompting the model to write things. 
+- Language models excel at writing software
+- *Vibe Coding*: Prompting models to write code without reading source
   - GPT 5 (OpenAI)
   - Claude Sonnet and Opus (Anthropic)
-  - Gemini 2.5 Pro (Google) 
+  - Gemini 2.5 Pro (Google)
   - Qwen3-Coder
-  - Kimi K2 
+  - Kimi K2
   - Glm 4.6 
 
 ## Prompting Large Language Models
