@@ -30,6 +30,7 @@ Your new database will be created and you'll be taken to the database homepage.
 Once inside your database, click on the **"Tables"** tab. Click **"Create table"** to start defining your first table.
 
 To generate CREATE TABLE queries:
+  
 - Paste your table descriptions and information into an LLM (like Claude)
 - Have the LLM generate the CREATE TABLE queries for you
 - Copy the generated SQL statements and paste them directly into Dolt
@@ -39,6 +40,7 @@ To generate CREATE TABLE queries:
 ## Step 5: Insert Data
 
 To populate your tables with data:
+  
 - Prepare your table data (in CSV, list, or table format)
 - Paste your table data into an LLM (like Claude)
 - Have the LLM generate INSERT statements for you
