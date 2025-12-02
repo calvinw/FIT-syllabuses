@@ -10,8 +10,6 @@ format: html
 - A) True
 - B) False
 
-**Answer:** A) True
-
 ---
 
 **Question 2:** In the artifact workflow, who can send artifact documents?
@@ -21,18 +19,12 @@ format: html
 - C) Only the AI
 - D) Neither, artifacts are created automatically
 
-**Answer:** C) Only the AI
-
 ---
 
-**Question 3:** Artifacts use which system to track document iterations as they're updated?
+**Question 3:** Artifacts have version numbers so the LLM can undo changes.
 
-- A) Timestamps
-- B) Version numbering (version 1, 2, 3, etc.)
-- C) Hash codes
-- D) File names
-
-**Answer:** B) Version numbering (version 1, 2, 3, etc.)
+- A) True
+- B) False
 
 ---
 
@@ -40,10 +32,8 @@ format: html
 
 - A) HTML pages and SVG diagrams
 - B) Python and JavaScript code
-- C) JSON and CSV data
+- C) Text and Markdown
 - D) All of the above
-
-**Answer:** D) All of the above
 
 ---
 
@@ -54,238 +44,185 @@ format: html
 - C) Markdown headers
 - D) Binary encoding
 
-**Answer:** B) XML-style tags
+---
+
+**Question 6:** How do you select a column in a dataframe in pandas? Say you have a column called "age" and your dataframe is called `customers`.
 
 ---
 
-**Question 6:** Custom artifact types can be created for specific use cases like customer order tables or math problem statements.
+**Question 7:** Dataframes cannot contain different datatypes in the columns. All columns must hold the same data type.
 
 - A) True
 - B) False
 
-**Answer:** A) True
-
 ---
 
-**Question 7:** How do you select a column in a dataframe in pandas? Say you have a column called "age" and your dataframe is called `customers`.
-
-**Answer:** customers["age"]
-
----
-
-**Question 8:** "Vibe coding" refers to writing code by describing what you want in natural language to an AI assistant.
+**Question 8:** In dataframes all the data in a row is of the same data type.
 
 - A) True
 - B) False
 
-**Answer:** A) True
-
 ---
 
-**Question 9:** When you Vibe code you must get everything described perfectly in the first prompt.
+**Question 9:** "Vibe coding" refers to writing code by describing what you want in natural language and prompting an AI assistant.
 
 - A) True
 - B) False
 
-**Answer:** B) False
+---
+
+**Question 10:** When you Vibe code you must get everything described perfectly in the first prompt.
+
+- A) True
+- B) False
 
 ---
 
-**Question 10:** Which of the following is a benefit of vibe coding?
+**Question 11:** Which of the following is a benefit of vibe coding?
 
 - A) Faster prototyping
 - B) Lower barrier to entry for beginners
 - C) Ability to iterate quickly
 - D) All of the above
 
-**Answer:** D) All of the above
-
 ---
 
-**Question 11:** Google's Stitch is an AI-powered tool that generates UI designs and HTML/CSS code for web and mobile apps.
+**Question 12:** Google's Stitch is an AI-powered tool that generates UI designs and HTML/CSS code for web and mobile apps.
 
 - A) True
 - B) False
 
-**Answer:** A) True
-
 ---
 
-**Question 12:** Stitch can generate working prototypes with full backend functionality and database connections.
+**Question 13:** Stitch can generate prototypes with backend functionality and database connections.
 
 - A) True
 - B) False
 
-**Answer:** B) False - Stitch generates the UI part (HTML/CSS) but not the backend functionality
-
 ---
 
-**Question 13:** Stitch can accept which types of input to generate designs?
+**Question 14:** Stitch can accept which types of input to generate designs?
 
 - A) Text prompts only
 - B) Image uploads only
 - C) Both text prompts and images
 - D) Neither text nor images
 
-**Answer:** C) Both text prompts and images
+---
+
+**Question 15:** Though Stitch can generate HTML/CSS for your pages, you still need to use AI Studio or Gemini further after using Stitch. Why?
 
 ---
 
-**Question 14:** Though Stitch can generate HTML/CSS for your pages, you still need to use AI Studio or Gemini further after using Stitch. Why?
-
-**Answer:** Stitch cannot generate the interactivity for the app, just the look of it.
-
----
-
-**Question 15:** MCP stands for Model Context Protocol.
+**Question 16:** MCP stands for Model Context Protocol.
 
 - A) True
 - B) False
 
-**Answer:** A) True
+---
+
+**Question 17:** Give three examples of a tool that an LLM might use.
 
 ---
 
-**Question 16:** What is the primary purpose of MCP?
-
-- A) To encrypt AI model communications
-- B) To enable LLMs to interact with external tools, resources, and services
-- C) To train AI models faster
-- D) To compress model weights
-
-**Answer:** B) To enable LLMs to interact with external tools, resources, and services
+**Question 18:** Outline the steps in the process of how an LLM calls a tool.
 
 ---
 
-**Question 17:** MCP servers can provide which of the following to AI models?
+**Question 19:** MCP servers can have more than one tool?
 
-- A) Tools
-- B) Resources
-- C) Prompts
-- D) All of the above
-
-**Answer:** D) All of the above
+- A) True
+- B) False
 
 ---
 
-**Question 18:** Which of the following is an advantage of MCP over traditional tools?
-
-- A) Standardization
-- B) Discoverability
-- C) Interoperability
-- D) All of the above
-
-**Answer:** D) All of the above
-
----
-
-**Question 19:** In the MCP workflow, after the LLM identifies a need for external information, what happens next?
+**Question 20:** In the MCP workflow, after the LLM identifies a need for external information, what happens next?
 
 - A) The LLM directly calls the MCP server
 - B) The AI App calls the MCP server
 - C) The user manually executes the tool
 - D) The MCP server automatically runs
 
-**Answer:** B) The AI App calls the MCP server
-
 ---
 
-**Question 20:** Dolt is a SQL database with version control features and branches.
+**Question 21:** Dolt is a SQL database with branches.
 
 - A) True
 - B) False
 
-**Answer:** A) True
-
 ---
 
-**Question 21:** To create a Dolt database, you need to:
+**Question 22:** To create a Dolt database, you need to:
 
 - A) Install software on your local machine
 - B) Sign up at dolthub.com and create a database from your profile
 - C) Download a database template
 - D) Configure a server
 
-**Answer:** B) Sign up at dolthub.com and create a database from your profile
-
 ---
 
-**Question 22:** When using an LLM to generate SQL for Dolt, you should have the LLM create:
+**Question 23:** When using an LLM to generate SQL for Dolt, you should have the LLM create:
 
 - A) Separate scripts for CREATE TABLE and INSERT statements
 - B) Only CREATE TABLE statements
 - C) ONE complete SQL script with both CREATE TABLE and INSERT statements
 - D) Only INSERT statements
 
-**Answer:** C) ONE complete SQL script with both CREATE TABLE and INSERT statements
-
 ---
 
-**Question 23:** When you upload a SQL script to Dolt, the changes are initially placed on:
+**Question 24:** When you upload a SQL script to Dolt, the changes are initially placed on:
 
 - A) The main branch directly
 - B) A temporary branch
 - C) A backup database
 - D) Your local machine
 
-**Answer:** B) A temporary branch
-
 ---
 
-**Question 24:** To commit your SQL script changes to the main branch in Dolt, you must:
+**Question 25:** To commit your SQL script changes to the main branch in Dolt, you must:
 
 - A) Upload the file again
 - B) Run a command line tool
 - C) Create and merge a pull request
 - D) Restart the database
 
-**Answer:** C) Create and merge a pull request
-
 ---
 
-**Question 25:** A Primary Key is:
+**Question 26:** A Primary Key is:
 
 - A) The first column in a table
 - B) A column that uniquely identifies each row in a table
 - C) A column that references another table
 - D) An optional field in a database
 
-**Answer:** B) A column that uniquely identifies each row in a table
-
 ---
 
-**Question 26:** A primary key value can be NULL.
+**Question 27:** A primary key value can be NULL.
 
 - A) True
 - B) False
 
-**Answer:** B) False
-
 ---
 
-**Question 27:** In a Products table with columns: product_id, name, price, in_stock - which column would typically be the primary key?
+**Question 28:** In a Products table with columns: product_id, name, price, in_stock - which column would typically be the primary key?
 
 - A) name
 - B) price
 - C) product_id
 - D) in_stock
 
-**Answer:** C) product_id
-
 ---
 
-**Question 28:** A Foreign Key is:
+**Question 29:** A Foreign Key is:
 
 - A) A key from a foreign database
 - B) A column that references the primary key of another table
 - C) The same as a primary key
 - D) A backup key for security
 
-**Answer:** B) A column that references the primary key of another table
-
 ---
 
-**Question 29:** Consider these two tables:
+**Question 30:** Consider these two tables:
 
 Products: product_id (PK), name, price
 Orders: order_id (PK), product_id, customer, qty
@@ -297,19 +234,6 @@ What is the relationship between product_id in these tables?
 - C) Both are primary keys
 - D) There is no relationship
 
-**Answer:** A) product_id in Orders is a foreign key referencing Products
-
----
-
-**Question 30:** Why would you use a foreign key in the Orders table that references the Products table?
-
-- A) To make the database faster
-- B) To maintain relational integrity and link orders to specific products
-- C) To save storage space
-- D) Foreign keys are not necessary
-
-**Answer:** B) To maintain relational integrity and link orders to specific products
-
 ---
 
 **Question 31:** When working with an LLM to edit a Dolt database, it's recommended to:
@@ -319,57 +243,30 @@ What is the relationship between product_id in these tables?
 - C) Disable version control
 - D) Use a different database system
 
-**Answer:** B) Create a separate branch for the LLM to work on
-
 ---
 
-**Question 32:** A Dolt API token can be restricted to work only on specific branches.
-
-- A) True
-- B) False
-
-**Answer:** A) True
-
----
-
-**Question 33:** What is a primary benefit of using Dolt over traditional databases like MySQL?
+**Question 32:** What is a primary benefit of using Dolt over traditional databases like MySQL?
 
 - A) It's faster than traditional databases
 - B) It uses less storage space
 - C) You can track and revert changes to data
 - D) It requires no SQL knowledge
 
-**Answer:** C) You can track and revert changes to data
-
 ---
 
-**Question 34:** In Dolt, what command is similar to `git commit`?
-
-- A) dolt save
-- B) dolt commit
-- C) dolt push
-- D) dolt store
-
-**Answer:** B) dolt commit
-
----
-
-**Question 35:** When using an LLM for data manipulation in Dolt, you should always:
+**Question 33:** When using an LLM for data manipulation in Dolt, you should always:
 
 - A) Trust the LLM completely without verification
 - B) Review changes before merging them to the main branch
 - C) Avoid using version control
 - D) Work directly on the main/production database
 
-**Answer:** B) Review changes before merging them to the main branch
-
 ---
 
-**Question 36:** In the context of AI-assisted development, what does it mean to "iterate quickly"?
+**Question 34:** In the context of AI-assisted development, what does it mean to "iterate quickly"?
 
 - A) To write code very fast by typing quickly
 - B) To make rapid changes and test different approaches easily
 - C) To use loops in your code
 - D) To deploy code to production immediately
 
-**Answer:** B) To make rapid changes and test different approaches easily

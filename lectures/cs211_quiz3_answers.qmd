@@ -1,0 +1,74 @@
+---
+title: "CS211 Quiz 3 - Answer Key"
+format: html
+---
+
+## Answer Key
+
+**Answer 1:** A) True
+
+**Answer 2:** C) Only the AI
+
+**Answer 3:** A) True
+
+**Answer 4:** D) All of the above
+
+**Answer 5:** B) XML-style tags
+
+**Answer 6:** customers["age"]
+
+**Answer 7:** B) False
+
+**Answer 8:** B) False
+
+**Answer 9:** A) True
+
+**Answer 10:** B) False
+
+**Answer 11:** D) All of the above
+
+**Answer 12:** A) True
+
+**Answer 13:** B) False - Stitch generates the UI part (HTML/CSS) but not the backend functionality
+
+**Answer 14:** C) Both text prompts and images
+
+**Answer 15:** Stitch cannot generate the interactivity for the app, just the look of it.
+
+**Answer 16:** A) True
+
+**Answer 17:** Web search, Calculator, Gmail access
+
+**Answer 18:** 1) AI App sends prompt to LLM with available MCP servers, 2) LLM identifies need for external info and requests MCP server call, 3) AI App calls the MCP server, 4) MCP server provides results back to AI App, 5) AI App forwards results to LLM which incorporates them into response
+
+**Answer 19:** A) True
+
+**Answer 20:** B) The AI App calls the MCP server
+
+**Answer 21:** A) True
+
+**Answer 22:** B) Sign up at dolthub.com and create a database from your profile
+
+**Answer 23:** C) ONE complete SQL script with both CREATE TABLE and INSERT statements
+
+**Answer 24:** B) A temporary branch
+
+**Answer 25:** C) Create and merge a pull request
+
+**Answer 26:** B) A column that uniquely identifies each row in a table
+
+**Answer 27:** B) False
+
+**Answer 28:** C) product_id
+
+**Answer 29:** B) A column that references the primary key of another table
+
+**Answer 30:** A) product_id in Orders is a foreign key referencing Products
+
+**Answer 31:** B) Create a separate branch for the LLM to work on
+
+**Answer 32:** C) You can track and revert changes to data
+
+**Answer 33:** B) Review changes before merging them to the main branch
+
+**Answer 34:** B) To make rapid changes and test different approaches easily
