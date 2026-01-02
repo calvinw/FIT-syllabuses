@@ -80,7 +80,7 @@ $ upterm host --accept
 ✅ Starting to accept connections...
 ```
 
-Copy and paste the SSH Command (here it is `ssh tx065Om9KTrCxPZZ8fWQ@uptermd.upterm.dev`) to share your terminal session with others. Paste just that into the google meet chat.
+Copy and paste the SSH Command (here it is `ssh tx065Om9KTrCxPZZ8fWQ@uptermd.upterm.dev` but yours will be different) to share your terminal session with others. Paste just that into the google meet chat.
 
 If that doesnt work then we will try Options 2 and 3 below. Sometimes the port 22 is blocked. But the options below might work.
 
@@ -114,9 +114,9 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ✅ Starting to accept connections...
 ```
 
-Here you copy and paste the long ssh command (here it is `ssh -o ProxyCommand='upterm proxy wss://aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev' aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev:443`) all the way to ending in the `:433` 
+Here you copy and paste the long ssh command (here it is `ssh -o ProxyCommand=...` all the way and including the ending  `:433`. 
 
-and send it to whoever you want to connect to your terminal.
+Yours will be different but include all of it and send it to whoever you want to connect to your terminal.
 
 ### Option 3: Using upterm.dev
 
