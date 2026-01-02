@@ -103,6 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="installation-commands" class="level2">
 <h2 class="anchored" data-anchor-id="installation-commands">Installation Commands</h2>
 <p>Copy and paste the commands below and give them to Claude Code. Ask Claude to make a script called <code>upterm.sh</code> for this that you can execute.</p>
+<p>These commands install upterm on your machine.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-f</span> ~/.ssh/id_ed25519 <span class="at">-N</span> <span class="st">""</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> upterm</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> upterm</span>
@@ -114,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> upterm</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">upterm</span> version</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Exit Claude Code with /exit and execute the script like this:</p>
+<p>Exit Claude Code with /exit and execute the script like this at the terminal prompt:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./update.sh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>When it asks for your Password type in the password for your mac. It will look like it is not letting you type but it actually is. Then hit return.</p>
 <p>If you get output like this then it worked:</p>
@@ -145,7 +146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="ex">╰─</span> Run <span class="st">'upterm session current'</span> to display this again ─╯</span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="ex">✅</span> Starting to accept connections...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Copy and paste the SSH Command <code>ssh tx065Om9KTrCxPZZ8fWQ@uptermd.upterm.dev</code> to share your terminal session with others. Paste this into the google meet chat.</p>
+<p>Copy and paste the SSH Command (here it is <code>ssh tx065Om9KTrCxPZZ8fWQ@uptermd.upterm.dev</code>) to share your terminal session with others. Paste just that into the google meet chat.</p>
 <p>If that doesnt work then we will try Options 2 and 3 below. Sometimes the port 22 is blocked. But the options below might work.</p>
 </section>
 <section id="option-2-using-uptermd.upterm.dev" class="level3">
@@ -170,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="st">╰─ Run '</span>upterm session current<span class="st">' to display this again ─╯</span></span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="st">✅ Starting to accept connections...</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Here you copy and paste the long command <code>ssh -o ProxyCommand='upterm proxy wss://aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev' aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev:443</code></p>
-<p>and send it to whoever you want to connect.</p>
+<p>Here you copy and paste the long ssh command (here it is <code>ssh -o ProxyCommand='upterm proxy wss://aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev' aDdSuXNrnol4fMIN4VYf@uptermd.upterm.dev:443</code>) all the way to ending in the <code>:433</code></p>
+<p>and send it to whoever you want to connect to your terminal.</p>
 </section>
 <section id="option-3-using-upterm.dev" class="level3">
 <h3 class="anchored" data-anchor-id="option-3-using-upterm.dev">Option 3: Using upterm.dev</h3>
