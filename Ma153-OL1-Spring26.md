@@ -16,6 +16,11 @@ office hours: Monday 1-3, Tuesday 12-1, Thursday 12-1
 
 This course is an introduction to programming for mobile apps. Through visual programming tools, students learn to build mobile apps and control all aspects of the application. Computer science concepts are introduced to provide a complete understanding of the programming process. No previous programming experience is required. Prerequisite(s): mathematic proficiency (see beginning of Mathematics section).
 
+
+## Agentic Programming
+
+It is common now to use AI for programming and software development, so we will incorporete AI usage for helping to write AppInventor software. This will involve using various large language models to help us design and implement the software we are interested in. Since AppInventor is a visual programming language AI cannot directly produce working code for this situation but they can help you implement any program you want to build by describing to you how to set it up and how to implement it. This agentic software development is a valuable skill to have and we will develop it fully in our course. 
+
 ## Outcomes
 
 1. Use a visual programming environment to create mobile apps by editing code blocks that represent the parts of an app. 
