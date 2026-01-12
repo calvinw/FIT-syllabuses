@@ -48,6 +48,14 @@ Your grade will be determined as follows:
 
 You will submit programming assignments (roughly 20 assignments) as AppInventor project files (.aia project files). This is how your grade is determined. You are expected to demonstrate working programs in that format.  
 
+### Late Assignments 
+
+Late Assignments submitted after the official due date and time but within 7
+days of the that date and time are counted at 50% credit. Assignments more than
+7 days late count for 0. You may petition to have the lateness penalty waived
+but do not expect that to be granted easily. You must provide official
+documentation of extenuating circumstances.
+
 There is NO FINAL EXAM. 
 
 ## AI policy:
