@@ -1,0 +1,162 @@
+---
+title: "CS211 Quiz 4"
+format: html
+---
+
+## Quiz Questions
+
+1. (T/F) Artifacts usually allow the user to see a preview or rendered version of documents like HTML pages.
+
+1. Which of the following best describes how artifacts maintain history?
+
+   - A) They delete old versions automatically
+   - B) They use version numbers to track changes
+   - C) They save to a separate backup file
+   - D) They don't maintain any history
+
+1. What type of tag surrounds artifact content in an LLM's response?
+
+   - A) HTML tags like `<div>`
+   - B) Markdown code blocks
+   - C) XML-style tags like `<artifact>`
+
+1. (T/F) Users can edit artifacts and send the changes back to the LLM.
+
+1. (T/F) Each column in a pandas dataframe must contain values of the same data type.
+
+1. Which of the following is NOT a common data type found in dataframe columns?
+
+   - A) Integer
+   - B) String
+   - C) Float
+   - D) Dictionary
+
+1. (T/F) Vibe coding eliminates the need to understand the code that is generated.
+
+1. (T/F) When vibe coding, you should refine your prompts iteratively based on the output you receive.
+
+1. Which of the following is NOT a characteristic of vibe coding?
+
+   - A) Using natural language to describe what you want
+   - B) Iterating on prompts to refine results
+   - C) Writing every line of code manually
+   - D) Leveraging AI assistants to generate code
+
+1. Google Stitch is primarily designed for:
+
+   - A) Database management
+   - B) UI design and frontend code generation
+   - C) Backend server development
+   - D) Machine learning model training
+
+1. (T/F) Stitch generates fully functional backend APIs and database schemas.
+
+1. Which export format does Stitch support for the UI designs it creates?
+
+   - A) Python and Java
+   - B) HTML and CSS
+   - C) SQL and JSON
+   - D) Swift and Kotlin only
+
+1. What is one limitation of using Stitch alone for building a complete web application?
+
+1. (T/F) MCP (Model Context Protocol) allows LLMs to access external tools and data sources.
+
+1. What is the role of an MCP server?
+
+1. Describe what happens when an LLM needs information from an external source using MCP.
+
+1. In the MCP architecture, tools are defined by:
+
+   - A) The user during the conversation
+   - B) The MCP server in its configuration
+   - C) The LLM automatically
+   - D) The operating system
+
+1. (T/F) Dolt is a type of version control for data.
+
+1. What happens when you run a SQL query on a Dolt database?
+
+   - A) The changes are immediately permanent
+   - B) The changes are committed to a branch first
+   - C) A backup is automatically created
+   - D) The original data is deleted
+
+1. When having an LLM create a database for you, you should:
+
+   - A) Ask for tables one at a time in separate conversations
+   - B) Provide context about all related tables and their relationships
+   - C) Avoid mentioning foreign keys
+   - D) Only use auto-generated column names
+
+1. Branches in Dolt are useful for:
+
+   - A) Testing changes without affecting the main data
+   - B) Allowing multiple people to work on data simultaneously
+   - C) Creating isolated environments for LLM data manipulation
+   - D) All of the above
+
+1. After an LLM makes changes on a Dolt branch, you should:
+
+   - A) Immediately merge without reviewing
+   - B) Review and verify the changes then merge to main branch
+   - C) Delete the branch automatically
+   - D) Export to a different database
+
+1. (T/F) A table can have multiple primary keys.
+
+1. (T/F) Primary keys must contain unique values for each row.
+
+1. In a Customers table with columns: customer_id, first_name, last_name, email - which columns could be primary keys (circle all correct answers)?
+
+   - A) first_name
+   - B) email
+   - C) customer_id
+   - D) last_name
+
+1. Foreign keys help maintain:
+
+   - A) Data speed
+   - B) Relationships between tables
+   - C) File compression
+   - D) User authentication
+
+1. Consider these two tables:
+
+   Departments: dept_id (PK), dept_name, location
+   Employees: emp_id (PK), name, dept_id, salary
+
+   Which statement is correct about dept_id?
+
+   - A) dept_id in Employees is a primary key
+   - B) dept_id in Departments is a foreign key
+   - C) dept_id in Employees is a foreign key referencing Departments
+   - D) There is no relationship between the tables
+
+1. When using Dolt with an LLM, version control helps you:
+
+   - A) Speed up queries
+   - B) Undo mistakes the LLM might make
+   - C) Reduce storage costs
+   - D) Avoid writing SQL
+
+1. What makes Dolt different from a regular Git repository?
+
+   - A) It only works on Windows
+   - B) It stores data instead of code
+   - C) It doesn't support branching
+   - D) It can't be accessed online
+
+1. Before merging LLM-generated SQL changes into the main branch, you should:
+
+   - A) Run the changes immediately without testing
+   - B) Review the SQL statements and verify they match your intent
+   - C) Delete the original data first
+   - D) Disable version control
+
+1. What is a key advantage of using AI tools for rapid prototyping?
+
+   - A) The code is always perfect and needs no review
+   - B) You can quickly test ideas and iterate on designs
+   - C) It eliminates the need to understand requirements
+   - D) It replaces all manual coding permanently

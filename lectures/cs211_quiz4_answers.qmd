@@ -1,0 +1,68 @@
+---
+title: "CS211 Quiz 4 - Answer Key"
+format: html
+---
+
+## Answer Key
+
+1. A) True
+
+1. B) They use version numbers to track changes
+
+1. C) XML-style tags like `<artifact>`
+
+1. A) True
+
+1. A) True
+
+1. D) Dictionary
+
+1. B) False - You should still understand the generated code to verify it works correctly and to maintain it
+
+1. A) True
+
+1. C) Writing every line of code manually
+
+1. B) UI design and frontend code generation
+
+1. B) False - Stitch only generates the UI/frontend (HTML/CSS), not backend functionality
+
+1. B) HTML and CSS
+
+1. Stitch only generates static UI designs (HTML/CSS) but cannot add interactivity, backend logic, or database connections.
+
+1. A) True
+
+1. An MCP server provides tools and resources that LLMs can use to access external data and functionality.
+
+1. 1) AI App sends prompt to LLM with available MCP servers, 2) LLM identifies need for external info and requests MCP server call, 3) AI App calls the MCP server, 4) MCP server provides results back to AI App, 5) AI App forwards results to LLM which incorporates them into response
+
+1. B) The MCP server in its configuration
+
+1. A) True
+
+1. B) The changes are committed to a branch first
+
+1. B) Provide context about all related tables and their relationships
+
+1. D) All of the above
+
+1. B) Review and verify the changes then merge to main branch
+
+1. B) False - A table has one primary key (though it can be a composite key made of multiple columns)
+
+1. A) True
+
+1. B) email and C) customer_id
+
+1. B) Relationships between tables
+
+1. C) dept_id in Employees is a foreign key referencing Departments
+
+1. B) Undo mistakes the LLM might make
+
+1. B) It stores data instead of code
+
+1. B) Review the SQL statements and verify they match your intent
+
+1. B) You can quickly test ideas and iterate on designs
