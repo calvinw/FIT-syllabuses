@@ -6,8 +6,8 @@
 <script src="slide_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slide_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slide_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slide_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="slide_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.33">
 
   <meta name="author" content="Calvin Williamson, Science and Math">
   <meta name="dcterms.date" content="2026-01-26">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/theme/quarto-27a844e7d43f0d31b27642e48490372a.css">
   <link href="slide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slide_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -321,15 +321,6 @@ Calvin Williamson, Science and Math
 <li><a href="https://youtu.be/yBg6InLc1zg?si=2fkFm7Eb_9eFM6Xm">Claude working with Patterns/Channels</a></li>
 <li><a href="https://youtu.be/qbCdSiP-b2g?si=cjWem6aJLtLZ3Kt2&amp;t=308">Signal Midi Editor and Web based Claude</a></li>
 <li><a href="https://youtu.be/6k78wwMOJcU?si=ZajzR4O4A5MbALb_&amp;t=137">Codex CLI gpt-5.1-codex max and FL Studio Piano Roll</a></li>
-</ul>
-</section>
-<section id="llms-and-music-composition" class="slide level2">
-<h2>LLMs and Music Composition</h2>
-<p>You can use an LLM to teach you about programming. This is what they are good at. So you will be able to use an LLM to understand and write Strudel!</p>
-<p>This is amazing because Strudel can be difficult.</p>
-<ul>
-<li><a href="https://calvinw.github.io/llm-chat/strudel.html">Using an LLM to Learn and Compose With Strudel</a></li>
-<li><a href="https://youtube.com/playlist?list=PL3miIiuTRI6dEvBT8c-xr7LHIWZz2s7I_&amp;si=NsBq-cRXpKHb0pqZ">Video Series about This</a></li>
 </ul>
 </section>
 <section id="examples-of-what-the-llm-knows" class="slide level2">
@@ -635,6 +626,8 @@ Calvin Williamson, Science and Math
       });
       clipboard.on('success', onCopySuccess);
       if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
         const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
           text: getTextToCopy,
           container: window.document.getElementById('quarto-embedded-source-code-modal')
