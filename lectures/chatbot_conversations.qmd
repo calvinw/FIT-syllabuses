@@ -1,0 +1,125 @@
+---
+title: "Chatbot Conversations"
+author: "Calvin Williamson"
+format:
+  revealjs:
+    mermaid:
+      theme: forest
+    code-block-font-size: 1.4em
+---
+
+## Chatbot Conversations
+
+Chatbot conversations involve lists of messages sent to the LLM.
+
+## Start With an Empty List
+
+Start with an empty list of messages:
+
+```python
+messages = []
+```
+
+## Add the First User Message
+
+```python
+messages = [
+  "User: My name is Calvin. Why is Barbie so popular?"
+]
+```
+
+## First Call to the LLM {.smaller}
+
+**Prompt sent to LLM:**
+
+```python
+["User: My name is Calvin. Why is Barbie so popular?"]
+```
+
+**Response from LLM:**
+
+```python
+"Barbie is popular because…"
+```
+
+## Add the Response to the List {.smaller}
+
+```python
+messages = [
+  "User: My name is Calvin. Why is Barbie so popular?",
+  "AI: Barbie is popular because…"
+]
+```
+
+## Add the Next User Query {.smaller}
+
+```python
+messages = [
+  "User: My name is Calvin. Why is Barbie so popular?",
+  "AI: Barbie is popular because…",
+  "User: What is my name?"
+]
+```
+
+## Second Call to the LLM {.smaller}
+
+**Prompt sent to LLM:**
+
+```python
+[
+  "User: My name is Calvin. Why is Barbie so popular?",
+  "AI: Barbie is popular because…",
+  "User: What is my name?"
+]
+```
+
+**Response from LLM:**
+
+```python
+"Your name is Calvin. How can I help you?"
+```
+
+## Add the Response to the List {.smaller}
+
+```python
+messages = [
+  "User: My name is Calvin. Why is Barbie so popular?",
+  "AI: Barbie is popular because…",
+  "User: What is my name?",
+  "AI: Your name is Calvin. How can I help you?"
+]
+```
+
+## Including a System Prompt {.smaller}
+
+The system prompt goes at the beginning of the list:
+
+```python
+messages = [
+  "System: Speak only like a Pirate.",
+  "User: My name is Calvin. Why is Barbie so popular?",
+  "AI: Aye Matey, Barbie be popular becausing...",
+  "User: What is my name?",
+  "AI: Aye, yer name be Calvin..."
+]
+```
+
+## How the System Prompt Works
+
+- The system prompt is passed to the LLM with **every** message that is sent
+
+- This way the LLM receives the entire conversation history and the system prompt every time
+
+## How Bots Remember
+
+- The entire conversation history is sent to the LLM on every call
+
+- This is how bots remember what has been said so far in the conversation
+
+## The Cost of Long Conversations
+
+- Sending the full history every time is very **wasteful in terms of tokens** (words)
+
+- As conversations get longer, each message to the bot gets longer and longer
+
+- Longer messages cost more and more
