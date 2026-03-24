@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,10 +29,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="TodosSpec_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="TodosSpec_files/libs/quarto-html/anchor.min.js"></script>
 <link href="TodosSpec_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="TodosSpec_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="TodosSpec_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="TodosSpec_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="TodosSpec_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="TodosSpec_files/libs/bootstrap/bootstrap-e1410b04cc7f3ad098892ee0af4d0b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="TodosSpec_files/libs/bootstrap/bootstrap-c769a565bd55057ea50b55661ee20eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -50,11 +50,11 @@ ul.task-list li input[type="checkbox"] {
 <h1>Todo Application - Specification</h1>
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>You are building a todo list application for a fictional client, “TaskFlow Inc.” This assignment focuses on using Stitch (Google’s AI-powered UI design tool) to translate written specifications into functional interface designs. Your goal is to prompt and iterate with Stitch until your design matches these specifications exactly.</p>
+<p>You are building a todo list application for a fictional client, “TaskFlow Inc.” This assignment focuses on translating written specifications into functional interface designs. Your goal is to prompt and iterate with an AI tool until your design matches these specifications exactly.</p>
 </section>
 <section id="client-background" class="level2">
 <h2 class="anchored" data-anchor-id="client-background">Client Background</h2>
-<p>TaskFlow Inc.&nbsp;needs a simple, clean todo list application for their users. They’ve provided specifications for an MVP consisting of two pages. As the designer/developer, you must use Stitch to create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.</p>
+<p>TaskFlow Inc.&nbsp;needs a simple, clean todo list application for their users. They’ve provided specifications for an MVP consisting of two pages. As the designer/developer, you must create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.</p>
 </section>
 <section id="page-1-todo-list-view" class="level2">
 <h2 class="anchored" data-anchor-id="page-1-todo-list-view">Page 1: Todo List View</h2>
@@ -297,6 +297,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -407,6 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

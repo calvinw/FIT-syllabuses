@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TodosSpec Checklist</title>
+<title>pizza_spec</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="TodosSpec-Checklist_files/libs/clipboard/clipboard.min.js"></script>
-<script src="TodosSpec-Checklist_files/libs/quarto-html/quarto.js"></script>
-<script src="TodosSpec-Checklist_files/libs/quarto-html/popper.min.js"></script>
-<script src="TodosSpec-Checklist_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="TodosSpec-Checklist_files/libs/quarto-html/anchor.min.js"></script>
-<link href="TodosSpec-Checklist_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="TodosSpec-Checklist_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="TodosSpec-Checklist_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="TodosSpec-Checklist_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="TodosSpec-Checklist_files/libs/bootstrap/bootstrap-c769a565bd55057ea50b55661ee20eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="pizza_spec_files/libs/clipboard/clipboard.min.js"></script>
+<script src="pizza_spec_files/libs/quarto-html/quarto.js"></script>
+<script src="pizza_spec_files/libs/quarto-html/popper.min.js"></script>
+<script src="pizza_spec_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="pizza_spec_files/libs/quarto-html/anchor.min.js"></script>
+<link href="pizza_spec_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="pizza_spec_files/libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="pizza_spec_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="pizza_spec_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="pizza_spec_files/libs/bootstrap/bootstrap-c769a565bd55057ea50b55661ee20eab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -41,149 +41,72 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">TodosSpec Checklist</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p><strong>Name:</strong> ________________________ <strong>Date:</strong> ________________________</p>
-<hr>
-<section id="page-1-todo-list-view" class="level2">
-<h2 class="anchored" data-anchor-id="page-1-todo-list-view">Page 1: Todo List View</h2>
-<section id="header" class="level3">
-<h3 class="anchored" data-anchor-id="header">Header</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Application title “TaskFlow” is present</label></li>
-<li><label><input type="checkbox">“Add New Todo” button is prominent and easy to find</label></li>
+<section id="orderbot---specification" class="level1">
+<h1>OrderBot - Specification</h1>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>Here we are building a simple bot to take pizza orders.</p>
+<p>Create an order bot, which is an automated service to collect orders for a pizza restaurant. Come up with a set of instructions for the <code>system_prompt</code> below.</p>
+</section>
+<section id="the-menu" class="level2">
+<h2 class="anchored" data-anchor-id="the-menu">The Menu</h2>
+<p><strong>Pizzas</strong></p>
+<ul>
+<li>pepperoni pizza $12.95, $10.00, $7.00</li>
+<li>cheese pizza $10.95, $9.25, $6.50</li>
+<li>eggplant pizza $11.95, $9.75, $6.75</li>
+</ul>
+<p><strong>Sides</strong></p>
+<ul>
+<li>fries $4.50, $3.50</li>
+<li>greek salad $7.25</li>
+</ul>
+<p><strong>Toppings</strong></p>
+<ul>
+<li>extra cheese $2.00</li>
+<li>mushrooms $1.50</li>
+<li>sausage $3.00</li>
+<li>canadian bacon $3.50</li>
+<li>peppers $1.00</li>
+</ul>
+<p><strong>Drinks</strong></p>
+<ul>
+<li>coke $3.00, $2.00, $1.00</li>
+<li>sprite $3.00, $2.00, $1.00</li>
+<li>bottled water $5.00</li>
 </ul>
 </section>
-<section id="todo-display" class="level3">
-<h3 class="anchored" data-anchor-id="todo-display">Todo Display</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">All todos are displayed as cards or list items</label></li>
-<li><label><input type="checkbox">Each todo shows <strong>Title</strong> (prominently)</label></li>
-<li><label><input type="checkbox">Each todo shows <strong>Description</strong> (truncated if needed)</label></li>
-<li><label><input type="checkbox">Each todo shows <strong>Due Date</strong> (when set)</label></li>
-<li><label><input type="checkbox">Each todo shows <strong>Priority</strong> (High/Medium/Low - visually distinguishable)</label></li>
-<li><label><input type="checkbox">Each todo shows <strong>Status</strong> (Not Started/In Progress/Completed - visually distinguishable)</label></li>
-<li><label><input type="checkbox">Each todo has an <strong>Edit button</strong> or way to access editor</label></li>
-<li><label><input type="checkbox">Todos are clearly separated from each other</label></li>
+<section id="requirements-for-the-orderbot" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-for-the-orderbot">Requirements for the OrderBot</h2>
+<p>Try to implement and test each of these.</p>
+<ol type="1">
+<li>Greet the customer and introduce yourself as “The Order Technician”</li>
+<li>Be able to display the entire menu or just a category depending on the user’s requests</li>
+<li>If the customer orders an item, ask them what size they want</li>
+<li>Confirm each item with the name of the item, the size, and the price</li>
+<li>Once you have any items on the customer’s order, show the current order and total at the bottom of each response. Give the order details in a table</li>
+<li>Once the user is ready, ask the user for their name and their phone number</li>
+<li>Ask them if they will pickup or want delivery. If they want delivery, get an address.</li>
+<li>Apply the following multi-tiered discount system based on the order total, customer type, and day of the week:</li>
+</ol>
+<p><strong>Discount Rules:</strong></p>
+<ul>
+<li>If order total &lt; $20, no discount</li>
+<li>Else if order total &lt; $50, 5% discount</li>
+<li>Else if order total &lt; $100, 10% discount</li>
+<li>Else 15% discount</li>
 </ul>
-</section>
-<section id="filtering" class="level3">
-<h3 class="anchored" data-anchor-id="filtering">Filtering</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Can filter by Status (All, Not Started, In Progress, Completed)</label></li>
-<li><label><input type="checkbox">Can filter by Priority (All, High, Medium, Low)</label></li>
-<li><label><input type="checkbox">Filters update the displayed todos correctly</label></li>
+<p><strong>Additional Discounts:</strong></p>
+<ul>
+<li>If the customer is a senior citizen, add an additional 5% discount</li>
 </ul>
-</section>
-<section id="empty-state" class="level3">
-<h3 class="anchored" data-anchor-id="empty-state">Empty State</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">When no todos exist, shows helpful message encouraging creation</label></li>
-</ul>
-</section>
-<section id="interactions" class="level3">
-<h3 class="anchored" data-anchor-id="interactions">Interactions</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">“Add New Todo” navigates to Page 2 (create mode)</label></li>
-<li><label><input type="checkbox">Clicking todo or Edit button navigates to Page 2 (edit mode)</label></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="page-2-todo-editor" class="level2">
-<h2 class="anchored" data-anchor-id="page-2-todo-editor">Page 2: Todo Editor</h2>
-<section id="navigation" class="level3">
-<h3 class="anchored" data-anchor-id="navigation">Navigation</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Back button/link returns to List View</label></li>
-<li><label><input type="checkbox">Page title shows “Create New Todo” or “Edit Todo” appropriately</label></li>
-</ul>
-</section>
-<section id="form-fields" class="level3">
-<h3 class="anchored" data-anchor-id="form-fields">Form Fields</h3>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>Title</strong> field (text input, marked as required)</label></li>
-<li><label><input type="checkbox"><strong>Description</strong> field (multi-line text area, optional)</label></li>
-<li><label><input type="checkbox"><strong>Due Date</strong> field (date picker/input, optional)</label></li>
-<li><label><input type="checkbox"><strong>Priority</strong> field (dropdown/selection: High/Medium/Low, marked as required)</label></li>
-<li><label><input type="checkbox"><strong>Status</strong> field (dropdown/selection: Not Started/In Progress/Completed, marked as required)</label></li>
-<li><label><input type="checkbox">Required fields are clearly marked</label></li>
-</ul>
-</section>
-<section id="action-buttons" class="level3">
-<h3 class="anchored" data-anchor-id="action-buttons">Action Buttons</h3>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>Save</strong> button present (saves and returns to List View)</label></li>
-<li><label><input type="checkbox"><strong>Cancel</strong> button present (returns to List View without saving)</label></li>
-<li><label><input type="checkbox"><strong>Delete</strong> button only shown in edit mode (not in create mode)</label></li>
-</ul>
-</section>
-<section id="create-mode" class="level3">
-<h3 class="anchored" data-anchor-id="create-mode">Create Mode</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">All fields empty or set to defaults</label></li>
-<li><label><input type="checkbox">No Delete button visible</label></li>
-<li><label><input type="checkbox">Save creates a new todo successfully</label></li>
-</ul>
-</section>
-<section id="edit-mode" class="level3">
-<h3 class="anchored" data-anchor-id="edit-mode">Edit Mode</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">All fields populated with existing todo data</label></li>
-<li><label><input type="checkbox">Delete button is visible</label></li>
-<li><label><input type="checkbox">Delete asks for confirmation before removing</label></li>
-<li><label><input type="checkbox">Save updates the existing todo successfully</label></li>
-</ul>
-</section>
-<section id="validation" class="level3">
-<h3 class="anchored" data-anchor-id="validation">Validation</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Cannot save without Title</label></li>
-<li><label><input type="checkbox">Cannot save without Priority</label></li>
-<li><label><input type="checkbox">Cannot save without Status</label></li>
-<li><label><input type="checkbox">Clear error messages shown for missing required fields</label></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="overall-functional-requirements" class="level2">
-<h2 class="anchored" data-anchor-id="overall-functional-requirements">Overall Functional Requirements</h2>
-<section id="crud-operations" class="level3">
-<h3 class="anchored" data-anchor-id="crud-operations">CRUD Operations</h3>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>Create</strong> - Can add new todos</label></li>
-<li><label><input type="checkbox"><strong>Read</strong> - Can view all todos in list</label></li>
-<li><label><input type="checkbox"><strong>Update</strong> - Can edit existing todos</label></li>
-<li><label><input type="checkbox"><strong>Delete</strong> - Can remove todos (with confirmation)</label></li>
-</ul>
-</section>
-<section id="general" class="level3">
-<h3 class="anchored" data-anchor-id="general">General</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Two separate pages/views exist (List and Editor)</label></li>
-<li><label><input type="checkbox">Navigation works between both pages</label></li>
-<li><label><input type="checkbox">Interface is clean and not cluttered</label></li>
-<li><label><input type="checkbox">Design is functional and usable</label></li>
-</ul>
+<p>Make sure to add all the discounts before discounting. For example if the order is $23.95, then there is a 5% discount. If the customer is a senior citizen, add another 5% to the discount so that it becomes a 10% discount.</p>
+<p>Be sure to tell your chatbot to double check the arithmetic when it does it.</p>
 </section>
 </section>
 

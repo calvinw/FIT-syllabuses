@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-You are building a todo list application for a fictional client, "TaskFlow Inc." This assignment focuses on using Stitch (Google's AI-powered UI design tool) to translate written specifications into functional interface designs. Your goal is to prompt and iterate with Stitch until your design matches these specifications exactly.
+You are building a todo list application for a fictional client, "TaskFlow Inc." This assignment focuses on translating written specifications into functional interface designs. Your goal is to prompt and iterate with an AI tool until your design matches these specifications exactly.
 
 ## Client Background
 
-TaskFlow Inc. needs a simple, clean todo list application for their users. They've provided specifications for an MVP consisting of two pages. As the designer/developer, you must use Stitch to create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.
+TaskFlow Inc. needs a simple, clean todo list application for their users. They've provided specifications for an MVP consisting of two pages. As the designer/developer, you must create interfaces that meet these functional requirements. You have creative freedom on visual styling, but all specified functionality must be present.
 
 ## Page 1: Todo List View
 
