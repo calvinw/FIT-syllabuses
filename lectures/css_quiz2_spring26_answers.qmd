@@ -1,0 +1,56 @@
+---
+title: "CS211 Quiz 2 - Spring 2026 - Answer Key"
+format: html
+---
+
+## Answer Key
+
+**Answer 1:** C) The second prompt triggered chain of thought reasoning, causing the LLM to reason through intermediate steps rather than guessing the final answer
+
+**Answer 2:** A) The full menu with item names and prices, and instructions on how to collect and confirm the order
+
+**Answer 3:** D) A distinct piece of content (such as code, HTML, or a document) that the LLM generates and displays separately so it can be viewed and edited on its own
+
+**Answer 4:** B) Few shot prompting
+
+**Answer 5:** C) The total amount of text — including instructions, conversation history, and documents — that the LLM can see at once
+
+**Answer 6:** D) Prompt chaining
+
+**Answer 7:** A) It is a behind-the-scenes instruction that sets the LLM's behavior, tone, and constraints before the conversation begins
+
+**Answer 8:** B) "The concert is in Chicago. → Chicago / She moved to Austin last year. → Austin / We visited Paris in the spring. → Paris"
+
+**Answer 9:** D) The LLM can make an error in one of the intermediate steps, which causes the final answer to be wrong
+
+**Answer 10:** A) The orderbot may try to answer anyway, potentially making up items or prices that do not exist
+
+**Answer 11:** C) Asking the LLM to write a Python script that you plan to copy, run, and revise multiple times
+
+**Answer 12:** B) Few shot prompting shows the LLM the exact format and pattern you want, making its output more predictable
+
+**Answer 13:** D) The large document may use up much of the context window, leaving less room for the actual conversation
+
+**Answer 14:** C) Each step can be checked and corrected before moving to the next, reducing the chance of errors compounding
+
+**Answer 15:** A) The conversation exceeded the LLM's context window, so the earliest messages were dropped
+
+**Answer 16:** B) Learn the wrong pattern and apply it to new inputs
+
+**Answer 17:** D) "A store sells apples for $0.50 each. Maria buys 12 apples and pays with a $10 bill. How much change does she get? Show each step of your calculation."
+
+**Answer 18:** A) The LLM updates the existing artifact with the requested change
+
+**Answer 19:** C) Confirm the items and total cost, then ask if the customer wants to finalize the order
+
+**Answer 20:** B) The summary produced in Step 1
+
+**Answer 21:** Few shot prompting means including a few examples in your prompt to show the LLM the pattern or format you want it to follow. Example: if you want the LLM to label sentences as formal or informal, you include two or three labeled examples before asking it to label a new sentence.
+
+**Answer 22:** A system prompt is a behind-the-scenes instruction set that defines how the chatbot behaves — for example, "You are a friendly customer service agent for an online clothing store. Only answer questions about orders and returns." A user message is what the customer types during the conversation — for example, "Where is my order?" The system prompt is set by the developer; the user message comes from the person chatting with the bot.
+
+**Answer 23:** One potential problem is that a 20-page document may use up most of the LLM's context window, leaving little room for the conversation itself — and the LLM may lose track of earlier content or give incomplete answers. A better approach would be to paste in only the relevant section of the paper when asking a specific question, or to use prompt chaining to process the paper in smaller chunks.
+
+**Answer 24:** Example chain: Step 1 — prompt the LLM to suggest a theme based on the guest of honor's interests (output: theme idea). Step 2 — use that theme to generate a list of decoration and activity ideas (output: decoration/activity list). Step 3 — use the activity list to create a timeline/schedule for the party (output: party schedule). Each step's output feeds directly into the next prompt as input.
+
+**Answer 25:** It is important to review the order summary because the orderbot could misunderstand an item, record the wrong quantity, or include an incorrect price. If you skip the review step and submit without checking, you might end up ordering the wrong things or being charged the wrong amount — and it may be difficult to fix after the order is placed.

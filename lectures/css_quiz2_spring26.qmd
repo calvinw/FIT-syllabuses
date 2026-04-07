@@ -1,0 +1,204 @@
+---
+title: "CS211 Quiz 2 - Spring 2026"
+format: html
+---
+
+## Quiz Questions
+
+**Question 1:** A student asks an LLM: "What is 15% of 240?" and gets a wrong answer. They try again with: "What is 15% of 240? Think through this step by step." This time the answer is correct. Why did the second prompt work better?
+
+- A) The LLM recognized the question the second time because it had seen it before
+- B) The second prompt was longer, and longer prompts always work better
+- C) The second prompt triggered chain of thought reasoning, causing the LLM to reason through intermediate steps rather than guessing the final answer
+- D) Adding a question mark at the end improved accuracy
+
+---
+
+**Question 2:** You are designing an orderbot for a pizza restaurant. Which of the following should definitely be included in the system prompt?
+
+- A) The full menu with item names and prices, and instructions on how to collect and confirm the order
+- B) The customer's name and address
+- C) A list of all previous orders
+- D) The LLM's training data
+
+---
+
+**Question 3:** What is an artifact in the context of an LLM chat interface?
+
+- A) An error message produced when the LLM fails
+- B) A saved version of the system prompt
+- C) A file attachment the user uploads to the chat
+- D) A distinct piece of content (such as code, HTML, or a document) that the LLM generates and displays separately so it can be viewed and edited on its own
+
+---
+
+**Question 4:** You want an LLM to classify customer reviews as "positive", "neutral", or "negative". You include three labeled examples in your prompt before asking it to classify a new review. What technique are you using?
+
+- A) Prompt chaining
+- B) Few shot prompting
+- C) Zero shot prompting
+- D) Chain of thought prompting
+
+---
+
+**Question 5:** Which of the following best describes what "context" means when working with an LLM?
+
+- A) The number of words in your prompt
+- B) The programming language used to build the LLM
+- C) The total amount of text — including instructions, conversation history, and documents — that the LLM can see at once
+- D) The topic the LLM was trained on
+
+---
+
+**Question 6:** A developer wants to build a system that: (1) reads a product description, (2) writes a marketing tagline, and (3) translates that tagline into French. Which technique are they using?
+
+- A) Chain of thought prompting
+- B) Zero shot prompting
+- C) Few shot prompting
+- D) Prompt chaining
+
+---
+
+**Question 7:** In a chat conversation with an LLM, what is the role of the system prompt?
+
+- A) It is a behind-the-scenes instruction that sets the LLM's behavior, tone, and constraints before the conversation begins
+- B) It is a message sent automatically after every user turn
+- C) It is the first message the user sends to start the conversation
+- D) It summarizes the conversation at the end
+
+---
+
+**Question 8:** You are writing a few shot prompt to get the LLM to extract the city name from a sentence. Which set of examples would be most useful?
+
+- A) "I love traveling. / Yes, traveling is fun."
+- B) "The concert is in Chicago. → Chicago / She moved to Austin last year. → Austin / We visited Paris in the spring. → Paris"
+- C) "Name a city. / London."
+- D) "What cities do you know? / I know many cities."
+
+---
+
+**Question 9:** Why might chain of thought prompting produce a wrong answer even when the LLM shows its steps?
+
+- A) The LLM ignores the instruction to think step by step
+- B) Chain of thought only works for language tasks, not math
+- C) The LLM never actually follows the steps it writes out
+- D) The LLM can make an error in one of the intermediate steps, which causes the final answer to be wrong
+
+---
+
+**Question 10:** What is the biggest risk if an orderbot's system prompt does not clearly define what the bot should do when a customer asks for something not on the menu?
+
+- A) The orderbot may try to answer anyway, potentially making up items or prices that do not exist
+- B) The orderbot will crash
+- C) The context window will overflow
+- D) The customer will be automatically redirected to a human
+
+---
+
+**Question 11:** Which scenario is the best use case for producing an artifact rather than a regular chat response?
+
+- A) Asking the LLM what year a movie came out
+- B) Asking the LLM to define a vocabulary word
+- C) Asking the LLM to write a Python script that you plan to copy, run, and revise multiple times
+- D) Asking the LLM to recommend a restaurant
+
+---
+
+**Question 12:** What is the main advantage of few shot prompting over zero shot prompting?
+
+- A) Few shot prompting uses less of the context window
+- B) Few shot prompting shows the LLM the exact format and pattern you want, making its output more predictable
+- C) Few shot prompting is faster because the LLM doesn't have to think
+- D) Few shot prompting trains the LLM permanently on your examples
+
+---
+
+**Question 13:** You are building a customer service chatbot and you paste the company's 50-page policy manual directly into the system prompt. What risk does this create?
+
+- A) The LLM will refuse to read documents longer than one page
+- B) The LLM will only answer questions about the policy manual
+- C) The policy manual will be permanently saved to the LLM's memory
+- D) The large document may use up much of the context window, leaving less room for the actual conversation
+
+---
+
+**Question 14:** What is the main reason to break a complex task into a chain of prompts rather than putting everything into one large prompt?
+
+- A) LLMs charge less when prompts are shorter
+- B) LLMs cannot handle prompts with more than one instruction
+- C) Each step can be checked and corrected before moving to the next, reducing the chance of errors compounding
+- D) Chained prompts run in parallel and are faster
+
+---
+
+**Question 15:** A user has a long back-and-forth conversation with an LLM about planning a trip. Near the end, the LLM seems to "forget" details mentioned at the very beginning. What most likely caused this?
+
+- A) The conversation exceeded the LLM's context window, so the earliest messages were dropped
+- B) The LLM updated itself during the conversation
+- C) The user made a spelling mistake
+- D) The LLM deliberately ignores old messages to stay focused
+
+---
+
+**Question 16:** A poorly chosen example in a few shot prompt can cause the LLM to:
+
+- A) Switch to a different language
+- B) Learn the wrong pattern and apply it to new inputs
+- C) Refuse to answer entirely
+- D) Ask you to provide more examples
+
+---
+
+**Question 17:** Which of the following prompts best demonstrates chain of thought prompting?
+
+- A) "What is the fastest route from New York to Los Angeles?"
+- B) "Translate 'good morning' into Spanish."
+- C) "List 5 cities in Europe."
+- D) "A store sells apples for $0.50 each. Maria buys 12 apples and pays with a $10 bill. How much change does she get? Show each step of your calculation."
+
+---
+
+**Question 18:** A user asks an LLM to build a simple webpage. The LLM produces the HTML code as an artifact. The user then says "make the background blue." What most likely happens next?
+
+- A) The LLM updates the existing artifact with the requested change
+- B) The LLM asks the user to edit the artifact manually
+- C) The LLM pastes the full HTML into the chat instead
+- D) A brand new artifact is created from scratch
+
+---
+
+**Question 19:** A customer tells your pizza orderbot: "I want two large pepperoni pizzas and one Caesar salad." What should a well-designed orderbot do next?
+
+- A) Refuse the order because it contains multiple items
+- B) End the conversation immediately after taking the order
+- C) Confirm the items and total cost, then ask if the customer wants to finalize the order
+- D) Ask the customer to repeat the order in a different format
+
+---
+
+**Question 20:** In a prompt chain, Step 1 asks the LLM to summarize a legal document. Step 2 asks the LLM to identify any risks in the summary. What is passed from Step 1 to Step 2?
+
+- A) The original legal document
+- B) The summary produced in Step 1
+- C) The prompt used in Step 1
+- D) Nothing — each step starts fresh
+
+---
+
+**Question 21:** Describe in your own words what few shot prompting is and give one example of a task where you would use it.
+
+---
+
+**Question 22:** Explain the difference between a system prompt and a user message in a chat conversation. Give an example of what each might contain for a customer service chatbot.
+
+---
+
+**Question 23:** A friend says: "I just put my entire 20-page research paper into my prompt and asked the LLM to answer questions about it." What is one potential problem with this approach, and what might they do instead?
+
+---
+
+**Question 24:** You want to use prompt chaining to help plan a birthday party. Describe at least three steps you would break the task into, and explain what output from one step feeds into the next.
+
+---
+
+**Question 25:** Why is it important to review and confirm an orderbot's output (the final order summary) before submitting it? What could go wrong if you skip this step?
