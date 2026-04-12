@@ -6,6 +6,8 @@
 
 3 Credits  
 
+This is an Online (OL) course, which runs on the same semester schedule as face-to-face courses. Login to Brightspace with your FIT username and password on the first day of the semester at (http://brightspace.fitnyc.edu)
+
 ## Instructor Information
 
 calvin\_williamson@fitnyc.edu  
@@ -17,22 +19,16 @@ office hours: Monday 1-3, Tuesday 12-1, Thursday 12-1
 This course is an introduction to programming for mobile apps. Through visual programming tools, students learn to build mobile apps and control all aspects of the application. Computer science concepts are introduced to provide a complete understanding of the programming process. No previous programming experience is required. Prerequisite(s): mathematic proficiency (see beginning of Mathematics section).
 
 
-## Agentic Programming
-
-It is common now to use AI for programming and software development, so we will incorporete AI usage for helping to write AppInventor software. This will involve using various large language models to help us design and implement the software we are interested in. Since AppInventor is a visual programming language AI cannot directly produce working code for this situation but they can help you implement any program you want to build by describing to you how to set it up and how to implement it. This agentic software development is a valuable skill to have and we will develop it fully in our course. 
-
 ## Outcomes
 
-1. Use a visual programming environment to create mobile apps by editing code blocks that represent the parts of an app. 
-2. Show the use of a development environment in the app creation process. 
-3. Demonstrate application architecture for mobile apps using components and event handlers. 
-4. Use variables in a variety of contexts. 
-5. Use mathematical expressions and calculations to set variables during program execution. 
-6. Create applications using logic and control flow constructions including if/then/else and when/do. 
-7. Show how random choices are made by programs during execution and demonstrate the importance of this. 
-8. Create applications that employ lists and iterations over lists to perform tasks. 
-9. Explain persistent memory and create applications that use databases for storage. 
-10. Demonstrate code reuse by creating procedures and understanding their function within an application.
+1. Design and develop mobile applications using visual programming environments and development tools.
+2. Apply application architecture concepts such as components, event handlers, logic, and control flow.
+3. Represent and manipulate mathematical information through variables, expressions, and calculations in mobile apps.
+4. Demonstrate logical reasoning by estimating, checking, and validating program results for accuracy and reasonableness.
+5. Create applications that incorporate randomness, iteration, and data structures such as lists.
+6. Implement persistent memory by designing applications that use databases for data storage and retrieval.
+7. Perform quantitative analysis of user or application data and draw inferences from computational models.
+8. Apply abstraction by creating reusable procedures and modular code components in application design.
 
 ## Course Materials
 
@@ -60,5 +56,5 @@ There is NO FINAL EXAM.
 
 ## AI policy:
 
-We will use AI at all stages of this course to help us write programs. There is no restriction with what you can do with the tools. You may use them in every poossible way, since programming is what they are good at. You will gain an ability to use them for agentic software design in this course.  
+AI usage is not restricted in this course and you may use AI to help you compose the programs written in this course.
 
