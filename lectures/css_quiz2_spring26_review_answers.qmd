@@ -1,0 +1,42 @@
+---
+title: "CS211 Quiz 2 - Spring 2026 - Answer Key"
+format: html
+---
+
+## Answer Key
+
+**Answer 1:** C) Asking the LLM to perform a task without providing any examples of the desired output
+
+**Answer 2:** A) The bot may make up an answer about delivery rather than saying it doesn't know
+
+**Answer 3:** D) Zero shot prompting
+
+**Answer 4:** A) Prompt chaining
+
+**Answer 5:** C) A unit of text (roughly a word or part of a word) that the LLM processes
+
+**Answer 6:** D) The developer or company deploying the chatbot
+
+**Answer 7:** B) "Please be advised that the meeting has been rescheduled. → Hey, just so you know, the meeting got moved. / I would like to request your assistance. → Can you help me out?"
+
+**Answer 8:** C) The novel may exceed the context window, causing the LLM to miss or truncate parts of the text
+
+**Answer 9:** A) Chain of thought prompting
+
+**Answer 10:** D) A one-sentence answer to "What year did World War II end?"
+
+**Answer 11:** B) The LLM will learn from the biased examples and over-apply the "POSITIVE" label to new inputs
+
+**Answer 12:** A) The error from Step 1 carries forward, causing problems in Step 2 and Step 3
+
+**Answer 13:** D) "If a customer asks about something not on the menu or outside your knowledge, say you don't have that information and offer to help with something else."
+
+**Answer 14:** B) A prompt injection or jailbreak attempt
+
+**Answer 15:** D) "Consider this business's current revenue, target markets, and competitive landscape. Think through each factor step by step, then give a recommendation on international expansion."
+
+**Answer 16:** C) The output (text, data, or content) produced by the previous step
+
+**Answer 17:** A) Display the cover letter as an artifact so the user can easily view, copy, and edit it separately
+
+**Answer 18:** B) 1–3 examples per category, clearly labeled

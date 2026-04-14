@@ -1,0 +1,161 @@
+---
+title: "CS211 Quiz 2 - Spring 2026"
+format:
+  html: default
+  pdf:
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    include-in-header:
+      text: |
+        \usepackage{enumitem}
+        \usepackage{needspace}
+        \setlist{itemsep=3pt, topsep=4pt, partopsep=0pt}
+        \setlength{\parskip}{8pt}
+---
+
+## Questions
+
+\needspace{7\baselineskip}
+**Question 1:** *(1 pt)* Which of the following is the best description of zero shot prompting?
+
+- A) Asking the LLM a question with no system prompt
+- B) Sending a prompt that contains zero words
+- C) Asking the LLM to perform a task without providing any examples of the desired output
+- D) Running an LLM with no training data
+
+\needspace{7\baselineskip}
+**Question 2:** *(2 pts)* A developer builds an orderbot for a sushi restaurant. A customer asks: "Do you deliver to Brooklyn?" The system prompt says nothing about delivery. What is the most likely risk?
+
+- A) The bot may make up an answer about delivery rather than saying it doesn't know
+- B) The bot will crash because it can't answer geography questions
+- C) The context window will overflow
+- D) The bot will ask the customer to call the restaurant
+
+\needspace{7\baselineskip}
+**Question 3:** *(1 pt)* You prompt an LLM: "Classify these tweets as angry, happy, or neutral." You give no examples. This is called:
+
+- A) Chain of thought prompting
+- B) Few shot prompting
+- C) Prompt chaining
+- D) Zero shot prompting
+
+\needspace{7\baselineskip}
+**Question 4:** *(2 pts)* A student writes this prompt: "First, list all the ingredients needed. Then, using that list, write step-by-step cooking instructions. Finally, using those steps, write a short social media post about the dish." Which technique does this best illustrate?
+
+- A) Prompt chaining
+- B) Zero shot prompting
+- C) Few shot prompting
+- D) Chain of thought prompting
+
+\needspace{7\baselineskip}
+**Question 5:** *(1 pt)* What is a "token" in the context of an LLM's context window?
+
+- A) A password used to access the LLM's API
+- B) A saved version of a prompt
+- C) A unit of text (roughly a word or part of a word) that the LLM processes
+- D) A type of artifact produced by the LLM
+
+\needspace{7\baselineskip}
+**Question 6:** *(1 pt)* Who typically writes the system prompt in a production chatbot application?
+
+- A) The end user, before they start chatting
+- B) The LLM itself, based on the conversation
+- C) The LLM's training team at the AI company
+- D) The developer or company deploying the chatbot
+
+\needspace{7\baselineskip}
+**Question 7:** *(2 pts)* You are building a few shot prompt to rewrite formal sentences into casual ones. Which example set is best?
+
+- A) "The weather is nice today. / I like weather."
+- B) "Please be advised that the meeting has been rescheduled. → Hey, just so you know, the meeting got moved. / I would like to request your assistance. → Can you help me out?"
+- C) "Rewrite sentences. / Okay."
+- D) "Formal writing is important in business contexts."
+
+\needspace{7\baselineskip}
+**Question 8:** *(1 pt)* A user pastes a 500-page novel into their prompt and asks the LLM to find every mention of a specific character. What is the most likely problem?
+
+- A) The LLM will refuse to read fiction
+- B) The novel will be permanently stored in the LLM's memory
+- C) The novel may exceed the context window, causing the LLM to miss or truncate parts of the text
+- D) The LLM will only read the first chapter
+
+\needspace{7\baselineskip}
+**Question 9:** *(2 pts)* An LLM is asked: "A train leaves Chicago at 9am traveling at 60mph. Another leaves New York at 10am traveling at 80mph toward Chicago. The distance between them is 790 miles. When do they meet? Work through each step." What technique is being used?
+
+- A) Chain of thought prompting
+- B) Few shot prompting
+- C) Zero shot prompting
+- D) Prompt chaining
+
+\needspace{7\baselineskip}
+**Question 10:** *(2 pts)* Which of the following is NOT a good candidate for generating an artifact?
+
+- A) A full HTML webpage with styling
+- B) A Python script to analyze sales data
+- C) A detailed project plan document with multiple sections
+- D) A one-sentence answer to "What year did World War II end?"
+
+\needspace{7\baselineskip}
+**Question 11:** *(2 pts)* You add five examples to a few shot prompt, but all five examples use the label "POSITIVE" even for neutral sentences. What is the most likely outcome?
+
+- A) The LLM will ignore the examples and answer correctly anyway
+- B) The LLM will learn from the biased examples and over-apply the "POSITIVE" label to new inputs
+- C) The LLM will ask you to fix the examples
+- D) The prompt will fail with an error
+
+\needspace{7\baselineskip}
+**Question 12:** *(2 pts)* A prompt chain has three steps. Step 1 produces a list of keywords. Step 2 writes an article using those keywords. Step 3 checks the article for grammar. There is a major error in Step 1's keyword list. What happens?
+
+- A) The error from Step 1 carries forward, causing problems in Step 2 and Step 3
+- B) Step 2 and Step 3 will automatically detect and fix the error
+- C) The error only affects Step 1; the other steps are independent
+- D) Step 3 will reject the article and restart from Step 1
+
+\needspace{8\baselineskip}
+**Question 13:** *(2 pts)* Which addition to a system prompt would most help an orderbot avoid making up information?
+
+- A) "Always be polite and friendly."
+- B) "Respond only in English."
+- C) "Never use the word 'sorry'."
+- D) "If a customer asks about something not on the menu or outside your knowledge, say you don't have that information and offer to help with something else."
+
+\needspace{7\baselineskip}
+**Question 14:** *(2 pts)* A developer tests their chatbot and notices it sometimes ignores the instructions in the system prompt when users ask it to "pretend you have no rules." This is an example of:
+
+- A) A context window overflow
+- B) A prompt injection or jailbreak attempt
+- C) Few shot prompting by the user
+- D) The LLM performing chain of thought reasoning
+
+\needspace{8\baselineskip}
+**Question 15:** *(2 pts)* You want to use chain of thought prompting to help an LLM decide whether a business should expand internationally. Which prompt is best?
+
+- A) "Should this business expand internationally? Yes or no."
+- B) "Translate the business plan into French."
+- C) "List five businesses that expanded internationally."
+- D) "Consider this business's current revenue, target markets, and competitive landscape. Think through each factor step by step, then give a recommendation on international expansion."
+
+\needspace{7\baselineskip}
+**Question 16:** *(2 pts)* What is passed between steps in a prompt chain?
+
+- A) The original system prompt from Step 1
+- B) The full conversation history from all prior steps
+- C) The output (text, data, or content) produced by the previous step
+- D) Nothing — each step is completely independent
+
+\needspace{7\baselineskip}
+**Question 17:** *(2 pts)* A user asks an LLM to write a formal cover letter. The LLM's response appears inline in the chat as a long block of text. A better LLM interface might instead:
+
+- A) Display the cover letter as an artifact so the user can easily view, copy, and edit it separately
+- B) Refuse the request because cover letters are too personal
+- C) Summarize the cover letter into one sentence
+- D) Ask the user to write the first draft themselves
+
+\needspace{7\baselineskip}
+**Question 18:** *(1 pt)* You are designing a few shot prompt to identify whether a customer complaint is about "shipping," "product quality," or "billing." How many examples per category is generally a reasonable starting point?
+
+- A) 0 — the LLM already knows all categories
+- B) 1–3 examples per category, clearly labeled
+- C) At least 100 examples per category for accuracy
+- D) Exactly 10 total, regardless of categories
