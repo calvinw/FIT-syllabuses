@@ -175,21 +175,3 @@ enrollment_id | student_id | course_id | grade
 **Question 16:** An AI App sends a user prompt and a list of available tools to an LLM. Describe in your own words what happens next. Include: what the LLM decides, how the tool gets called, what happens after the tool runs, and how the final answer reaches the user.
 
 ---
-
-## Answer Key
-
-1. B
-2. C
-3. B
-4. B
-5. B
-6. C
-7. B
-8. B
-9. B
-10. B
-11. B
-12. C
-13. C
-14. B
-15. C
