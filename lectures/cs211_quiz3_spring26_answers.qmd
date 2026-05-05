@@ -1,0 +1,118 @@
+---
+title: "CS211 Quiz 3 Review - Spring 2026 (Answer Key)"
+format: html
+---
+
+## Example Database Schema
+
+Here is a simple 3-table database for a school enrollment system:
+
+### Table 1: Students
+```
+student_id | name           | email
+@1234      | Alice Johnson  | alice@fitnyc.edu
+@0234      | Bob Smith      | bob@fitnyc.edu
+@0345      | Carol White    | carol@fitnyc.edu
+```
+
+### Table 2: Courses
+```
+course_id | title                        | instructor
+FM101     | Retail Management            | Dr. Brown
+FM102     | Inventory & Supply Chain     | Dr. Green
+FM103     | Visual Merchandising         | Dr. Blue
+```
+
+### Table 3: Enrollments
+```
+enrollment_id | student_id | course_id | grade
+1001          | @1234      | FM101     | A
+1002          | @1234      | FM102     | B+
+1003          | @0234      | FM101     | A-
+1004          | @0234      | FM103     | B
+1005          | @0345      | FM102     | A
+```
+
+---
+
+## Quiz Answers
+
+**Question 1:** What is the Model Context Protocol (MCP)?
+**Answer: B** - A standard that enables LLMs to safely connect to and interact with external data sources and tools.
+
+---
+
+**Question 2:** Which of the following is a primary benefit of using tools with an LLM?
+**Answer: C** - Tools allow the LLM to perform actions beyond generating text, such as reading files, querying databases, or calling APIs.
+
+---
+
+**Question 3:** In a database, what is a primary key?
+**Answer: B** - A unique identifier that guarantees each row in a table can be uniquely identified.
+
+---
+
+**Question 4:** What is a foreign key in a relational database?
+**Answer: B** - A column that references the primary key of another table, creating a relationship between tables.
+
+---
+
+**Question 5:** What is OpenCode in the context of LLM tools?
+**Answer: B** - An agentic LLM harness that allows LLMs to interact with and manipulate files, folders, and other system resources.
+
+---
+
+**Question 6:** You want an LLM to fetch the current weather and then suggest what clothes to wear. Which of the following would you need?
+**Answer: C** - A tool that can call a weather API to retrieve current conditions.
+
+---
+
+**Question 7:** What is a connector?
+**Answer: B** - Another word for an MCP—a connection between an LLM and an external system or data source (like a database or file system).
+
+---
+
+**Question 8:** Looking at the Enrollments table above, why is it structured with 2 foreign keys instead of storing all data in one Students table?
+**Answer: B** - To avoid duplicating course information and allow students to enroll in multiple courses without repeating course details.
+
+---
+
+**Question 9:** An LLM is connected to a tool that can query a database. A user asks: "What are the top 5 customers by total spending?" What should the LLM do?
+**Answer: B** - Use the database tool to query the actual data and return real results.
+
+---
+
+**Question 10:** What is the main advantage of using MCPs to connect an LLM to a database rather than embedding the entire database contents in the system prompt?
+**Answer: B** - MCPs allow the LLM to query only the data it needs, keeping the context window free for conversation and reasoning.
+
+---
+
+**Question 11:** You are building a system where users can ask an LLM questions about their personal files (documents, spreadsheets, etc.). Which technology would you need?
+**Answer: B** - An MCP connector to the user's file system and a tool that can read and analyze files.
+
+---
+
+**Question 12:** In the example database above, if you wanted to find "all courses that Alice is enrolled in", you would need to:
+**Answer: C** - Query the Enrollments table using her student_id, then join with the Courses table to get course names.
+
+---
+
+**Question 13:** What should happen if you try to insert a record with a foreign key value that doesn't exist in the referenced table?
+**Answer: C** - The database should reject the insertion to maintain data integrity.
+
+---
+
+**Question 14:** An LLM is using OpenCode to help a user debug their Python script. What can OpenCode do that a regular chat interface cannot?
+**Answer: B** - Execute the code in a sandboxed environment and show the output or error messages in real-time.
+
+---
+
+**Question 15:** A company wants to give an LLM access to their customer database so it can answer customer service questions like "What was my last order?" Which of the following is the most secure approach?
+**Answer: C** - Use an MCP with a connector that allows the LLM to query only specific, pre-approved data and cannot delete or modify records.
+
+---
+
+**Question 16:** An AI App sends a user prompt and a list of available tools to an LLM. Describe in your own words what happens next. Include: what the LLM decides, how the tool gets called, what happens after the tool runs, and how the final answer reaches the user.
+
+**Sample Answer:**
+The LLM receives the user prompt and reviews the list of available tools. It analyzes the prompt to determine if any tools are needed to answer the question. If a tool is relevant, the LLM decides which tool to call and what parameters to pass to it. The AI App intercepts this tool call, executes the tool, and returns the result to the LLM. The LLM then uses the tool's result to formulate a complete answer to the user's original question. Finally, the AI App sends the LLM's response back to the user.
