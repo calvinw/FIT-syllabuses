@@ -85,15 +85,15 @@ You may use any AI tool (ChatGPT, Gemini, Claude, and others) to work on materia
 
 ### Modules
 
-This course is organized into 7 modules:
+This course is organized into 7 modules. Each module has 2 parts, part 1 and part 2. If part 1 is due on F, then part 2 is due on M, etc. 
 
-Each module lasts two week.s A module becomes available on the first day it is assigned. (See the course schedule  for the dates.) When a module is finished it will remain open so you can refer to it but you will not be able to do further work in that module.
+A module becomes available on the first day it is assigned. (See the course schedule for the dates.) When a module is finished it will remain open so you can refer to it but you will not be able to do further work in that module.
 
 There is no way to make-up any module work once a module is finished, so stay up-to-date with the modules, otherwise you will lose the credit for work in that module.
 
 ### Module Activities - Overview
 
-For each week you will follow essentially the same activities listed below:
+For each module you will do the following same activities:
 
 1. Watch a demo video from the instructor talking about the topics and techniques
 2. Look at any accompanying documents or references
