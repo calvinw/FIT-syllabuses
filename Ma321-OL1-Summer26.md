@@ -56,15 +56,15 @@ We will be using Google Spreadsheets or other free software for all work in this
 
 ## Evaluation
 
-Your grade will come from a set of assignments (one per week) due on Fridays
+Your grade will come from a set of assignments due on Monday, Wednesday, and Friday dates beginning with the first due date on 5/29
 
-15 Assignments  - one per week (100%)
+15 Assignments - due on M,W,F schedule (100%)
 
 ### Assignments (100%) (using Google Spreadsheets)
 
 - For each module you will have to complete some problems using a Google Spreadsheet which you share with me.
 
-- Due dates are every Friday at 11:59 EST PM
+- Due dates are Monday, Wednesday, and Friday at 11:59 EST PM, beginning 5/29
 
 - For each assignment I will choose only some parts to grade, but you will not know which parts ahead of time are graded so you need to do all the assignments.
 Share the document or assignment with me as soon as you start the module. This process will be explained in the first assignment.
