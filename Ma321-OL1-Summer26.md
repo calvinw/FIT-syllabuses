@@ -71,9 +71,9 @@ Share the document or assignment with me as soon as you start the module. This p
 
 ### Late Assignments 
 
-Late Assignments submitted after the official due date and time but within 7
-days of the that date and time are counted at 50% credit. Assignments more than
-7 days late count for 0. You may petition to have the lateness penalty waived
+Late Assignments submitted after the official due date and time but within 72
+hours of that date and time are counted at 50% credit. Assignments more than
+72 hours late count for 0. You may petition to have the lateness penalty waived
 but do not expect that to be granted easily. You must provide official
 documentation of extenuating circumstances.
 
